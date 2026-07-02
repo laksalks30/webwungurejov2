@@ -11,6 +11,25 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 150);
     }
 
+    // --- 0.2 Scroll to Top Button ---
+    const scrollToTopBtn = document.getElementById('scrollToTopBtn');
+    if (scrollToTopBtn) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 400) {
+                scrollToTopBtn.classList.add('show');
+            } else {
+                scrollToTopBtn.classList.remove('show');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+    }
+
     // --- 0.5 Language Toggle System ---
     const langToggleBtn = document.getElementById('lang-toggle');
     const defaultLang = 'id';

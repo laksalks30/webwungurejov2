@@ -4319,3 +4319,46 @@ body.lang-switching [data-lang-ph] {
     background: #1E1E2E;
     border-top-color: #313244;
 }
+
+/* ===== 23. SCROLL TO TOP BUTTON ===== */
+#scrollToTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 100px; /* Di sebelah kiri chatbot */
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--color-primary);
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: 0 5px 15px rgba(255, 51, 133, 0.3);
+    cursor: pointer;
+    z-index: 998;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#scrollToTopBtn.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+#scrollToTopBtn:hover {
+    background: var(--color-secondary);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(255, 51, 133, 0.4);
+}
+
+@media (max-width: 768px) {
+    #scrollToTopBtn {
+        bottom: 90px; /* Pindah ke atas tombol chat di HP */
+        right: 30px;
+    }
+}
