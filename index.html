@@ -237,8 +237,7 @@
                 <i class="fa-solid fa-chart-pie" style="color: var(--color-primary); margin-right: 10px;"></i> <span
                     data-lang-key="demo_title">Data Demografi Dusun Wungurejo</span>
             </h3>
-            <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: center;">
+            <div class="demo-grid">
                 <!-- Stat 1: Total Jiwa -->
                 <div class="demo-box" data-aos="zoom-in" data-aos-delay="100">
                     <i class="fa-solid fa-users demo-icon" style="color: var(--color-primary);"></i>
@@ -258,23 +257,22 @@
                     <p class="demo-label" data-lang-key="demo_rt">Rukun Tetangga (RT)</p>
                 </div>
                 <!-- Stat 4: Gender -->
-                <div class="demo-box" data-aos="zoom-in" data-aos-delay="400" style="padding: 20px;">
-                    <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 10px auto;">
+                <div class="demo-box" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="demo-chart-wrapper">
                         <canvas id="genderChart"></canvas>
                     </div>
-                    <div style="display: flex; justify-content: center; gap: 15px; margin-bottom: 8px;">
-                        <div><span style="font-size: 1.2rem; font-weight: 800; color: var(--color-dark);"
-                                class="counter-up" data-target="230">0</span><br><span
-                                style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 600;"
-                                data-lang-key="demo_lakilaki">Laki-laki</span></div>
-                        <div style="width: 2px; background-color: rgba(0,0,0,0.1);"></div>
-                        <div><span style="font-size: 1.2rem; font-weight: 800; color: var(--color-dark);"
-                                class="counter-up" data-target="207">0</span><br><span
-                                style="font-size: 0.75rem; color: var(--color-text-muted); font-weight: 600;"
-                                data-lang-key="demo_perempuan">Perempuan</span></div>
+                    <div class="demo-gender-stats">
+                        <div>
+                            <span class="counter-up demo-val-sm" data-target="230">0</span><br>
+                            <span class="demo-label-sm" data-lang-key="demo_lakilaki">Laki-laki</span>
+                        </div>
+                        <div class="demo-divider"></div>
+                        <div>
+                            <span class="counter-up demo-val-sm" data-target="207">0</span><br>
+                            <span class="demo-label-sm" data-lang-key="demo_perempuan">Perempuan</span>
+                        </div>
                     </div>
-                    <p style="color: var(--color-text-muted); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;"
-                        data-lang-key="demo_gender">Rasio Gender</p>
+                    <p class="demo-label" data-lang-key="demo_gender">Rasio Gender</p>
                 </div>
             </div>
         </div>

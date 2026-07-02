@@ -736,6 +736,19 @@ textarea {
 }
 
 /* Demographics Section */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    align-items: stretch;
+}
+@media (max-width: 992px) {
+    .demo-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 576px) {
+    .demo-grid { grid-template-columns: 1fr; }
+}
+
 .demo-header {
     text-align: center;
     margin-bottom: 30px;
@@ -751,14 +764,25 @@ textarea {
     border: 1.5px solid rgba(108, 8, 32, 0.05);
     transition: transform 0.3s;
     cursor: default;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
 }
 .demo-box:hover {
     transform: translateY(-5px);
 }
 .demo-icon {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
     margin-bottom: 16px;
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,0.04);
 }
 .demo-val {
     font-size: 2.2rem;
@@ -773,6 +797,35 @@ textarea {
     font-size: 0.95rem;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    text-align: center;
+}
+.demo-chart-wrapper {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px auto;
+}
+.demo-gender-stats {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 12px;
+    text-align: center;
+}
+.demo-val-sm {
+    font-size: 1.2rem;
+    font-weight: 800;
+    color: var(--color-dark);
+}
+.demo-label-sm {
+    font-size: 0.75rem;
+    color: var(--color-text-muted);
+    font-weight: 600;
+}
+.demo-divider {
+    width: 2px;
+    background-color: rgba(0,0,0,0.1);
+    height: auto;
 }
 
 
@@ -3709,12 +3762,22 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .demo-header,
-[data-theme="dark"] .demo-val {
+[data-theme="dark"] .demo-val,
+[data-theme="dark"] .demo-val-sm {
     color: #CDD6F4 !important;
 }
 
-[data-theme="dark"] .demo-label {
+[data-theme="dark"] .demo-label,
+[data-theme="dark"] .demo-label-sm {
     color: #A6ADC8 !important;
+}
+
+[data-theme="dark"] .demo-divider {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .demo-icon {
+    background-color: rgba(255, 255, 255, 0.05) !important;
 }
 
 [data-theme="dark"] .logbook-section {
