@@ -588,55 +588,45 @@
             </div>
 
             <div class="guestbook-grid">
-                <!-- Form Side -->
+                <!-- Kirim Pesan Side -->
                 <div class="guestbook-form-card" data-aos="fade-right" data-aos-delay="100">
-                    <h3 data-lang-key="gb_form_title">Kirim Pesan Baru</h3>
-                    <form id="comment-form">
-                        <div class="form-group">
-                            <label for="input-name" data-lang-key="gb_label_name">Nama Lengkap</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fa-solid fa-user"></i>
-                                <input type="text" id="input-name" placeholder="Contoh: Pak Budi"
-                                    data-lang-ph="gb_ph_name" required>
-                            </div>
+                    <h3><i class="fa-solid fa-comment-dots" style="color: var(--color-primary); margin-right: 8px;"></i> Tinggalkan Pesan</h3>
+                    <p style="color: var(--color-text-muted); font-size: 0.9rem; margin-bottom: 28px; line-height: 1.6;">
+                        Pesan Anda akan langsung diteruskan ke WhatsApp Ketua KKN (<strong>Anas Rifai</strong>) atau bisa juga melalui Google Form kami.
+                    </p>
+
+                    <!-- Pilihan 1: WhatsApp -->
+                    <a href="https://wa.me/6282243136157?text=Halo%20Ketua%20KKN%20AA%2084.095%20(Anas%20Rifai)%2C%20saya%20ingin%20menitipkan%20pesan%20untuk%20Buku%20Tamu%20website%20KKN."
+                       target="_blank"
+                       class="btn btn-primary btn-block"
+                       style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 14px; text-decoration: none;">
+                        <i class="fa-brands fa-whatsapp" style="font-size: 1.2rem;"></i>
+                        <div style="text-align: left;">
+                            <div style="font-weight: 700;">Kirim via WhatsApp</div>
+                            <div style="font-size: 0.78rem; opacity: 0.85;">ke Anas Rifai (Ketua KKN)</div>
                         </div>
+                    </a>
 
-                        <div class="form-group">
-                            <label for="input-role" data-lang-key="gb_label_role">Status / Peran</label>
-                            <div class="input-icon-wrapper">
-                                <i class="fa-solid fa-users"></i>
-                                <select id="input-role" required>
-                                    <option value="Warga Desa" data-lang-key="gb_opt_warga">Warga Dusun Wungurejo
-                                    </option>
-                                    <option value="Perangkat Desa" data-lang-key="gb_opt_perangkat">Perangkat Desa
-                                    </option>
-                                    <option value="Mahasiswa" data-lang-key="gb_opt_mhs">Mahasiswa KKN</option>
-                                    <option value="Dosen/DPL" data-lang-key="gb_opt_dosen">Dosen Pembimbing Lapangan
-                                    </option>
-                                    <option value="Umum" data-lang-key="gb_opt_umum">Pengunjung Umum</option>
-                                </select>
-                            </div>
+                    <!-- Pilihan 2: Google Form -->
+                    <a href="https://forms.gle/GANTI_LINK_GOOGLE_FORM_ANDA"
+                       target="_blank"
+                       class="btn btn-secondary btn-block"
+                       style="display: flex; align-items: center; justify-content: center; gap: 10px; text-decoration: none;">
+                        <i class="fa-solid fa-file-pen" style="font-size: 1.1rem;"></i>
+                        <div style="text-align: left;">
+                            <div style="font-weight: 700;">Isi via Google Form</div>
+                            <div style="font-size: 0.78rem; opacity: 0.85;">Formulir online resmi kami</div>
                         </div>
+                    </a>
 
-                        <div class="form-group">
-                            <label for="input-message" data-lang-key="gb_label_msg">Pesan Anda</label>
-                            <textarea id="input-message" rows="4"
-                                placeholder="Tuliskan pesan atau saran Anda di sini..." data-lang-ph="gb_ph_msg"
-                                required></textarea>
-                        </div>
-
-                        <button type="submit" class="btn btn-primary btn-block"><span data-lang-key="gb_btn_send">Kirim
-                                Pesan</span> <i class="fa-solid fa-paper-plane"></i></button>
-                    </form>
-                </div>
-
-                <!-- Messages Display Side -->
-                <div class="guestbook-messages-card" data-aos="fade-left" data-aos-delay="200">
-                    <h3><span data-lang-key="gb_latest">Pesan Terbaru</span> (<span id="messages-count">0</span>)</h3>
-                    <div id="messages-list" class="messages-list">
-                        <!-- Dynamic Comments will appear here -->
+                    <div style="margin-top: 20px; padding: 14px; background: rgba(108,8,32,0.04); border-radius: 12px; border-left: 3px solid var(--color-primary);">
+                        <p style="font-size: 0.8rem; color: var(--color-text-muted); margin: 0; line-height: 1.5;">
+                            <i class="fa-solid fa-circle-info" style="color: var(--color-primary); margin-right: 5px;"></i>
+                            Pesan yang masuk akan kami tampilkan di sisi kanan setelah diverifikasi oleh tim KKN.
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -796,7 +786,7 @@
     <!-- Multi-Language Dictionary -->
     <script src="lang.js?v=2"></script>
     <!-- App Script -->
-    <script src="app.js?v=14"></script>
+    <script src="app.js?v=15"></script>
     <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {

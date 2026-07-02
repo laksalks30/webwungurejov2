@@ -146,26 +146,37 @@ document.addEventListener('DOMContentLoaded', () => {
     // Execute routing on page load
     handleRouting();
 
-    // --- 3. API Base URL and Data Loading ---
-    const API_BASE_URL = 'http://localhost:8067'; // Updated to match local Uvicorn port
+    // --- 3. STATIC DATA (No Backend Required) ---
+
+    // Helper to escape HTML and prevent XSS (defined here so all renderers can use it)
+    const escapeHTML = (str) => {
+        if (!str) return '';
+        return str.replace(/[&<>'"]/g,
+            tag => ({
+                '&': '&amp;',
+                '<': '&lt;',
+                '>': '&gt;',
+                "'": '&#39;',
+                '"': '&quot;'
+            }[tag] || tag)
+        );
+    };
+
+    // ================================================================
+    // EDIT DATA PROGRAM KERJA DI SINI:
+    // ================================================================
+    const prokersData = [
+        { id: 1, type: "Proker Bersama", owner_name: null, title: "Sosialisasi Pencegahan Stunting", description_markdown: "Sosialisasi kepada ibu-ibu PKK dan posyandu mengenai gizi balita dan pencegahan stunting sejak dini.", status: "Belum Mulai", image_urls: [] },
+        { id: 2, type: "Proker Bersama", owner_name: null, title: "Bimbingan Belajar Kreatif", description_markdown: "Kegiatan bimbingan belajar untuk anak-anak SD di Dusun Wungurejo dengan metode kreatif dan menyenangkan.", status: "Belum Mulai", image_urls: [] },
+        { id: 3, type: "Proker Bersama", owner_name: null, title: "Pembuatan Peta WebGIS", description_markdown: "Pemetaan potensi wilayah Dusun Wungurejo secara digital menggunakan teknologi Geographic Information System (GIS).", status: "Selesai", image_urls: [] },
+        { id: 4, type: "Proker Bersama", owner_name: null, title: "Digitalisasi UMKM Wungurejo", description_markdown: "Pendampingan pelaku UMKM lokal dalam memanfaatkan platform digital untuk pemasaran produk lebih luas.", status: "Belum Mulai", image_urls: [] },
+        { id: 5, type: "Proker Bersama", owner_name: null, title: "Rebranding Kemasan Produk", description_markdown: "Membantu UMKM lokal dalam mendesain ulang kemasan produk agar lebih menarik dan kompetitif di pasar modern.", status: "Belum Mulai", image_urls: [] },
+        { id: 6, type: "Proker Individu", owner_name: "Anas Rifai", title: "Sosialisasi Manajemen Keuangan", description_markdown: "Sosialisasi literasi keuangan dan manajemen usaha sederhana bagi pelaku UMKM di Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
+        { id: 7, type: "Proker Individu", owner_name: "Laksa Atmaja", title: "Pengembangan Website KKN", description_markdown: "Membangun website profil digital KKN kelompok AA 84.095 sebagai media publikasi dan dokumentasi kegiatan.", status: "Selesai", image_urls: [] }
+    ];
 
     const prokerGridContainer = document.getElementById('proker-grid-container');
     const filterButtons = document.querySelectorAll('.filter-btn');
-    let prokersData = [];
-
-    const fetchProkers = async () => {
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/proker`);
-            if (!response.ok) throw new Error('Gagal mengambil data program kerja');
-            prokersData = await response.json();
-            renderProkers('all');
-        } catch (error) {
-            console.error(error);
-            if (prokerGridContainer) {
-                prokerGridContainer.innerHTML = `<div class="error-msg" style="color: var(--color-primary); font-weight: 600; text-align: center; padding: 20px; width: 100%;">Gagal memuat Program Kerja. Pastikan server backend aktif.</div>`;
-            }
-        }
-    };
 
     const renderProkers = (filter) => {
         if (!prokerGridContainer) return;
@@ -239,24 +250,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- Logbook Timeline Fetching & Rendering ---
+    // --- Logbook Timeline Rendering ---
     const logbookTimelineContainer = document.getElementById('logbook-timeline-container');
     const logbookFilterButtons = document.querySelectorAll('.logbook-filter-btn');
     let logbookData = [];
 
-    const fetchLogbook = async () => {
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/logbook`);
-            if (!response.ok) throw new Error('Gagal mengambil data logbook');
-            logbookData = await response.json();
-            renderLogbook('all');
-        } catch (error) {
-            console.error(error);
-            if (logbookTimelineContainer) {
-                logbookTimelineContainer.innerHTML = `<div class="error-msg" style="color: var(--color-primary); font-weight: 600; text-align: center; padding: 20px; width: 100%;">Gagal memuat Logbook. Pastikan server backend aktif.</div>`;
-            }
-        }
-    };
+    // ================================================================
+    // EDIT DATA LOGBOOK DI SINI:
+    // ================================================================
+    logbookData = [
+        { id: 1, phase: "Pra-KKN", date: "2026-06-15", title: "Pembekalan KKN Universitas", content_markdown: "Seluruh mahasiswa KKN mengikuti pembekalan resmi dari pihak universitas mengenai tata tertib, program kerja, dan panduan pengabdian di lapangan.", image_urls: [] },
+        { id: 2, phase: "Pra-KKN", date: "2026-06-20", title: "Koordinasi Awal Kelompok", content_markdown: "Pertemuan perdana kelompok AA 84.095 untuk membahas pembagian tugas, program kerja, dan persiapan teknis sebelum berangkat ke lokasi KKN.", image_urls: [] },
+        { id: 3, phase: "Pelaksanaan KKN", date: "2026-07-01", title: "Tiba di Dusun Wungurejo", content_markdown: "Kelompok KKN AA 84.095 resmi tiba di Dusun Wungurejo dan disambut hangat oleh Bapak Dukuh serta warga setempat. Acara perkenalan dan serah terima berlangsung dengan khidmat.", image_urls: [] },
+        { id: 4, phase: "Pelaksanaan KKN", date: "2026-07-02", title: "Observasi dan Pemetaan Wilayah", content_markdown: "Tim melakukan survei keliling Dusun Wungurejo untuk memahami kondisi geografis, sosial, dan potensi UMKM yang ada sebagai dasar penyusunan program kerja.", image_urls: [] }
+    ];
+    // renderLogbook dipanggil di bagian startup bawah
 
     const renderLogbook = (filter) => {
         if (!logbookTimelineContainer) return;
@@ -649,107 +657,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // --- 5. Guestbook Functional Logic ---
-    const commentForm = document.getElementById('comment-form');
-    const messagesList = document.getElementById('messages-list');
-    const messagesCountSpan = document.getElementById('messages-count');
-    let guestbookMessages = [];
-
-    // Helper to escape HTML and prevent XSS
-    const escapeHTML = (str) => {
-        if (!str) return '';
-        return str.replace(/[&<>'"]/g,
-            tag => ({
-                '&': '&amp;',
-                '<': '&lt;',
-                '>': '&gt;',
-                "'": '&#39;',
-                '"': '&quot;'
-            }[tag] || tag)
-        );
-    };
-
-    const fetchGuestbook = async () => {
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/guestbook`);
-            if (!response.ok) throw new Error('Gagal mengambil data buku tamu');
-            guestbookMessages = await response.json();
-            renderComments();
-        } catch (error) {
-            console.error(error);
-            if (messagesList) {
-                messagesList.innerHTML = `<div class="error-msg" style="color: var(--color-primary); font-weight: 600; padding: 20px;">Gagal memuat pesan buku tamu.</div>`;
-            }
-        }
-    };
-
-    const renderComments = () => {
-        if (!messagesList) return;
-        messagesList.innerHTML = '';
-        if (messagesCountSpan) messagesCountSpan.textContent = guestbookMessages.length;
-
-        if (guestbookMessages.length === 0) {
-            messagesList.innerHTML = `<div class="empty-msg" style="color: var(--color-text-muted); padding: 20px; text-align: center;">Belum ada pesan yang disetujui.</div>`;
-            return;
-        }
-
-        guestbookMessages.forEach(msg => {
-            const commentCard = document.createElement('div');
-            commentCard.className = 'comment-card';
-            commentCard.setAttribute('data-aos', 'fade-up');
-
-            commentCard.innerHTML = `
-                <div class="comment-header">
-                    <span class="comment-author">${escapeHTML(msg.name)}</span>
-                    <span class="comment-role">${escapeHTML(msg.role)}</span>
-                </div>
-                <p class="comment-text">${escapeHTML(msg.message)}</p>
-                <div class="comment-date">${msg.date}</div>
-            `;
-            messagesList.appendChild(commentCard);
-        });
-
-        // Refresh AOS for new elements
-        if (typeof AOS !== 'undefined') AOS.refresh();
-    };
-
-    // Handle new message submission
-    if (commentForm) {
-        commentForm.addEventListener('submit', async (e) => {
-            e.preventDefault();
-
-            const nameInput = document.getElementById('input-name');
-            const roleInput = document.getElementById('input-role');
-            const messageInput = document.getElementById('input-message');
-
-            const payload = {
-                name: nameInput.value.trim(),
-                role: roleInput.value,
-                message: messageInput.value.trim()
-            };
-
-            try {
-                const response = await fetch(`${API_BASE_URL}/api/guestbook`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json'
-                    },
-                    body: JSON.stringify(payload)
-                });
-
-                if (!response.ok) throw new Error('Gagal mengirim pesan');
-
-                // Reset form
-                commentForm.reset();
-
-                // Show dynamic premium toast / notification
-                showNotification("Terima kasih! Pesan Anda berhasil dikirim dan sedang menunggu persetujuan admin.", "success");
-            } catch (error) {
-                console.error(error);
-                showNotification("Gagal mengirim pesan. Silakan coba beberapa saat lagi.", "error");
-            }
-        });
-    }
+    // --- 5. Guestbook (Static - WhatsApp & Google Form) ---
+    // Form diarahkan ke WhatsApp & Google Form langsung dari HTML (tidak ada form input).
 
     // Dynamic premium toast notification helper
     const showNotification = (message, type = "success") => {
@@ -861,7 +770,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const slide = document.createElement('div');
                     slide.className = 'carousel-slide';
 
-                    const fullUrl = imgUrl.startsWith('http') ? imgUrl : `${API_BASE_URL}${imgUrl}`;
+                    const fullUrl = imgUrl;
 
                     slide.innerHTML = `<img src="${fullUrl}" alt="Slide ${idx + 1}" class="carousel-image">`;
 
@@ -1015,70 +924,60 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // --- 6. Gallery Functional Logic ---
-    const fetchGallery = async () => {
+    // --- 6. Gallery (Static) ---
+    const fetchGallery = () => {
         const galleryContainer = document.getElementById('masonry-gallery-container');
         if (!galleryContainer) return;
-        
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/gallery`);
-            if (!response.ok) throw new Error('Gagal mengambil data galeri');
-            const galleryItems = await response.json();
-            
-            galleryContainer.innerHTML = ''; // Clear spinner
-            
-            if (galleryItems.length === 0) {
-                galleryContainer.innerHTML = `<div style="text-align: center; width: 100%; padding: 40px; color: var(--color-text-muted); grid-column: 1 / -1;">Belum ada foto galeri.</div>`;
-                return;
-            }
 
-            galleryItems.forEach(item => {
-                const fullUrl = item.image_url.startsWith('http') ? item.image_url : `${API_BASE_URL}${item.image_url}`;
-                const dateObj = new Date(item.date);
-                const formattedDate = isNaN(dateObj.getTime()) ? item.date : dateObj.toLocaleDateString('id-ID', {
-                    day: 'numeric', month: 'short', year: 'numeric'
-                });
+        // ================================================================
+        // EDIT DATA GALERI DI SINI:
+        // ================================================================
+        const galleryItems = [
+            { id: 1, title: "Posko KKN AA 84.095", description: "Suasana posko kami di Dusun Wungurejo.", image_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
+        ];
 
-                const html = `
-                    <div class="gallery-item" data-aos="zoom-in" onclick="openLightbox('${fullUrl}')">
-                        <img src="${fullUrl}" alt="${escapeHTML(item.title)}" class="gallery-img" loading="lazy">
-                        <div class="gallery-info">
-                            <h4 class="gallery-title">${escapeHTML(item.title)}</h4>
-                            <span class="gallery-date">${formattedDate}</span>
-                            ${item.description ? `<p style="font-size: 0.8rem; margin-top: 5px; color: #eee;">${escapeHTML(item.description)}</p>` : ''}
-                        </div>
-                    </div>
-                `;
-                galleryContainer.insertAdjacentHTML('beforeend', html);
-            });
-            
-            // Refresh AOS
-            if (typeof AOS !== 'undefined') AOS.refresh();
+        galleryContainer.innerHTML = '';
 
-        } catch (error) {
-            console.error(error);
-            galleryContainer.innerHTML = `<div class="error-msg" style="color: var(--color-primary); font-weight: 600; padding: 20px; text-align: center; grid-column: 1 / -1;">Gagal memuat galeri.</div>`;
+        if (galleryItems.length === 0) {
+            galleryContainer.innerHTML = `<div style="text-align: center; width: 100%; padding: 40px; color: var(--color-text-muted); grid-column: 1 / -1;">Belum ada foto galeri.</div>`;
+            return;
         }
+
+        galleryItems.forEach(item => {
+            const fullUrl = item.image_url;
+            const dateObj = new Date(item.date);
+            const formattedDate = isNaN(dateObj.getTime()) ? item.date : dateObj.toLocaleDateString('id-ID', {
+                day: 'numeric', month: 'short', year: 'numeric'
+            });
+            const html = `
+                <div class="gallery-item" data-aos="zoom-in" onclick="openLightbox('${fullUrl}')">
+                    <img src="${fullUrl}" alt="${escapeHTML(item.title)}" class="gallery-img" loading="lazy">
+                    <div class="gallery-info">
+                        <h4 class="gallery-title">${escapeHTML(item.title)}</h4>
+                        <span class="gallery-date">${formattedDate}</span>
+                        ${item.description ? `<p style="font-size: 0.8rem; margin-top: 5px; color: #eee;">${escapeHTML(item.description)}</p>` : ''}
+                    </div>
+                </div>
+            `;
+            galleryContainer.insertAdjacentHTML('beforeend', html);
+        });
+        if (typeof AOS !== 'undefined') AOS.refresh();
     };
 
-    // --- 12. Blog Functional Logic ---
-    const fetchBlogs = async () => {
+    // --- 12. Blog (Static) ---
+    const fetchBlogs = () => {
         const blogContainer = document.getElementById('blog-grid-container');
         if (!blogContainer) return;
-        
-        try {
-            const response = await fetch(`${API_BASE_URL}/api/blogs`);
-            if (!response.ok) throw new Error('Gagal mengambil data blog');
-            const blogs = await response.json();
-            
-            window.blogData = blogs;
-            renderBlogCards(blogs);
-            
-        } catch (error) {
-            console.error(error);
-            const blogContainer = document.getElementById('blog-grid-container');
-            if (blogContainer) blogContainer.innerHTML = `<div style="color: var(--color-primary); font-weight: 600; padding: 20px; text-align: center; grid-column: 1 / -1;">Gagal memuat artikel.</div>`;
-        }
+
+        // ================================================================
+        // EDIT DATA ARTIKEL/BLOG DI SINI:
+        // ================================================================
+        const blogs = [
+            { id: 1, title: "Mengenal Dusun Wungurejo: Antara Tradisi dan Potensi", content_markdown: "Dusun Wungurejo, yang berarti 'bunga yang tumbuh subur di daerah makmur', menyimpan kekayaan budaya dan potensi alam yang luar biasa. Mulai dari kesenian Reog, madu klanceng, hingga kerajinan popor kayu yang mendunia.\n\nKKN AA 84.095 hadir untuk membantu mengoptimalkan semua potensi tersebut menjadi kekuatan ekonomi dan budaya yang berkelanjutan.", thumbnail_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
+        ];
+
+        window.blogData = blogs;
+        renderBlogCards(blogs);
     };
 
     // Render blog cards — called on fetch and on language switch
@@ -1116,7 +1015,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const excerpt = plainText.substring(0, 150) + (plainText.length > 150 ? '...' : '');
 
             const thumbnail = item.thumbnail_url
-                ? (item.thumbnail_url.startsWith('http') ? item.thumbnail_url : `${API_BASE_URL}${item.thumbnail_url}`)
+                ? item.thumbnail_url
                 : 'assets/logo/LogoKKNBaru.png';
 
             const readMoreText = t('blog_read_more', 'Baca Selengkapnya');
@@ -1163,9 +1062,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- Hero image ---
         if (blog.thumbnail_url) {
-            const fullUrl = blog.thumbnail_url.startsWith('http')
-                ? blog.thumbnail_url
-                : `${API_BASE_URL}${blog.thumbnail_url}`;
+            const fullUrl = blog.thumbnail_url;
             heroImg.src = fullUrl;
             heroImg.alt = escapeHTML(blog.title);
             heroImg.classList.remove('hidden');
@@ -1363,10 +1260,9 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
-    // Load dynamic data on startup
-    fetchProkers();
-    fetchLogbook();
-    fetchGuestbook();
+    // Load static data on startup
+    renderProkers('all');
+    renderLogbook('all');
     fetchGallery();
     fetchBlogs();
 
