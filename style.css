@@ -2209,6 +2209,11 @@ textarea:focus {
     padding: 14px 28px !important;
     font-size: 0.95rem !important;
     backdrop-filter: blur(8px);
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-social-instagram i {
+    color: #FFFFFF !important;
 }
 
 [data-theme="dark"] .btn-social-instagram:hover {
@@ -2225,6 +2230,11 @@ textarea:focus {
     padding: 14px 28px !important;
     font-size: 0.95rem !important;
     backdrop-filter: blur(8px);
+    color: #FFFFFF !important;
+}
+
+[data-theme="dark"] .btn-social-tiktok i {
+    color: #FFFFFF !important;
 }
 
 [data-theme="dark"] .btn-social-tiktok:hover {
