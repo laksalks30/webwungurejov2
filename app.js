@@ -1382,50 +1382,194 @@ document.addEventListener('DOMContentLoaded', () => {
     // Initialize WebGIS Map safely
     setTimeout(initWebGIS, 500);
 
-    // --- 13. Particles.js (Kunang-Kunang Wungurejo) ---
-    if (document.getElementById('particles-js') && typeof particlesJS !== 'undefined') {
-        particlesJS('particles-js', {
-            "particles": {
-                "number": { "value": 45, "density": { "enable": true, "value_area": 800 } },
-                "color": { "value": ["#FFD700", "#FFFACD", "#FFB6C1", "#FF69B4"] },
-                "shape": { "type": "circle" },
-                "opacity": {
-                    "value": 0.8,
-                    "random": true,
-                    "anim": { "enable": true, "speed": 1, "opacity_min": 0.1, "sync": false }
-                },
-                "size": {
-                    "value": 3,
-                    "random": true,
-                    "anim": { "enable": true, "speed": 2, "size_min": 0.1, "sync": false }
-                },
-                "line_linked": { "enable": false },
-                "move": {
-                    "enable": true,
-                    "speed": 1.5,
-                    "direction": "none",
-                    "random": true,
-                    "straight": false,
-                    "out_mode": "out",
-                    "bounce": false,
-                    "attract": { "enable": false }
-                }
-            },
-            "interactivity": {
-                "detect_on": "canvas",
-                "events": {
-                    "onhover": { "enable": true, "mode": "repulse" },
-                    "onclick": { "enable": true, "mode": "push" },
-                    "resize": true
-                },
-                "modes": {
-                    "repulse": { "distance": 100, "duration": 0.4 },
-                    "push": { "particles_nb": 4 }
-                }
-            },
-            "retina_detect": true
+    // --- 13. Kunang-Kunang Custom Canvas (Theme-Aware Firefly Engine) ---
+    const initFireflies = () => {
+        const canvas = document.getElementById('firefly-canvas');
+        if (!canvas) return;
+
+        const ctx = canvas.getContext('2d');
+        const FIREFLY_COUNT = 35;
+        const REPULSE_RADIUS = 110;
+        const REPULSE_STRENGTH = 4;
+
+        // Theme-aware config
+        const getThemeConfig = () => {
+            const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+            return isDark ? {
+                colors: ['#FFD700', '#FFF8A0', '#FFE066', '#FFFACD'],
+                opacityMin: 0.15,
+                opacityRange: 0.45,
+                glowMin: 4,
+                glowRange: 7,
+                radiusMin: 0.8,
+                radiusRange: 1.4,
+                shadowBlur: 6,
+                opacityDeltaBase: 0.004,
+            } : {
+                // Light mode: very subtle, warm amber dots — nearly invisible, elegant
+                colors: ['#B8860B', '#DAA520', '#C8A000', '#A07800'],
+                opacityMin: 0.04,
+                opacityRange: 0.10,
+                glowMin: 2,
+                glowRange: 3,
+                radiusMin: 0.5,
+                radiusRange: 0.8,
+                shadowBlur: 0,
+                opacityDeltaBase: 0.002,
+            };
+        };
+
+        let mouse = { x: -9999, y: -9999 };
+        let fireflies = [];
+        let animId;
+        let currentConfig = getThemeConfig();
+
+        // Resize canvas to match viewport
+        const resize = () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        };
+        resize();
+        window.addEventListener('resize', resize);
+
+        // Track mouse globally on window
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.clientX;
+            mouse.y = e.clientY;
         });
-    }
+
+        // Click to spawn extra fireflies
+        window.addEventListener('click', (e) => {
+            const cfg = getThemeConfig();
+            for (let i = 0; i < 5; i++) {
+                fireflies.push(createFirefly(e.clientX, e.clientY, cfg));
+            }
+            if (fireflies.length > FIREFLY_COUNT + 30) {
+                fireflies.splice(0, fireflies.length - FIREFLY_COUNT);
+            }
+        });
+
+        // Re-apply theme when dark mode is toggled
+        const themeObserver = new MutationObserver(() => {
+            currentConfig = getThemeConfig();
+            // Smoothly update existing fireflies to new theme config
+            fireflies.forEach(f => {
+                f.color = currentConfig.colors[Math.floor(Math.random() * currentConfig.colors.length)];
+                f.opacityDelta = (Math.random() > 0.5 ? 1 : -1) * (currentConfig.opacityDeltaBase + Math.random() * 0.003);
+                f.glowSize = currentConfig.glowMin + Math.random() * currentConfig.glowRange;
+                f.radius = currentConfig.radiusMin + Math.random() * currentConfig.radiusRange;
+                // Clamp opacity to new range
+                f.opacity = Math.min(f.opacity, currentConfig.opacityMin + currentConfig.opacityRange);
+            });
+        });
+        themeObserver.observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+
+        const createFirefly = (x, y, cfg) => {
+            const angle = Math.random() * Math.PI * 2;
+            const speed = 0.25 + Math.random() * 0.7;
+            cfg = cfg || getThemeConfig();
+            return {
+                x: x !== undefined ? x : Math.random() * canvas.width,
+                y: y !== undefined ? y : Math.random() * canvas.height,
+                vx: Math.cos(angle) * speed,
+                vy: Math.sin(angle) * speed,
+                radius: cfg.radiusMin + Math.random() * cfg.radiusRange,
+                color: cfg.colors[Math.floor(Math.random() * cfg.colors.length)],
+                opacity: cfg.opacityMin + Math.random() * cfg.opacityRange * 0.6,
+                opacityDelta: (Math.random() > 0.5 ? 1 : -1) * (cfg.opacityDeltaBase + Math.random() * 0.003),
+                glowSize: cfg.glowMin + Math.random() * cfg.glowRange,
+                opacityMax: cfg.opacityMin + cfg.opacityRange,
+                opacityFloor: cfg.opacityMin,
+            };
+        };
+
+        // Init fireflies
+        for (let i = 0; i < FIREFLY_COUNT; i++) {
+            fireflies.push(createFirefly());
+        }
+
+        const animate = () => {
+            const cfg = currentConfig;
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            fireflies.forEach(f => {
+                // Pulsing opacity (blink)
+                f.opacity += f.opacityDelta;
+                if (f.opacity >= f.opacityMax) { f.opacity = f.opacityMax; f.opacityDelta *= -1; }
+                if (f.opacity <= f.opacityFloor) { f.opacity = f.opacityFloor; f.opacityDelta *= -1; }
+
+                // Mouse repulse
+                const dx = f.x - mouse.x;
+                const dy = f.y - mouse.y;
+                const dist = Math.sqrt(dx * dx + dy * dy);
+                if (dist < REPULSE_RADIUS && dist > 0) {
+                    const force = (REPULSE_RADIUS - dist) / REPULSE_RADIUS;
+                    f.vx += (dx / dist) * force * REPULSE_STRENGTH * 0.07;
+                    f.vy += (dy / dist) * force * REPULSE_STRENGTH * 0.07;
+                }
+
+                // Dampen velocity
+                f.vx *= 0.97;
+                f.vy *= 0.97;
+
+                // Keep minimum drift
+                const spd = Math.sqrt(f.vx * f.vx + f.vy * f.vy);
+                if (spd < 0.18) {
+                    const a = Math.atan2(f.vy, f.vx);
+                    f.vx = Math.cos(a) * 0.25;
+                    f.vy = Math.sin(a) * 0.25;
+                }
+
+                // Move
+                f.x += f.vx;
+                f.y += f.vy;
+
+                // Wrap edges
+                if (f.x < -10) f.x = canvas.width + 10;
+                if (f.x > canvas.width + 10) f.x = -10;
+                if (f.y < -10) f.y = canvas.height + 10;
+                if (f.y > canvas.height + 10) f.y = -10;
+
+                // Parse hex color
+                const cr = parseInt(f.color.slice(1, 3), 16);
+                const cg = parseInt(f.color.slice(3, 5), 16);
+                const cb = parseInt(f.color.slice(5, 7), 16);
+
+                // Draw glow halo (only if significant)
+                if (f.glowSize > 2) {
+                    const glow = ctx.createRadialGradient(f.x, f.y, 0, f.x, f.y, f.glowSize);
+                    glow.addColorStop(0, `rgba(${cr}, ${cg}, ${cb}, ${f.opacity * 0.6})`);
+                    glow.addColorStop(1, 'rgba(0,0,0,0)');
+                    ctx.beginPath();
+                    ctx.arc(f.x, f.y, f.glowSize, 0, Math.PI * 2);
+                    ctx.fillStyle = glow;
+                    ctx.fill();
+                }
+
+                // Draw core dot
+                ctx.beginPath();
+                ctx.arc(f.x, f.y, f.radius, 0, Math.PI * 2);
+                ctx.fillStyle = f.color;
+                ctx.globalAlpha = f.opacity;
+                if (cfg.shadowBlur > 0) {
+                    ctx.shadowBlur = cfg.shadowBlur;
+                    ctx.shadowColor = f.color;
+                }
+                ctx.fill();
+                ctx.globalAlpha = 1;
+                ctx.shadowBlur = 0;
+            });
+
+            animId = requestAnimationFrame(animate);
+        };
+
+        animate();
+    };
+
+    initFireflies();
+
+
+
 
     // --- Pillar Card Hover Animation (JS-driven to bypass AOS lock) ---
     const pillarCards = document.querySelectorAll('.pillar-card');

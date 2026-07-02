@@ -33,6 +33,10 @@
 
 <body>
 
+    <!-- Kunang-Kunang Global Canvas Background -->
+    <canvas id="firefly-canvas"
+        style="position: fixed; width: 100%; height: 100%; top: 0; left: 0; z-index: 9998; pointer-events: none;"></canvas>
+
     <!-- Preloader -->
     <div id="preloader">
         <div class="loader-spinner"></div>
@@ -78,9 +82,6 @@
 
     <!-- Hero Section -->
     <section id="beranda" class="hero-section page-section">
-        <div id="particles-js"
-            style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; z-index: 1; pointer-events: none;">
-        </div>
         <div class="hero-overlay" style="z-index: 2;"></div>
         <div class="hero-container" style="z-index: 3;">
             <div class="hero-content" data-aos="fade-up">
@@ -232,50 +233,32 @@
 
         <!-- Data Demografi Section -->
         <div class="demographics-container" style="margin-top: 60px;">
-            <h3 data-aos="fade-up"
-                style="text-align: center; margin-bottom: 30px; font-size: 1.5rem; color: var(--color-dark); font-weight: 800;">
+            <h3 class="demo-header" data-aos="fade-up">
                 <i class="fa-solid fa-chart-pie" style="color: var(--color-primary); margin-right: 10px;"></i> <span
                     data-lang-key="demo_title">Data Demografi Dusun Wungurejo</span>
             </h3>
             <div
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; text-align: center;">
                 <!-- Stat 1: Total Jiwa -->
-                <div data-aos="zoom-in" data-aos-delay="100"
-                    style="background-color: var(--color-white); padding: 30px 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1.5px solid rgba(108, 8, 32, 0.05); transition: transform 0.3s; cursor: default;"
-                    onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
-                    <i class="fa-solid fa-users"
-                        style="font-size: 2.5rem; color: var(--color-primary); margin-bottom: 16px; display: block;"></i>
-                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin-bottom: 4px; line-height: 1;"
-                        class="counter-up" data-target="437">0</h4>
-                    <p style="color: var(--color-text-muted); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;"
-                        data-lang-key="demo_penduduk">Total Penduduk</p>
+                <div class="demo-box" data-aos="zoom-in" data-aos-delay="100">
+                    <i class="fa-solid fa-users demo-icon" style="color: var(--color-primary);"></i>
+                    <h4 class="counter-up demo-val" data-target="437">0</h4>
+                    <p class="demo-label" data-lang-key="demo_penduduk">Total Penduduk</p>
                 </div>
                 <!-- Stat 2: KK -->
-                <div data-aos="zoom-in" data-aos-delay="200"
-                    style="background-color: var(--color-white); padding: 30px 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1.5px solid rgba(108, 8, 32, 0.05); transition: transform 0.3s; cursor: default;"
-                    onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
-                    <i class="fa-solid fa-house-chimney-user"
-                        style="font-size: 2.5rem; color: var(--color-secondary); margin-bottom: 16px; display: block;"></i>
-                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin-bottom: 4px; line-height: 1;"
-                        class="counter-up" data-target="135">0</h4>
-                    <p style="color: var(--color-text-muted); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;"
-                        data-lang-key="demo_kk">Kepala Keluarga</p>
+                <div class="demo-box" data-aos="zoom-in" data-aos-delay="200">
+                    <i class="fa-solid fa-house-chimney-user demo-icon" style="color: var(--color-secondary);"></i>
+                    <h4 class="counter-up demo-val" data-target="135">0</h4>
+                    <p class="demo-label" data-lang-key="demo_kk">Kepala Keluarga</p>
                 </div>
                 <!-- Stat 3: RT -->
-                <div data-aos="zoom-in" data-aos-delay="300"
-                    style="background-color: var(--color-white); padding: 30px 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1.5px solid rgba(108, 8, 32, 0.05); transition: transform 0.3s; cursor: default;"
-                    onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
-                    <i class="fa-solid fa-map"
-                        style="font-size: 2.5rem; color: #FFA500; margin-bottom: 16px; display: block;"></i>
-                    <h4 style="font-size: 2.2rem; font-weight: 800; color: var(--color-dark); margin-bottom: 4px; line-height: 1;"
-                        class="counter-up" data-target="10">0</h4>
-                    <p style="color: var(--color-text-muted); font-weight: 700; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.5px;"
-                        data-lang-key="demo_rt">Rukun Tetangga (RT)</p>
+                <div class="demo-box" data-aos="zoom-in" data-aos-delay="300">
+                    <i class="fa-solid fa-map demo-icon" style="color: #FFA500;"></i>
+                    <h4 class="counter-up demo-val" data-target="10">0</h4>
+                    <p class="demo-label" data-lang-key="demo_rt">Rukun Tetangga (RT)</p>
                 </div>
                 <!-- Stat 4: Gender -->
-                <div data-aos="zoom-in" data-aos-delay="400"
-                    style="background-color: var(--color-white); padding: 20px; border-radius: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); border: 1.5px solid rgba(108, 8, 32, 0.05); transition: transform 0.3s; cursor: default;"
-                    onmouseover="this.style.transform='translateY(-5px)'" onmouseout="this.style.transform='none'">
+                <div class="demo-box" data-aos="zoom-in" data-aos-delay="400" style="padding: 20px;">
                     <div style="position: relative; width: 140px; height: 140px; margin: 0 auto 10px auto;">
                         <canvas id="genderChart"></canvas>
                     </div>
@@ -773,8 +756,7 @@
             offset: 100,
         });
     </script>
-    <!-- Particles.js -->
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
     <!-- Vanilla Tilt (3D Hover Effect) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>
     <script>

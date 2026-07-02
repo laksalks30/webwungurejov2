@@ -735,6 +735,47 @@ textarea {
     color: var(--color-white);
 }
 
+/* Demographics Section */
+.demo-header {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    font-weight: 800;
+}
+.demo-box {
+    background-color: var(--color-white);
+    padding: 30px 20px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+    border: 1.5px solid rgba(108, 8, 32, 0.05);
+    transition: transform 0.3s;
+    cursor: default;
+}
+.demo-box:hover {
+    transform: translateY(-5px);
+}
+.demo-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    display: block;
+}
+.demo-val {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: var(--color-dark);
+    margin-bottom: 4px;
+    line-height: 1;
+}
+.demo-label {
+    color: var(--color-text-muted);
+    font-weight: 700;
+    font-size: 0.95rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+
 /* Program Kerja (Proker) Section */
 .proker-section {
     background-color: #FAF6F6;
@@ -3637,6 +3678,49 @@ body.lang-switching [data-lang-ph] {
 /* Section Backgrounds */
 [data-theme="dark"] .profile-section {
     background-color: #181825 !important;
+}
+
+/* Profile Text Fixes */
+[data-theme="dark"] .profile-text-content h3,
+[data-theme="dark"] .section-title {
+    color: #CDD6F4 !important;
+}
+
+[data-theme="dark"] .profile-text-content p,
+[data-theme="dark"] .section-subtitle {
+    color: #A6ADC8 !important;
+}
+
+/* Visual Card Fixes */
+[data-theme="dark"] .visual-card {
+    background-color: rgba(30, 30, 46, 0.6) !important;
+    border-color: rgba(255, 107, 157, 0.2) !important;
+}
+[data-theme="dark"] .visual-img-placeholder {
+    background-color: rgba(255, 255, 255, 0.03) !important;
+    border-color: rgba(255, 107, 157, 0.2) !important;
+    color: #A6ADC8 !important;
+}
+[data-theme="dark"] .visual-badge {
+    background-color: rgba(30, 30, 46, 0.9) !important;
+    border-color: rgba(255, 107, 157, 0.2) !important;
+    color: #CDD6F4 !important;
+}
+
+/* Demographics Dark Mode */
+[data-theme="dark"] .demo-box {
+    background-color: #1E1E2E !important;
+    border-color: rgba(255, 107, 157, 0.1) !important;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
+}
+
+[data-theme="dark"] .demo-header,
+[data-theme="dark"] .demo-val {
+    color: #CDD6F4 !important;
+}
+
+[data-theme="dark"] .demo-label {
+    color: #A6ADC8 !important;
 }
 
 [data-theme="dark"] .logbook-section {
