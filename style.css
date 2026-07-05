@@ -5421,6 +5421,7 @@ body.lang-switching [data-lang-ph] {
     z-index: 10;
     pointer-events: none; /* Let clicks pass through to gallery */
     background: transparent;
+    align-self: start;
 }
 
 /* Subtle dark overlay to make text readable over photos */

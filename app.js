@@ -1512,7 +1512,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- 12. SCROLLYTELLING IMPACT REPORT ---
     const initScrollytelling = () => {
-        const container = document.getElementById('galeri');
+        const container = document.querySelector('.gallery-overlap-wrapper');
         const texts = [
             document.getElementById('scroll-text-1'),
             document.getElementById('scroll-text-2'),
