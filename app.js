@@ -1474,7 +1474,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
         } catch (err) {
             console.error('Failed to fetch weather data:', err);
-            loader.innerHTML = '<span style="color:var(--color-primary); font-size: 0.9rem;">Gagal memuat data cuaca.</span>';
+            loader.innerHTML = `
+                <div style="text-align: center; color: var(--color-text-muted); padding: 10px;">
+                    <i class="fa-solid fa-wifi" style="font-size: 1.5rem; margin-bottom: 12px; opacity: 0.4;"></i><br>
+                    <span style="font-weight: 700; font-size: 0.95rem;">Mode Offline Aktif</span><br>
+                    <span style="font-size: 0.85rem;">Data cuaca *real-time* memerlukan koneksi internet.</span>
+                </div>
+            `;
         }
     };
 
