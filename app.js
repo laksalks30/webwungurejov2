@@ -182,8 +182,117 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     // ================================================================
+    // DATA E-KATALOG UMKM - Edit di sini untuk update produk
+    // ================================================================
+    const umkmData = {
+        1: {
+            name: "Kerajinan Popor Senapan Kayu",
+            badge: "Kerajinan Khas",
+            price: "Mulai dari Rp 250.000",
+            owner: "Pengrajin: Warga Dusun Wungurejo (Pengrajin Popor)",
+            desc: "Mahakarya seni ukir kayu berkualitas tinggi yang dikerjakan secara handmade oleh pengrajin lokal Dusun Wungurejo. Bahan baku kayu pilihan diolah dengan teknik tradisional yang telah diwariskan turun-temurun. Cocok untuk kolektor senjata, pecinta olahraga menembak, dan sebagai cendera mata khas Gunungkidul.",
+            images: ["assets/images/umkm_popor.png"],
+            waLink: "https://wa.me/6281229370617?text=Halo%20Pengrajin%20Popor%2C%20saya%20tertarik%20dengan%20karya%20popor%20kayu%20dari%20Wungurejo.%20Bisa%20tanya-tanya%3F",
+            // Google Maps embed src untuk lokasi pengrajin popor
+            mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.60471903789087!3d-7.874912049612724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInMjkuNyJTIDExMMKwMzYnMTcuMCJF!5e0!3m2!1sid!2sid!4v1000000000000!5m2!1sid!2sid"
+        },
+        2: {
+            name: "Madu Klanceng Murni",
+            badge: "Hasil Peternakan",
+            price: "Rp 85.000 / Botol (100ml)",
+            owner: "Peternak: Usaha Madu TBS — Dusun Wungurejo",
+            desc: "Madu klanceng murni 100% tanpa campuran, dipanen langsung dari koloni lebah tanpa sengat (Trigona sp.) yang diternakkan di alam asri Dusun Wungurejo. Kaya akan antioksidan, vitamin, dan mineral alami. Berkhasiat untuk meningkatkan imun tubuh, menyembuhkan luka, dan menjaga kesehatan secara holistik.",
+            images: ["assets/images/umkm_madu.png"],
+            waLink: "https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Madu%20Klanceng%20asli%20Wungurejo.%20Apakah%20stoknya%20ready%3F",
+            mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.605389!3d-7.874000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInMjYuNCJTIDExMMKwMzYnMTkuNCJF!5e0!3m2!1sid!2sid!4v1000000000001!5m2!1sid!2sid"
+        },
+        3: {
+            name: "Bibit & Konsumsi Ikan Air Tawar",
+            badge: "Hasil Peternakan",
+            price: "Harga Bervariasi (Hubungi Peternak)",
+            owner: "Peternak: Bapak Sugino Wiryo — Dusun Wungurejo",
+            desc: "Menyediakan bibit ikan berkualitas (Lele, Nila, Mas) dan ikan siap konsumsi hasil budidaya intensif oleh Bapak Sugino Wiryo. Kolam ikan dikelola secara higienis dengan pakan alami. Cocok untuk pembelian retail maupun partai besar untuk kebutuhan hajatan atau warung makan.",
+            images: ["assets/images/umkm_ikan.png"],
+            waLink: "https://wa.me/6281234567890?text=Halo%20Bapak%20Sugino%2C%20saya%20tertarik%20dengan%20hasil%20perikanannya.%20Bisa%20tanya%20stok%20yang%20ready%3F",
+            mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.60831684355774!3d-7.879900709814317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInNDcuNiJTIDExMMKwMzYnMzAuMCJF!5e0!3m2!1sid!2sid!4v1000000000002!5m2!1sid!2sid"
+        }
+    };
+
+    // --- UMKM Modal Logic ---
+    (function () {
+        const overlay = document.getElementById('umkm-modal-overlay');
+        const closeBtn = document.getElementById('umkm-modal-close');
+        if (!overlay) return;
+
+        function openUmkmModal(id) {
+            const data = umkmData[id];
+            if (!data) return;
+
+            // Fill content
+            document.getElementById('umkm-modal-badge').textContent = data.badge;
+            document.getElementById('umkm-modal-name').textContent = data.name;
+            document.getElementById('umkm-modal-price').textContent = data.price;
+            document.getElementById('umkm-modal-desc').textContent = data.desc;
+            document.getElementById('umkm-modal-owner').textContent = data.owner;
+            document.getElementById('umkm-modal-wa-btn').href = data.waLink;
+
+            // Main image
+            const mainImg = document.getElementById('umkm-modal-main-img');
+            mainImg.src = data.images[0];
+
+            // Thumbnails
+            const thumbsContainer = document.getElementById('umkm-gallery-thumbs');
+            thumbsContainer.innerHTML = '';
+            if (data.images.length > 1) {
+                data.images.forEach((src, i) => {
+                    const thumb = document.createElement('img');
+                    thumb.src = src;
+                    thumb.alt = `Foto ${i + 1}`;
+                    thumb.className = 'umkm-thumb' + (i === 0 ? ' active' : '');
+                    thumb.addEventListener('click', () => {
+                        mainImg.src = src;
+                        thumbsContainer.querySelectorAll('.umkm-thumb').forEach(t => t.classList.remove('active'));
+                        thumb.classList.add('active');
+                    });
+                    thumbsContainer.appendChild(thumb);
+                });
+                thumbsContainer.style.display = 'flex';
+            } else {
+                thumbsContainer.style.display = 'none';
+            }
+
+            // Google Maps
+            document.getElementById('umkm-modal-map').src = data.mapSrc;
+
+            // Open modal
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeUmkmModal() {
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+            // Clear iframe src to stop map loading in bg
+            setTimeout(() => { document.getElementById('umkm-modal-map').src = ''; }, 300);
+        }
+
+        // Bind clicks on UMKM cards
+        document.querySelectorAll('.umkm-clickable').forEach(card => {
+            card.addEventListener('click', () => {
+                const id = parseInt(card.getAttribute('data-umkm-id'));
+                openUmkmModal(id);
+            });
+        });
+
+        closeBtn.addEventListener('click', closeUmkmModal);
+        overlay.addEventListener('click', (e) => { if (e.target === overlay) closeUmkmModal(); });
+        document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeUmkmModal(); });
+    })();
+
+    // ================================================================
     // EDIT DATA PROGRAM KERJA DI SINI:
     // ================================================================
+
     const prokersData = [
         // PROKER BERSAMA
         { id: 1, type: "Proker Bersama", owner_name: null, title: "Pembuatan Peta Administrasi Fisik dan Digital", description_markdown: "Pembuatan peta administrasi fisik dan digital Dusun Wungurejo, mencakup batas RT, fasilitas umum, dan potensi UMKM.", status: "Belum Mulai", image_urls: [] },

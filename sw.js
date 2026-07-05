@@ -1,4 +1,4 @@
-﻿const CACHE_NAME = 'kkn-wungurejo-v5';
+﻿const CACHE_NAME = 'kkn-wungurejo-v6';
 
 // Install event: skip waiting so the new service worker takes over immediately
 self.addEventListener('install', (event) => {
@@ -52,5 +52,6 @@ self.addEventListener('fetch', (event) => {
             })
     );
 });
+
 
 
