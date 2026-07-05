@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
 
     // --- 0. Preloader ---
     const preloader = document.getElementById('preloader');
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const applyLanguage = (lang) => {
         if (!window.KKN_LANG || !window.KKN_LANG[lang]) return;
-        
+
         const dictionary = window.KKN_LANG[lang];
 
         // Update Text Elements
@@ -73,24 +73,24 @@ document.addEventListener('DOMContentLoaded', () => {
     applyLanguage(currentLang);
 
     // Initialise window-level lang references so renderBlogCards can read them on first load
-    window.currentLang  = currentLang;
+    window.currentLang = currentLang;
     window.translations = window.KKN_LANG;
 
     if (langToggleBtn) {
         langToggleBtn.addEventListener('click', () => {
             currentLang = currentLang === 'id' ? 'en' : 'id';
             localStorage.setItem('kkn-lang', currentLang);
-            
+
             // Add transition class for smooth fade out
             document.body.classList.add('lang-switching');
-            
+
             // Wait for fade out to complete before swapping text
             setTimeout(() => {
                 applyLanguage(currentLang);
 
                 // Expose to window so renderBlogCards and other renderers can read it
-                window.currentLang   = currentLang;
-                window.translations  = window.KKN_LANG;
+                window.currentLang = currentLang;
+                window.translations = window.KKN_LANG;
 
                 // Notify other renderers (blog cards, etc.)
                 document.dispatchEvent(new CustomEvent('langChanged', { detail: { lang: currentLang } }));
@@ -189,12 +189,12 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 1, type: "Proker Bersama", owner_name: null, title: "Pembuatan Peta Administrasi Fisik dan Digital", description_markdown: "Pembuatan peta administrasi fisik dan digital Dusun Wungurejo, mencakup batas RT, fasilitas umum, dan potensi UMKM.", status: "Belum Mulai", image_urls: [] },
         { id: 2, type: "Proker Bersama", owner_name: null, title: "Sosialisasi dan Pelatihan Pertanian KWT", description_markdown: "Sosialisasi dan pelatihan budidaya pertanian, pengendalian hama, dan pengolahan hasil panen untuk Kelompok Wanita Tani (KWT) Wungurejo.", status: "Belum Mulai", image_urls: [] },
         { id: 3, type: "Proker Bersama", owner_name: null, title: "Penomoran Rumah & Database Warga", description_markdown: "Pembuatan sistem penomoran rumah terstandar dan pendataan database warga Dusun Wungurejo yang terdigitalisasi.", status: "Belum Mulai", image_urls: [] },
-        
+
         // PROKER INDIVIDU
         { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
         { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Identifikasi Kualitas Air Tanah", description_markdown: "Identifikasi kualitas air tanah dan air permukaan di wilayah Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Uji Recovery Sumur Warga", description_markdown: "Melakukan uji recovery dan analisis ketersediaan air pada sumur-sumur Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 7, type: "Proker Individu", owner_name: "Shofaâ€™ Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
+        { id: 7, type: "Proker Individu", owner_name: "ShofaÃ¢â‚¬â„¢ Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
         { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Desa", description_markdown: "Membangun website profil desa, katalog UMKM, serta digitalisasi logbook KKN.", status: "Belum Mulai", image_urls: [] },
         { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: [] },
         { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Company Profile Usaha Madu", description_markdown: "Penyusunan Company Profile digital untuk meningkatkan profesionalitas Usaha Madu TBS.", status: "Belum Mulai", image_urls: [] },
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prokerCard.innerHTML = `
                 <div class="proker-icon-box ${iconBoxClass}"><i class="fa-solid ${icon}"></i></div>
                 <div class="proker-body">
-                    <span class="proker-tag">${proker.type} ${proker.owner_name ? `â€¢ ${proker.owner_name}` : ''}</span>
+                    <span class="proker-tag">${proker.type} ${proker.owner_name ? `Ã¢â‚¬Â¢ ${proker.owner_name}` : ''}</span>
                     <h3 class="proker-title">${escapeHTML(proker.title)}</h3>
                     <div class="proker-desc">${descHtml}</div>
                     <div class="proker-footer">
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
             major: "-",
             quote: "Teknologi dan inovasi dari desa untuk dunia.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/havezein?igsh=MWJ6dWhraXE2NGc1cA==",
             linkedin: "https://linkedin.com/",
             photo: "assets/profilepic/HAVEZ.jpeg"
         },
@@ -930,7 +930,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const themeToggleBtn = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
     const bodyElement = document.body;
-    
+
     // Check local storage for saved theme
     const savedTheme = localStorage.getItem('kkn-theme');
     if (savedTheme === 'dark') {
@@ -1008,7 +1008,7 @@ document.addEventListener('DOMContentLoaded', () => {
         renderBlogCards(blogs);
     };
 
-    // Render blog cards â€” called on fetch and on language switch
+    // Render blog cards Ã¢â‚¬â€ called on fetch and on language switch
     const renderBlogCards = (blogs) => {
         const blogContainer = document.getElementById('blog-grid-container');
         if (!blogContainer) return;
@@ -1027,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         blogs.forEach(item => {
-            // Format date â€” respects locale of active language
+            // Format date Ã¢â‚¬â€ respects locale of active language
             const locale = (window.currentLang === 'en') ? 'en-US' : 'id-ID';
             const dateObj = new Date(item.date);
             const formattedDate = isNaN(dateObj.getTime()) ? item.date : dateObj.toLocaleDateString(locale, {
@@ -1078,13 +1078,13 @@ document.addEventListener('DOMContentLoaded', () => {
         const blog = window.blogData.find(b => b.id === id);
         if (!blog) return;
 
-        const overlay         = document.getElementById('blog-reader-modal');
-        const heroImg         = document.getElementById('blog-reader-hero-img');
+        const overlay = document.getElementById('blog-reader-modal');
+        const heroImg = document.getElementById('blog-reader-hero-img');
         const heroPlaceholder = document.getElementById('blog-reader-hero-placeholder');
-        const badge           = document.getElementById('blog-reader-badge');
-        const dateEl          = document.getElementById('blog-reader-date');
-        const titleEl         = document.getElementById('blog-reader-title');
-        const contentEl       = document.getElementById('blog-reader-content');
+        const badge = document.getElementById('blog-reader-badge');
+        const dateEl = document.getElementById('blog-reader-date');
+        const titleEl = document.getElementById('blog-reader-title');
+        const contentEl = document.getElementById('blog-reader-content');
 
         if (!overlay) return;
 
@@ -1135,14 +1135,14 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!mapContainer || typeof L === 'undefined') return;
 
         // Koordinat area Dusun Wungurejo (Berdasarkan foto peta aktual)
-        const wungurejoCoords = [-7.874, 110.605]; 
-        
+        const wungurejoCoords = [-7.874, 110.605];
+
         const map = L.map('webgis-map').setView(wungurejoCoords, 15);
 
         // Tambahkan Tile Layer (OpenStreetMap - 100% Gratis)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: 'Â© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution: 'Ã‚Â© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
         // Buat Custom Icon untuk Marker
@@ -1180,7 +1180,7 @@ document.addEventListener('DOMContentLoaded', () => {
             fillColor: '#6C0820',  // Warna isian area
             fillOpacity: 0.1       // Sangat transparan agar jalan di bawahnya tetap terlihat
         }).addTo(map);
-        
+
         // Pop-up saat area desa diklik (bukan di markernya)
         desaPolygon.bindPopup(`
             <div style="font-family: 'Plus Jakarta Sans', sans-serif; text-align: center;">
@@ -1193,8 +1193,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const locations = [
             {
                 name: "Posko KKN 84.095",
-                coords: [-7.874000, 110.605389], // Presisi dari 7Â°52'26.4"S 110Â°36'19.4"E
-                color: "#6C0820", 
+                coords: [-7.874000, 110.605389], // Presisi dari 7Ã‚Â°52'26.4"S 110Ã‚Â°36'19.4"E
+                color: "#6C0820",
                 icon: "fa-solid fa-house-user",
                 desc: "Pusat koordinasi dan tempat tinggal mahasiswa KKN selama mengabdi.",
                 type: "Posko Utama"
@@ -1202,7 +1202,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Balai Padukuhan Wungurejo",
                 coords: [-7.873732597455154, 110.60495672624596], // Presisi dari user
-                color: "#4A90E2", 
+                color: "#4A90E2",
                 icon: "fa-solid fa-landmark",
                 desc: "Pusat administrasi dusun dan lokasi berbagai sosialisasi proker.",
                 type: "Fasilitas Umum"
@@ -1210,7 +1210,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Masjid Al Amin",
                 coords: [-7.873480286219351, 110.60479159365966], // Dikoreksi oleh user
-                color: "#9B59B6", 
+                color: "#9B59B6",
                 icon: "fa-solid fa-mosque",
                 desc: "Pusat kegiatan ibadah kemasyarakatan dan pendidikan keagamaan warga.",
                 type: "Fasilitas Ibadah"
@@ -1218,7 +1218,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Pengrajin Popor",
                 coords: [-7.874912049612724, 110.60471903789087], // Presisi dari user
-                color: "#F5A623", 
+                color: "#F5A623",
                 icon: "fa-solid fa-hammer",
                 desc: "Usaha kerajinan popor kayu, potensi UMKM unggulan Dusun Wungurejo.",
                 type: "UMKM Lokal"
@@ -1226,7 +1226,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Toko Qutis",
                 coords: [-7.873920390437767, 110.60660252927839], // Presisi dari user
-                color: "#1ABC9C", 
+                color: "#1ABC9C",
                 icon: "fa-solid fa-store",
                 desc: "Salah satu warung kelontong penggerak ekonomi mikro warga.",
                 type: "UMKM Lokal"
@@ -1234,7 +1234,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Makam Punthuk",
                 coords: [-7.875043496517649, 110.60667095892298], // Presisi dari user
-                color: "#7F8C8D", 
+                color: "#7F8C8D",
                 icon: "fa-solid fa-cross",
                 desc: "Situs pemakaman bersejarah yang menjadi bagian dari warisan budaya Dusun Wungurejo.",
                 type: "Situs Budaya"
@@ -1242,7 +1242,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Peternak Ikan Sugino Wiryo",
                 coords: [-7.879900709814317, 110.60831684355774],
-                color: "#3498DB", 
+                color: "#3498DB",
                 icon: "fa-solid fa-fish",
                 desc: "Usaha budidaya perikanan lokal, potensi UMKM peternakan ikan di Dusun Wungurejo.",
                 type: "UMKM Lokal"
@@ -1250,7 +1250,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "TPQ Tarbiyatul Muchcinin",
                 coords: [-7.8765467110434555, 110.60488574061534],
-                color: "#27AE60", 
+                color: "#27AE60",
                 icon: "fa-solid fa-book-quran",
                 desc: "Pusat pendidikan agama dan taman bacaan Al-Quran bagi anak-anak dusun.",
                 type: "Pendidikan & Agama"
@@ -1258,7 +1258,7 @@ document.addEventListener('DOMContentLoaded', () => {
             {
                 name: "Masjid Darussalam",
                 coords: [-7.880814014201857, 110.607250621794], // Presisi dari user
-                color: "#8E44AD", 
+                color: "#8E44AD",
                 icon: "fa-solid fa-mosque",
                 desc: "Masjid Darussalam, pusat ibadah dan kegiatan keagamaan warga Wungurejo.",
                 type: "Fasilitas Ibadah"
@@ -1268,7 +1268,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // --- 3. RENDER MARKERS KE PETA ---
         locations.forEach((loc, index) => {
             const marker = L.marker(loc.coords, { icon: createCustomIcon(loc.color, loc.icon) }).addTo(map);
-            
+
             const popupContent = `
                 <div style="font-family: 'Plus Jakarta Sans', sans-serif; min-width: 220px; padding: 5px;">
                     <span data-lang-key="map_loc_${index}_type" style="display: inline-block; padding: 4px 8px; border-radius: 20px; background-color: ${loc.color}15; font-size: 0.7rem; font-weight: 800; color: ${loc.color}; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px;">${loc.type}</span>
@@ -1276,12 +1276,12 @@ document.addEventListener('DOMContentLoaded', () => {
                     <p data-lang-key="map_loc_${index}_desc" style="margin: 0; font-size: 0.85rem; color: #666; line-height: 1.5;">${loc.desc}</p>
                 </div>
             `;
-            
+
             marker.bindPopup(popupContent);
         });
 
         // Apply language translation automatically when a popup opens
-        map.on('popupopen', function() {
+        map.on('popupopen', function () {
             if (typeof applyLanguage === 'function' && typeof currentLang !== 'undefined') {
                 applyLanguage(currentLang);
             }
@@ -1320,7 +1320,7 @@ document.addEventListener('DOMContentLoaded', () => {
                             backgroundColor: 'rgba(0,0,0,0.8)',
                             padding: 10,
                             callbacks: {
-                                label: function(context) {
+                                label: function (context) {
                                     return ' ' + context.label + ': ' + context.raw + ' Jiwa';
                                 }
                             }
@@ -1347,7 +1347,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
                     // Calculate increment based on target size to ensure they finish around the same time
-                    const inc = target / speed; 
+                    const inc = target / speed;
 
                     if (count < target) {
                         counter.innerText = Math.ceil(count + inc);
@@ -1378,7 +1378,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initialize after a slight delay to ensure DOM is fully ready
     setTimeout(initDemographics, 500);
-    
+
     // Initialize WebGIS Map safely
     setTimeout(initWebGIS, 500);
 
@@ -1406,7 +1406,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 shadowBlur: 6,
                 opacityDeltaBase: 0.004,
             } : {
-                // Light mode: very subtle, warm amber dots â€” nearly invisible, elegant
+                // Light mode: very subtle, warm amber dots Ã¢â‚¬â€ nearly invisible, elegant
                 colors: ['#B8860B', '#DAA520', '#C8A000', '#A07800'],
                 opacityMin: 0.04,
                 opacityRange: 0.10,
@@ -1600,3 +1600,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 });
+
