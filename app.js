@@ -1397,13 +1397,95 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     };
 
+    // --- 11. SMART WEATHER DASHBOARD ---
+    const initWeatherDashboard = async () => {
+        const loader = document.getElementById('weather-loader');
+        const content = document.getElementById('weather-content');
+        if (!loader || !content) return;
+
+        try {
+            // Wungurejo coords approx: Lat -7.874, Lon 110.605
+            const res = await fetch('https://api.open-meteo.com/v1/forecast?latitude=-7.874&longitude=110.605&current=temperature_2m,relative_humidity_2m,is_day,precipitation,weather_code&timezone=Asia%2FJakarta');
+            const data = await res.json();
+            
+            const current = data.current;
+            const temp = Math.round(current.temperature_2m);
+            const humidity = current.relative_humidity_2m;
+            const precip = current.precipitation;
+            const code = current.weather_code;
+            const isDay = current.is_day === 1;
+
+            // Map WMO Code to FontAwesome and Description
+            let iconClass = 'fa-cloud';
+            let desc = 'Berawan';
+            let iconColor = '#A6ADC8';
+            let advice = 'Cuaca normal. Waktu yang baik untuk aktivitas harian di kebun atau memeriksa kolam ikan.';
+
+            if (code === 0) {
+                desc = 'Cerah';
+                iconClass = isDay ? 'fa-sun' : 'fa-moon';
+                iconColor = isDay ? '#FFA500' : '#F1C40F';
+                if (temp > 30) advice = 'Cuaca terik! Waktu yang tepat untuk mengeringkan hasil panen. Tunda penyemprotan Eco Enzyme cair ke daun tanaman agar tidak gosong.';
+                else advice = 'Cuaca cerah yang mendukung! Bagus untuk menyiram tanaman dengan pupuk organik cair / Eco Enzyme pada pangkal batang.';
+            } else if (code >= 1 && code <= 3) {
+                desc = 'Cerah Berawan';
+                iconClass = isDay ? 'fa-cloud-sun' : 'fa-cloud-moon';
+                iconColor = '#F39C12';
+                advice = 'Kondisi ideal untuk berbagai aktivitas pertanian, penanaman bibit baru, maupun penyiraman pestisida nabati.';
+            } else if (code === 45 || code === 48) {
+                desc = 'Berkabut';
+                iconClass = 'fa-smog';
+                advice = 'Kabut membatasi jarak pandang. Jaga kelembapan kandang ternak dan hindari pemupukan daun sementara waktu.';
+            } else if (code >= 51 && code <= 55) {
+                desc = 'Gerimis';
+                iconClass = 'fa-cloud-rain';
+                iconColor = '#3498DB';
+                advice = 'Tanah sudah basah oleh gerimis. Kurangi volume penyiraman manual untuk menghemat persediaan air tanah.';
+            } else if (code >= 61 && code <= 65) {
+                desc = 'Hujan';
+                iconClass = 'fa-cloud-showers-heavy';
+                iconColor = '#2980B9';
+                advice = 'Hujan turun! Segera siapkan wadah penampung air hujan (bisa dicampur sedikit Eco Enzyme untuk menjernihkan). Jangan menyemprot pupuk daun karena akan larut.';
+            } else if (code >= 71 && code <= 75) {
+                desc = 'Salju / Es';
+                iconClass = 'fa-snowflake';
+            } else if (code >= 95 && code <= 99) {
+                desc = 'Badai Petir';
+                iconClass = 'fa-cloud-bolt';
+                iconColor = '#8E44AD';
+                advice = 'Cuaca ekstrem! Hentikan aktivitas di lahan terbuka atau sawah. Pastikan saluran pembuangan air di kolam lele tidak mampet.';
+            }
+
+            // Update DOM
+            document.getElementById('weather-temp').textContent = `${temp}°C`;
+            document.getElementById('weather-desc').textContent = desc;
+            document.getElementById('weather-humidity').textContent = `${humidity}%`;
+            document.getElementById('weather-precip').textContent = `${precip} mm`;
+            
+            const iconBox = document.getElementById('weather-icon-box');
+            iconBox.innerHTML = `<i class="fa-solid ${iconClass}"></i>`;
+            iconBox.style.color = iconColor;
+            
+            document.getElementById('weather-advice').textContent = advice;
+
+            // Show content
+            loader.style.display = 'none';
+            content.style.display = 'block';
+
+        } catch (err) {
+            console.error('Failed to fetch weather data:', err);
+            loader.innerHTML = '<span style="color:var(--color-primary); font-size: 0.9rem;">Gagal memuat data cuaca.</span>';
+        }
+    };
+
     // Load static data on startup
     renderProkers('all');
     renderLogbook('all');
     fetchGallery();
     fetchBlogs();
+    initWeatherDashboard();
 
-    // --- 11. DEMOGRAPHICS ANIMATION (CHART & COUNTER) ---
+    // --- 12. DEMOGRAPHICS ANIMATION (CHART & COUNTER) ---
     const initDemographics = () => {
         // 1. Chart.js for Gender Ratio
         const ctx = document.getElementById('genderChart');
