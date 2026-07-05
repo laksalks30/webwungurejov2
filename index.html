@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -18,11 +18,11 @@
     </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KKN AA 84.095 UPN "Veteran" Yogyakarta - Dusun Wungurejo</title>
+    <title>KKN AB 84.095 UPN "Veteran" Yogyakarta - Dusun Wungurejo</title>
     <!-- Favicon -->
     <link rel="icon" href="assets/logo/LogoKKNBaru.png" type="image/png">
     <meta name="description"
-        content="Official website of KKN AA 84.095 UPN 'Veteran' Yogyakarta in Desa Dusun Wungurejo, Pengkol, Nglipar, Gunung Kidul. Explore our community development programs, daily logbook, and leave a message in our guestbook.">
+        content="Official website of KKN AB 84.095 UPN 'Veteran' Yogyakarta in Desa Dusun Wungurejo, Pengkol, Nglipar, Gunung Kidul. Explore our community development programs, daily logbook, and leave a message in our guestbook.">
     <!-- PWA Manifest and Theme Color -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#FF3385">
@@ -62,9 +62,9 @@
     <header class="header">
         <div class="nav-container">
             <a href="#" class="logo-area">
-                <img src="assets/logo/LogoKKNBaru.png" alt="Logo KKN AA 84.095" class="logo-img">
+                <img src="assets/logo/LogoKKNBaru.png" alt="Logo KKN AB 84.095" class="logo-img">
                 <div class="logo-text">
-                    <span class="logo-title">KKN AA 84.095</span>
+                    <span class="logo-title">KKN AB 84.095</span>
                     <span class="logo-subtitle">UPN "Veteran" Yogyakarta</span>
                 </div>
             </a>
@@ -81,6 +81,11 @@
                 <a href="#galeri" class="nav-link" data-lang-key="nav_gallery">Galeri</a>
                 <a href="#tim" class="nav-link" data-lang-key="nav_team">Tim Kami</a>
                 <a href="#guestbook" class="nav-link nav-btn" data-lang-key="nav_guestbook">Buku Tamu</a>
+                <!-- PDF Generator Button -->
+                <button id="pdf-nav-btn" class="theme-toggle" aria-label="Buat Surat Izin PDF" title="Buat Surat Izin PDF" style="background: linear-gradient(135deg, #6C0820, #a81032); color:#fff; border:none; border-radius: 50px; width: auto; padding: 0 14px; font-size: 0.8rem; font-weight: 700; gap: 6px; display: inline-flex; align-items: center;">
+                    <i class="fa-solid fa-file-pdf"></i>
+                    <span class="pdf-nav-label">Surat PDF</span>
+                </button>
 
                 <!-- Language Toggle Button -->
                 <button id="lang-toggle" class="theme-toggle" aria-label="Toggle Language"
@@ -414,7 +419,7 @@
                 <span class="section-tag" data-lang-key="logbook_tag">Log Harian</span>
                 <h2 class="section-title" data-lang-key="logbook_title">Timeline & Kegiatan Terbaru</h2>
                 <p class="section-subtitle" data-lang-key="logbook_subtitle">Catatan dokumentasi harian kegiatan
-                    pengabdian KKN AA 84.095.</p>
+                    pengabdian KKN AB 84.095.</p>
             </div>
 
             <!-- Logbook Filters -->
@@ -478,7 +483,7 @@
         <div class="container container-wide">
             <div class="section-header" data-aos="fade-up">
                 <span class="section-tag" data-lang-key="tim_tag">Anggota Kelompok</span>
-                <h2 class="section-title" data-lang-key="tim_title">Di Balik Layar KKN AA 84.095</h2>
+                <h2 class="section-title" data-lang-key="tim_title">Di Balik Layar KKN AB 84.095</h2>
                 <p class="section-subtitle" data-lang-key="tim_subtitle">Arahkan kursor dan klik pada foto anggota
                     kelompok untuk melihat profil lengkap mereka.</p>
             </div>
@@ -487,7 +492,7 @@
                 <!-- Group Photo Side -->
                 <div class="team-photo-wrapper">
 
-                    <img src="assets/team/FOTOBERSAMA3_web.jpg" alt="KKN AA 84.095 Group Photo" class="base-photo"
+                    <img src="assets/team/FOTOBERSAMA3_web.jpg" alt="KKN AB 84.095 Group Photo" class="base-photo"
                         id="team-base-photo">
 
                     <!-- Per-person clip-path highlight layers -->
@@ -651,11 +656,6 @@
         </div>
     </section>
 
-    <!-- Scroll to Top Button -->
-    <button id="scrollToTopBtn" aria-label="Scroll to top">
-        <i class="fa-solid fa-arrow-up"></i>
-    </button>
-
     <!-- Footer -->
     <footer class="footer-bottom">
         <div class="container footer-container">
@@ -664,7 +664,7 @@
                 <img src="assets/logo/logoupn.png" alt="Logo UPN Veteran Yogyakarta"
                     class="footer-logo footer-upn-logo">
                 <div>
-                    <h4>KKN AA 84.095</h4>
+                    <h4>KKN AB 84.095</h4>
                     <p>UPN "Veteran" Yogyakarta - <span data-lang-key="footer_loc">Desa Dusun Wungurejo, Pengkol,
                             Nglipar, Gunung Kidul</span></p>
                 </div>
@@ -956,12 +956,12 @@
 
                 <div class="pdf-form-group">
                     <label>Keperluan / Keterangan Kegiatan</label>
-                    <textarea id="pdf-keperluan" rows="3" placeholder="Contoh: Sosialisasi Program UMKM Digital kepada warga Dusun Wungurejo dalam rangka KKN AA 84.095..."></textarea>
+                    <textarea id="pdf-keperluan" rows="3" placeholder="Contoh: Sosialisasi Program UMKM Digital kepada warga Dusun Wungurejo dalam rangka KKN AB 84.095..."></textarea>
                 </div>
 
                 <div class="pdf-preview-note">
                     <i class="fa-solid fa-circle-info"></i>
-                    Surat akan ditujukan kepada <strong>Kepala Dusun Wungurejo</strong> dengan kop surat resmi KKN AA 84.095 UPN "Veteran" Yogyakarta.
+                    Surat akan ditujukan kepada <strong>Kepala Dusun Wungurejo</strong> dengan kop surat resmi KKN AB 84.095 UPN "Veteran" Yogyakarta.
                 </div>
             </div>
 
@@ -979,6 +979,7 @@
     (function() {
         var overlay    = document.getElementById('pdf-modal-overlay');
         var fab        = document.getElementById('pdf-fab');
+        var navBtn    = document.getElementById('pdf-nav-btn');
         var closeBtn   = document.getElementById('pdf-modal-close');
         var cancelBtn  = document.getElementById('pdf-btn-cancel');
         var genBtn     = document.getElementById('pdf-btn-generate');
@@ -989,6 +990,7 @@
         function closeModal() { overlay.classList.remove('active'); document.body.style.overflow = ''; }
 
         fab.addEventListener('click', openModal);
+        if (navBtn) navBtn.addEventListener('click', openModal);
         closeBtn.addEventListener('click', closeModal);
         cancelBtn.addEventListener('click', closeModal);
         overlay.addEventListener('click', function(e) { if (e.target === overlay) closeModal(); });
@@ -1073,7 +1075,7 @@
             var y = 62;
             doc.setFontSize(11);
             doc.setTextColor(30, 30, 30);
-            var pembuka = 'Yang bertanda tangan di bawah ini, mahasiswa KKN AA 84.095 UPN "Veteran" Yogyakarta yang sedang melaksanakan pengabdian kepada masyarakat di Dusun Wungurejo, dengan hormat mengajukan permohonan kepada Bapak/Ibu Kepala Dusun Wungurejo.';
+            var pembuka = 'Yang bertanda tangan di bawah ini, mahasiswa KKN AB 84.095 UPN "Veteran" Yogyakarta yang sedang melaksanakan pengabdian kepada masyarakat di Dusun Wungurejo, dengan hormat mengajukan permohonan kepada Bapak/Ibu Kepala Dusun Wungurejo.';
             var pembLines = doc.splitTextToSize(pembuka, pw);
             doc.text(pembLines, lm, y);
             y += pembLines.length * 6 + 7;
@@ -1125,7 +1127,7 @@
             doc.text(ttdDate, 140, y);
             y += 5;
             doc.text('Pemohon,', lm, y);
-            doc.text('Ketua Kelompok KKN AA 84.095,', 140, y);
+            doc.text('Ketua Kelompok KKN AB 84.095,', 140, y);
             y += 28;
             doc.setFont('helvetica', 'bold');
             doc.text(nama, lm, y);
@@ -1143,7 +1145,7 @@
             doc.setFontSize(8);
             doc.setTextColor(140, 140, 140);
             doc.text(
-                'Dokumen dibuat otomatis oleh website KKN AA 84.095 | ' + new Date().toLocaleString('id-ID'),
+                'Dokumen dibuat otomatis oleh website KKN AB 84.095 | ' + new Date().toLocaleString('id-ID'),
                 105, ph - 13, { align: 'center' }
             );
 

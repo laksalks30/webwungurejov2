@@ -1,6 +1,6 @@
-/**
+﻿/**
  * ============================================================
- *  MULTI-LANGUAGE DICTIONARY — KKN AA 84.095
+ *  MULTI-LANGUAGE DICTIONARY â€” KKN AB 84.095
  *  lang.js  |  Bahasa Indonesia (id) & English (en)
  *  Usage: window.KKN_LANG[lang][key]
  * ============================================================
@@ -8,7 +8,7 @@
 window.KKN_LANG = {
 
     id: {
-        // ── NAV ──────────────────────────────────────────────
+        // â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         nav_home:       "Beranda",
         nav_profile:    "Profil Desa",
         nav_umkm:       "E-Katalog UMKM",
@@ -19,7 +19,7 @@ window.KKN_LANG = {
         nav_team:       "Tim Kami",
         nav_guestbook:  "Buku Tamu",
 
-        // ── HERO ─────────────────────────────────────────────
+        // â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         hero_tag:       "Wungurejo, Gunungkidul (1 Juli - 31 Juli 2026)",
         hero_title:     "Datang Mengabdi,",
         hero_highlight: "Pulang Membawa Arti",
@@ -27,12 +27,12 @@ window.KKN_LANG = {
         hero_btn_proker:"Lihat Program Kerja",
         hero_btn_desa:  "Jelajahi Desa",
 
-        // ── HERO STATS ────────────────────────────────────────
+        // â”€â”€ HERO STATS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         stat_proker_label:  "Program Kerja",
         stat_mhs_label:     "Mahasiswa KKN",
         stat_hari_label:    "Mengabdi (1 Juli - 31 Juli)",
 
-        // ── PILLARS ───────────────────────────────────────────
+        // â”€â”€ PILLARS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         pillars_title:  "Fokus Utama Pengabdian Kami",
         p1_title:       "Pendidikan & Literasi",
         p1_desc:        "Membangun masa depan generasi muda Wungurejo melalui bimbingan belajar kreatif, literasi digital sejak dini, dan penyediaan pojok baca.",
@@ -43,7 +43,7 @@ window.KKN_LANG = {
         p4_title:       "Adaptasi & Digitalisasi IT",
         p4_desc:        "Mengimplementasikan solusi digital untuk administrasi desa, pemetaan potensi wilayah, dan optimalisasi publikasi online desa.",
 
-        // ── PROFIL SECTION ────────────────────────────────────
+        // â”€â”€ PROFIL SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         profil_tag:         "Profil Pengabdian",
         profil_title:       "Kenal Lebih Dekat dengan Wungurejo",
         profil_subtitle:    "Kalurahan Pengkol, Kapanewon Nglipar, Kabupaten Gunungkidul, D.I. Yogyakarta",
@@ -54,7 +54,7 @@ window.KKN_LANG = {
         misi_title:         "Misi Pengabdian",
         misi_desc:          "Pemberdayaan UMKM lokal, edukasi berkelanjutan anak usia sekolah, serta implementasi adaptasi digital ramah masyarakat.",
 
-        // ── DEMOGRAFI ─────────────────────────────────────────
+        // â”€â”€ DEMOGRAFI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         demo_title:         "Data Demografi Dusun Wungurejo",
         demo_penduduk:      "Total Penduduk",
         demo_kk:            "Kepala Keluarga",
@@ -64,7 +64,7 @@ window.KKN_LANG = {
         demo_perempuan:     "Perempuan",
         map_title:          "Peta Lokasi Dusun Wungurejo",
 
-        // ── PROKER SECTION ────────────────────────────────────
+        // â”€â”€ PROKER SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         proker_tag:         "Rencana Aksi",
         proker_title:       "Program Kerja Pengabdian",
         proker_subtitle:    "Inisiatif program kerja KKN Kelompok AA 84.095 yang terbagi berdasarkan kategori pelaksanaan.",
@@ -72,7 +72,7 @@ window.KKN_LANG = {
         filter_bersama:     "Proker Bersama",
         filter_individu:    "Proker Individu",
 
-        // ── UMKM SECTION ──────────────────────────────────────
+        // â”€â”€ UMKM SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         umkm_tag:           "Pemberdayaan Ekonomi",
         umkm_title:         "E-Katalog Potensi UMKM Wungurejo",
         umkm_subtitle:      "Dukung kemandirian ekonomi lokal dengan membeli produk unggulan asli dari warga Dusun Wungurejo.",
@@ -89,7 +89,7 @@ window.KKN_LANG = {
         umkm_3_desc:        "Menyediakan bibit ikan berkualitas dan ikan siap konsumsi (Lele, Nila) hasil budidaya Bapak Sugino Wiryo.",
         umkm_3_price:       "Harga Bervariasi",
 
-        // ── BLOG SECTION ──────────────────────────────────────
+        // â”€â”€ BLOG SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         blog_tag:           "Kabar & Artikel",
         blog_title:         "Cerita dari Wungurejo",
         blog_subtitle:      "Kumpulan tulisan inspiratif, sejarah dusun, dan artikel ringan dari kegiatan pengabdian kami.",
@@ -97,26 +97,26 @@ window.KKN_LANG = {
         blog_empty:         "Belum ada artikel. Nantikan tulisan kami!",
         blog_badge_label:   "Artikel",
         blog_modal_close:   "Tutup",
-        // ── LOGBOOK SECTION ───────────────────────────────────
+        // â”€â”€ LOGBOOK SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         logbook_tag:        "Log Harian",
         logbook_title:      "Timeline & Kegiatan Terbaru",
-        logbook_subtitle:   "Catatan dokumentasi harian kegiatan pengabdian KKN AA 84.095.",
+        logbook_subtitle:   "Catatan dokumentasi harian kegiatan pengabdian KKN AB 84.095.",
         filter_all_phase:   "Semua Fase",
         filter_prakkn:      "Pra-KKN",
         filter_pelaksanaan: "Pelaksanaan KKN",
 
-        // ── GALLERY SECTION ───────────────────────────────────
+        // â”€â”€ GALLERY SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         gallery_tag:        "Pesona Wungurejo",
         gallery_title:      "Galeri Pengabdian",
         gallery_subtitle:   "Potret keindahan alam dan momen berharga selama pelaksanaan KKN Kelompok AA 84.095.",
 
-        // ── TIM SECTION ───────────────────────────────────────
+        // â”€â”€ TIM SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         tim_tag:            "Anggota Kelompok",
-        tim_title:          "Di Balik Layar KKN AA 84.095",
+        tim_title:          "Di Balik Layar KKN AB 84.095",
         tim_subtitle:       "Arahkan kursor dan klik pada foto anggota kelompok untuk melihat profil lengkap mereka.",
         tim_placeholder:    "Klik salah satu anggota kelompok pada foto untuk melihat profil lengkap.",
 
-        // ── GUESTBOOK SECTION ─────────────────────────────────
+        // â”€â”€ GUESTBOOK SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         gb_tag:             "Pesan & Saran",
         gb_title:           "Buku Tamu Interaktif",
         gb_subtitle:        "Silakan tinggalkan pesan, masukan, atau kesan bagi KKN Kelompok AA 84.095 selama di Dusun Wungurejo.",
@@ -134,11 +134,11 @@ window.KKN_LANG = {
         gb_btn_send:        "Kirim Pesan",
         gb_latest:          "Pesan Terbaru",
 
-        // ── CTA SECTION ───────────────────────────────────────
+        // â”€â”€ CTA SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         cta_title:          "Ikuti Perjalanan KKN Kami!",
         cta_desc:           "Dapatkan update terbaru seputar program kerja dan kegiatan sehari-hari kami di Dusun Wungurejo melalui Instagram dan TikTok resmi kelompok.",
 
-        // ── MAP LOCATIONS (WEBGIS) ────────────────────────────
+        // â”€â”€ MAP LOCATIONS (WEBGIS) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         map_loc_0_name: "Posko KKN 84.095",
         map_loc_0_desc: "Pusat koordinasi dan tempat tinggal mahasiswa KKN selama mengabdi.",
         map_loc_0_type: "Posko Utama",
@@ -167,14 +167,14 @@ window.KKN_LANG = {
         map_loc_8_desc: "Masjid Darussalam, pusat ibadah dan kegiatan keagamaan warga Wungurejo.",
         map_loc_8_type: "Fasilitas Ibadah",
 
-        // ── FOOTER ────────────────────────────────────────────
+        // â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         footer_loc:         "Desa Dusun Wungurejo, Pengkol, Nglipar, Gunung Kidul",
-        footer_copy:        "© 2026 KKN Kelompok AA 84.095. All Rights Reserved. Made with",
+        footer_copy:        "Â© 2026 KKN Kelompok AA 84.095. All Rights Reserved. Made with",
         footer_for:         "for Wungurejo.",
     },
 
     en: {
-        // ── NAV ──────────────────────────────────────────────
+        // â”€â”€ NAV â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         nav_home:       "Home",
         nav_profile:    "Village Profile",
         nav_umkm:       "SME E-Catalog",
@@ -185,7 +185,7 @@ window.KKN_LANG = {
         nav_team:       "Our Team",
         nav_guestbook:  "Guest Book",
 
-        // ── HERO ─────────────────────────────────────────────
+        // â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         hero_tag:       "Wungurejo, Gunungkidul (July 1 - July 31, 2026)",
         hero_title:     "We Came to Serve,",
         hero_highlight: "We Leave with Purpose",
@@ -193,12 +193,12 @@ window.KKN_LANG = {
         hero_btn_proker:"View Work Programs",
         hero_btn_desa:  "Explore the Village",
 
-        // ── HERO STATS ────────────────────────────────────────
+        // â”€â”€ HERO STATS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         stat_proker_label:  "Work Programs",
         stat_mhs_label:     "KKN Students",
         stat_hari_label:    "Service Days (Jul 1 - Jul 31)",
 
-        // ── PILLARS ───────────────────────────────────────────
+        // â”€â”€ PILLARS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         pillars_title:  "Our Core Service Focus",
         p1_title:       "Education & Literacy",
         p1_desc:        "Building the future of Wungurejo's youth through creative tutoring, early digital literacy, and providing reading corners.",
@@ -209,7 +209,7 @@ window.KKN_LANG = {
         p4_title:       "IT Adaptation & Digitalization",
         p4_desc:        "Implementing digital solutions for village administration, territorial potential mapping, and optimizing online village publications.",
 
-        // ── PROFIL SECTION ────────────────────────────────────
+        // â”€â”€ PROFIL SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         profil_tag:         "Community Profile",
         profil_title:       "Get to Know Wungurejo Better",
         profil_subtitle:    "Pengkol Village, Nglipar District, Gunungkidul Regency, D.I. Yogyakarta",
@@ -220,7 +220,7 @@ window.KKN_LANG = {
         misi_title:         "Service Mission",
         misi_desc:          "Empowering local SMEs, providing sustainable education for school-age children, and implementing community-friendly digital adaptation.",
 
-        // ── DEMOGRAFI ─────────────────────────────────────────
+        // â”€â”€ DEMOGRAFI â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         demo_title:         "Wungurejo Hamlet Demographic Data",
         demo_penduduk:      "Total Population",
         demo_kk:            "Households",
@@ -230,7 +230,7 @@ window.KKN_LANG = {
         demo_perempuan:     "Female",
         map_title:          "Wungurejo Hamlet Location Map",
 
-        // ── PROKER SECTION ────────────────────────────────────
+        // â”€â”€ PROKER SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         proker_tag:         "Action Plan",
         proker_title:       "Community Service Work Programs",
         proker_subtitle:    "KKN Group AA 84.095 program initiatives divided by implementation category.",
@@ -238,7 +238,7 @@ window.KKN_LANG = {
         filter_bersama:     "Group Programs",
         filter_individu:    "Individual Programs",
 
-        // ── UMKM SECTION ──────────────────────────────────────
+        // â”€â”€ UMKM SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         umkm_tag:           "Economic Empowerment",
         umkm_title:         "Wungurejo SME Potential E-Catalog",
         umkm_subtitle:      "Support local economic independence by purchasing authentic flagship products from the residents of Wungurejo.",
@@ -255,7 +255,7 @@ window.KKN_LANG = {
         umkm_3_desc:        "Providing quality fish seeds and ready-to-consume fish (Catfish, Tilapia) farmed by Mr. Sugino Wiryo.",
         umkm_3_price:       "Prices Vary",
 
-        // ── BLOG SECTION ──────────────────────────────────────
+        // â”€â”€ BLOG SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         blog_tag:           "News & Articles",
         blog_title:         "Stories from Wungurejo",
         blog_subtitle:      "A collection of inspiring writings, village history, and light articles from our community service.",
@@ -264,26 +264,26 @@ window.KKN_LANG = {
         blog_badge_label:   "Article",
         blog_modal_close:   "Close",
 
-        // ── LOGBOOK SECTION ───────────────────────────────────
+        // â”€â”€ LOGBOOK SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         logbook_tag:        "Daily Log",
         logbook_title:      "Timeline & Latest Activities",
-        logbook_subtitle:   "Daily documentation records of KKN AA 84.095 community service activities.",
+        logbook_subtitle:   "Daily documentation records of KKN AB 84.095 community service activities.",
         filter_all_phase:   "All Phases",
         filter_prakkn:      "Pre-KKN",
         filter_pelaksanaan: "KKN Implementation",
 
-        // ── GALLERY SECTION ───────────────────────────────────
+        // â”€â”€ GALLERY SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         gallery_tag:        "Wungurejo Charms",
         gallery_title:      "Community Service Gallery",
         gallery_subtitle:   "Portraits of natural beauty and precious moments during KKN Group AA 84.095.",
 
-        // ── TIM SECTION ───────────────────────────────────────
+        // â”€â”€ TIM SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         tim_tag:            "Group Members",
-        tim_title:          "Behind the Scenes of KKN AA 84.095",
+        tim_title:          "Behind the Scenes of KKN AB 84.095",
         tim_subtitle:       "Hover and click on a group member's photo to view their full profile.",
         tim_placeholder:    "Click on a group member in the photo to see their full profile.",
 
-        // ── GUESTBOOK SECTION ─────────────────────────────────
+        // â”€â”€ GUESTBOOK SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         gb_tag:             "Messages & Feedback",
         gb_title:           "Interactive Guest Book",
         gb_subtitle:        "Please leave a message, feedback, or impression for KKN Group AA 84.095 during our stay in Wungurejo.",
@@ -301,11 +301,11 @@ window.KKN_LANG = {
         gb_btn_send:        "Send Message",
         gb_latest:          "Latest Messages",
 
-        // ── CTA SECTION ───────────────────────────────────────
+        // â”€â”€ CTA SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         cta_title:          "Follow Our KKN Journey!",
         cta_desc:           "Get the latest updates about our work programs and daily activities in Wungurejo through our official Instagram and TikTok accounts.",
 
-        // ── MAP LOCATIONS (WEBGIS) ────────────────────────────
+        // â”€â”€ MAP LOCATIONS (WEBGIS) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         map_loc_0_name: "KKN 84.095 Basecamp",
         map_loc_0_desc: "Coordination center and residence for KKN students during service.",
         map_loc_0_type: "Main Basecamp",
@@ -334,9 +334,9 @@ window.KKN_LANG = {
         map_loc_8_desc: "Darussalam Mosque, center of worship and religious activities for Wungurejo residents.",
         map_loc_8_type: "Worship Facility",
 
-        // ── FOOTER ────────────────────────────────────────────
+        // â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         footer_loc:         "Wungurejo Hamlet, Pengkol, Nglipar, Gunung Kidul",
-        footer_copy:        "© 2026 KKN Group AA 84.095. All Rights Reserved. Made with",
+        footer_copy:        "Â© 2026 KKN Group AA 84.095. All Rights Reserved. Made with",
         footer_for:         "for Wungurejo.",
     }
 };

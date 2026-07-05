@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+﻿document.addEventListener('DOMContentLoaded', () => {
 
     // --- 0. Preloader ---
     const preloader = document.getElementById('preloader');
@@ -59,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // Update Button UI with Flags
         if (langToggleBtn) {
             if (lang === 'en') {
-                langToggleBtn.innerHTML = '<span style="opacity: 0.5; font-weight: 400;">🇮🇩 ID | </span> 🇬🇧 EN';
+                langToggleBtn.innerHTML = '<span style="opacity: 0.5; font-weight: 400;">ðŸ‡®ðŸ‡© ID | </span> ðŸ‡¬ðŸ‡§ EN';
             } else {
-                langToggleBtn.innerHTML = '🇮🇩 ID <span style="opacity: 0.5; margin: 0 4px; font-weight: 400;">| 🇬🇧 EN</span>';
+                langToggleBtn.innerHTML = 'ðŸ‡®ðŸ‡© ID <span style="opacity: 0.5; margin: 0 4px; font-weight: 400;">| ðŸ‡¬ðŸ‡§ EN</span>';
             }
         }
 
@@ -194,7 +194,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
         { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Identifikasi Kualitas Air Tanah", description_markdown: "Identifikasi kualitas air tanah dan air permukaan di wilayah Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Uji Recovery Sumur Warga", description_markdown: "Melakukan uji recovery dan analisis ketersediaan air pada sumur-sumur Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 7, type: "Proker Individu", owner_name: "Shofa’ Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
+        { id: 7, type: "Proker Individu", owner_name: "Shofaâ€™ Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
         { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Desa", description_markdown: "Membangun website profil desa, katalog UMKM, serta digitalisasi logbook KKN.", status: "Belum Mulai", image_urls: [] },
         { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: [] },
         { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Company Profile Usaha Madu", description_markdown: "Penyusunan Company Profile digital untuk meningkatkan profesionalitas Usaha Madu TBS.", status: "Belum Mulai", image_urls: [] },
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', () => {
             prokerCard.innerHTML = `
                 <div class="proker-icon-box ${iconBoxClass}"><i class="fa-solid ${icon}"></i></div>
                 <div class="proker-body">
-                    <span class="proker-tag">${proker.type} ${proker.owner_name ? `• ${proker.owner_name}` : ''}</span>
+                    <span class="proker-tag">${proker.type} ${proker.owner_name ? `â€¢ ${proker.owner_name}` : ''}</span>
                     <h3 class="proker-title">${escapeHTML(proker.title)}</h3>
                     <div class="proker-desc">${descHtml}</div>
                     <div class="proker-footer">
@@ -289,7 +289,7 @@ document.addEventListener('DOMContentLoaded', () => {
     logbookData = [
         { id: 1, phase: "Pra-KKN", date: "2026-06-15", title: "Pembekalan KKN Universitas", content_markdown: "Seluruh mahasiswa KKN mengikuti pembekalan resmi dari pihak universitas mengenai tata tertib, program kerja, dan panduan pengabdian di lapangan.", image_urls: [] },
         { id: 2, phase: "Pra-KKN", date: "2026-06-20", title: "Koordinasi Awal Kelompok", content_markdown: "Pertemuan perdana kelompok AA 84.095 untuk membahas pembagian tugas, program kerja, dan persiapan teknis sebelum berangkat ke lokasi KKN.", image_urls: [] },
-        { id: 3, phase: "Pelaksanaan KKN", date: "2026-07-01", title: "Tiba di Dusun Wungurejo", content_markdown: "Kelompok KKN AA 84.095 resmi tiba di Dusun Wungurejo dan disambut hangat oleh Bapak Dukuh serta warga setempat. Acara perkenalan dan serah terima berlangsung dengan khidmat.", image_urls: [] },
+        { id: 3, phase: "Pelaksanaan KKN", date: "2026-07-01", title: "Tiba di Dusun Wungurejo", content_markdown: "Kelompok KKN AB 84.095 resmi tiba di Dusun Wungurejo dan disambut hangat oleh Bapak Dukuh serta warga setempat. Acara perkenalan dan serah terima berlangsung dengan khidmat.", image_urls: [] },
         { id: 4, phase: "Pelaksanaan KKN", date: "2026-07-02", title: "Observasi dan Pemetaan Wilayah", content_markdown: "Tim melakukan survei keliling Dusun Wungurejo untuk memahami kondisi geografis, sosial, dan potensi UMKM yang ada sebagai dasar penyusunan program kerja.", image_urls: [] }
     ];
     // renderLogbook dipanggil di bagian startup bawah
@@ -961,7 +961,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // EDIT DATA GALERI DI SINI:
         // ================================================================
         const galleryItems = [
-            { id: 1, title: "Posko KKN AA 84.095", description: "Suasana posko kami di Dusun Wungurejo.", image_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
+            { id: 1, title: "Posko KKN AB 84.095", description: "Suasana posko kami di Dusun Wungurejo.", image_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
         ];
 
         galleryContainer.innerHTML = '';
@@ -1001,14 +1001,14 @@ document.addEventListener('DOMContentLoaded', () => {
         // EDIT DATA ARTIKEL/BLOG DI SINI:
         // ================================================================
         const blogs = [
-            { id: 1, title: "Mengenal Dusun Wungurejo: Antara Tradisi dan Potensi", content_markdown: "Dusun Wungurejo, yang berarti 'bunga yang tumbuh subur di daerah makmur', menyimpan kekayaan budaya dan potensi alam yang luar biasa. Mulai dari kesenian Reog, madu klanceng, hingga kerajinan popor kayu yang mendunia.\n\nKKN AA 84.095 hadir untuk membantu mengoptimalkan semua potensi tersebut menjadi kekuatan ekonomi dan budaya yang berkelanjutan.", thumbnail_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
+            { id: 1, title: "Mengenal Dusun Wungurejo: Antara Tradisi dan Potensi", content_markdown: "Dusun Wungurejo, yang berarti 'bunga yang tumbuh subur di daerah makmur', menyimpan kekayaan budaya dan potensi alam yang luar biasa. Mulai dari kesenian Reog, madu klanceng, hingga kerajinan popor kayu yang mendunia.\n\nKKN AB 84.095 hadir untuk membantu mengoptimalkan semua potensi tersebut menjadi kekuatan ekonomi dan budaya yang berkelanjutan.", thumbnail_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
         ];
 
         window.blogData = blogs;
         renderBlogCards(blogs);
     };
 
-    // Render blog cards — called on fetch and on language switch
+    // Render blog cards â€” called on fetch and on language switch
     const renderBlogCards = (blogs) => {
         const blogContainer = document.getElementById('blog-grid-container');
         if (!blogContainer) return;
@@ -1027,7 +1027,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         blogs.forEach(item => {
-            // Format date — respects locale of active language
+            // Format date â€” respects locale of active language
             const locale = (window.currentLang === 'en') ? 'en-US' : 'id-ID';
             const dateObj = new Date(item.date);
             const formattedDate = isNaN(dateObj.getTime()) ? item.date : dateObj.toLocaleDateString(locale, {
@@ -1142,7 +1142,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // Tambahkan Tile Layer (OpenStreetMap - 100% Gratis)
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             maxZoom: 19,
-            attribution: '© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            attribution: 'Â© <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
 
         // Buat Custom Icon untuk Marker
@@ -1193,7 +1193,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const locations = [
             {
                 name: "Posko KKN 84.095",
-                coords: [-7.874000, 110.605389], // Presisi dari 7°52'26.4"S 110°36'19.4"E
+                coords: [-7.874000, 110.605389], // Presisi dari 7Â°52'26.4"S 110Â°36'19.4"E
                 color: "#6C0820", 
                 icon: "fa-solid fa-house-user",
                 desc: "Pusat koordinasi dan tempat tinggal mahasiswa KKN selama mengabdi.",
@@ -1406,7 +1406,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 shadowBlur: 6,
                 opacityDeltaBase: 0.004,
             } : {
-                // Light mode: very subtle, warm amber dots — nearly invisible, elegant
+                // Light mode: very subtle, warm amber dots â€” nearly invisible, elegant
                 colors: ['#B8860B', '#DAA520', '#C8A000', '#A07800'],
                 opacityMin: 0.04,
                 opacityRange: 0.10,
