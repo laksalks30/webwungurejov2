@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 
 <head>
@@ -40,7 +40,7 @@
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=15">
+    <link rel="stylesheet" href="style.css?v=17">
     <!-- Chart.js for Demographics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- jsPDF for PDF Generator -->
@@ -786,7 +786,7 @@
     <!-- Multi-Language Dictionary -->
     <script src="lang.js?v=2"></script>
     <!-- App Script -->
-    <script src="app.js?v=15"></script>
+    <script src="app.js?v=17"></script>
     <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
@@ -847,7 +847,7 @@
                     class="fa-solid fa-xmark"></i></button>
         </div>
         <div class="chat-body" id="chat-body">
-            <div class="chat-msg bot-msg">Halo! 👋 Aku Mimin KKN 84.095. Ada yang bisa kubantu terkait desa Wungurejo
+            <div class="chat-msg bot-msg">Halo! ðŸ‘‹ Aku Mimin KKN 84.095. Ada yang bisa kubantu terkait desa Wungurejo
                 atau proker kami?</div>
         </div>
         <div class="chat-options">
@@ -893,13 +893,7 @@
         }
     </script>
 
-    <!-- ============================================================ -->
-    <!-- FLOATING PDF BUTTON -->
-    <!-- ============================================================ -->
-    <button id="pdf-fab" title="Buat Surat Izin PDF" aria-label="Buat Surat PDF">
-        <i class="fa-solid fa-file-pdf"></i>
-        <span>Surat Izin</span>
-    </button>
+    <!-- (Floating PDF Button Removed) -->
 
     <!-- ============================================================ -->
     <!-- PDF GENERATOR MODAL -->
@@ -1038,7 +1032,7 @@
             var doc   = new jsPDF({ unit: 'mm', format: 'a4' });
             var lm = 25, rm = 25, pw = 210 - lm - rm;
 
-            // ─── KOP SURAT ───────────────────────────────────────────
+            // â”€â”€â”€ KOP SURAT â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             doc.setDrawColor(108, 8, 32);
             doc.setLineWidth(1.5);
             doc.line(lm, 10, 210 - rm, 10);
@@ -1059,7 +1053,7 @@
             doc.setLineWidth(0.2);
             doc.line(lm, 31, 210 - rm, 31);
 
-            // ─── JUDUL ───────────────────────────────────────────────
+            // â”€â”€â”€ JUDUL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             doc.setFont('helvetica', 'bold');
             doc.setFontSize(13);
             doc.setTextColor(20, 20, 20);
@@ -1070,7 +1064,7 @@
             doc.setTextColor(80, 80, 80);
             doc.text('Nomor: ' + nomorSurat, 105, 50, { align: 'center' });
 
-            // ─── PARAGRAF PEMBUKA ────────────────────────────────────
+            // â”€â”€â”€ PARAGRAF PEMBUKA â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             var y = 62;
             doc.setFontSize(11);
             doc.setTextColor(30, 30, 30);
@@ -1079,7 +1073,7 @@
             doc.text(pembLines, lm, y);
             y += pembLines.length * 6 + 7;
 
-            // ─── DATA PEMOHON ────────────────────────────────────────
+            // â”€â”€â”€ DATA PEMOHON â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             doc.setFont('helvetica', 'bold');
             doc.text('Data Pemohon:', lm, y); y += 7;
 
@@ -1102,7 +1096,7 @@
             });
 
             y += 4;
-            // ─── KEPERLUAN ───────────────────────────────────────────
+            // â”€â”€â”€ KEPERLUAN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             doc.setFont('helvetica', 'bold');
             doc.text('Keperluan / Keterangan:', lm, y); y += 7;
             doc.setFont('helvetica', 'normal');
@@ -1112,13 +1106,13 @@
             doc.text('Tanggal Kegiatan  :  ' + tanggalStr, colLabel, y);
             y += 14;
 
-            // ─── PENUTUP ─────────────────────────────────────────────
+            // â”€â”€â”€ PENUTUP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             var penutup = 'Demikian surat ini kami buat dengan sebenar-benarnya. Atas perhatian dan izin yang diberikan, kami ucapkan terima kasih.';
             var petLines = doc.splitTextToSize(penutup, pw);
             doc.text(petLines, lm, y);
             y += petLines.length * 6 + 14;
 
-            // ─── TANDA TANGAN (2 kolom) ──────────────────────────────
+            // â”€â”€â”€ TANDA TANGAN (2 kolom) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             var tglNow  = new Date();
             var ttdDate = 'Nglipar, ' + tglNow.getDate() + ' ' + bulanArr[tglNow.getMonth()] + ' ' + tglNow.getFullYear();
 
@@ -1136,7 +1130,7 @@
             doc.text('NIK: ' + nik, lm, y);
             doc.text('NIM: ......................', 140, y);
 
-            // ─── FOOTER ──────────────────────────────────────────────
+            // â”€â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             var ph = 297;
             doc.setDrawColor(108, 8, 32);
             doc.setLineWidth(0.4);
@@ -1148,7 +1142,7 @@
                 105, ph - 13, { align: 'center' }
             );
 
-            // ─── SIMPAN ──────────────────────────────────────────────
+            // â”€â”€â”€ SIMPAN â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
             var safeNama  = nama.replace(/[^a-zA-Z0-9]/g, '_');
             var safeJudul = judulSurat.replace(/ /g, '_');
             doc.save('Surat_' + safeJudul + '_' + safeNama + '.pdf');
@@ -1158,3 +1152,4 @@
 
 </body>
 </html>
+

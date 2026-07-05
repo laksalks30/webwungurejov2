@@ -4817,4 +4817,6 @@ body.lang-switching [data-lang-ph] {
     border-color: rgba(255,255,255,0.15);
     color: #A6ADC8;
 }
-[data-theme="dark"] .pdf-btn-cancel:hover { border-color: #FF6B9D; color: #FF6B9D; }
+[data-theme="dark"] .pdf-btn-cancel:hover { border-color: #FF6B9D; color: #FF6B9D; }
+.lang-toggle-btn { white-space: nowrap !important; }
+
