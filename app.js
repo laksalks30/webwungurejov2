@@ -1484,14 +1484,70 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     };
 
+    // --- 12. SCROLLYTELLING IMPACT REPORT ---
+    const initScrollytelling = () => {
+        const container = document.getElementById('impact-report');
+        const texts = [
+            document.getElementById('scroll-text-1'),
+            document.getElementById('scroll-text-2'),
+            document.getElementById('scroll-text-3'),
+            document.getElementById('scroll-text-4')
+        ];
+        
+        if (!container || texts.some(t => !t)) return;
+
+        window.addEventListener('scroll', () => {
+            const rect = container.getBoundingClientRect();
+            // Calculate how far we've scrolled inside the container
+            // rect.top is 0 when container hits the top of viewport
+            // rect.bottom is window.innerHeight when container hits bottom of viewport
+            
+            const startScroll = 0; // The point where container top hits viewport top
+            const endScroll = container.offsetHeight - window.innerHeight; // The total scrollable distance inside container
+
+            let scrollProgress = 0;
+            if (rect.top <= 0) {
+                // We are inside the container
+                scrollProgress = Math.min(1, Math.max(0, Math.abs(rect.top) / endScroll));
+            }
+
+            // Only animate if we are in or near the container
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                const totalTexts = texts.length;
+                const segmentSize = 1 / totalTexts;
+
+                texts.forEach((text, index) => {
+                    // Center of this text's segment
+                    const segmentCenter = (index * segmentSize) + (segmentSize / 2);
+                    
+                    // How far is the current scroll from this text's center?
+                    const distance = Math.abs(scrollProgress - segmentCenter);
+                    
+                    // Convert distance to opacity (1 when exact center, 0 when outside segment)
+                    // We make the fade radius a bit smaller than segmentSize to ensure clear transitions
+                    const fadeRadius = segmentSize * 0.8;
+                    let opacity = 1 - (distance / fadeRadius);
+                    opacity = Math.max(0, Math.min(1, opacity)); // Clamp between 0 and 1
+
+                    // Scale effect (1.1 when fading out/in, 1.0 when fully visible)
+                    const scale = 0.95 + (0.05 * opacity);
+
+                    text.style.opacity = opacity;
+                    text.style.transform = `translate(-50%, -50%) scale(${scale})`;
+                });
+            }
+        });
+    };
+
     // Load static data on startup
     renderProkers('all');
     renderLogbook('all');
     fetchGallery();
     fetchBlogs();
     initWeatherDashboard();
+    initScrollytelling();
 
-    // --- 12. DEMOGRAPHICS ANIMATION (CHART & COUNTER) ---
+    // --- 13. DEMOGRAPHICS ANIMATION (CHART & COUNTER) ---
     const initDemographics = () => {
         // 1. Chart.js for Gender Ratio
         const ctx = document.getElementById('genderChart');

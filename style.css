@@ -5213,6 +5213,84 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ======================================================
+   SCROLLYTELLING IMPACT REPORT
+   ====================================================== */
+.scrolly-container {
+    height: 350vh; /* Make it super tall so user has to scroll */
+    position: relative;
+    background-color: #050505; /* Deep black for cinematic feel */
+}
+
+.scrolly-sticky {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(circle at center, #111 0%, #000 100%);
+}
+
+.scrolly-content {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 20px;
+    text-align: center;
+    perspective: 1000px;
+}
+
+.scrolly-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    width: 100%;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.1;
+    opacity: 0;
+    will-change: transform, opacity;
+    transition: opacity 0.1s ease-out, transform 0.1s ease-out;
+}
+
+.scrolly-highlight {
+    background: linear-gradient(135deg, #FF3385 0%, #FFA500 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0) translateX(-50%); }
+    40% { transform: translateY(-15px) translateX(-50%); }
+    60% { transform: translateY(-7px) translateX(-50%); }
+}
+
+@media (max-width: 768px) {
+    .scrolly-text { font-size: 2.5rem; }
+}
+
+/* ======================================================
    MOBILE NAVBAR FIX â€” compact single-row header on HP
    ====================================================== */
 @media (max-width: 768px) {
