@@ -1,4 +1,4 @@
-﻿/* Style variables representing the custom color palette */
+/* Style variables representing the custom color palette */
 :root {
     --color-primary: #FF3385;
     /* Vibrant Pink matching logo */
@@ -5032,11 +5032,15 @@ body.lang-switching [data-lang-ph] {
 
     /* Shrink logo text */
     .logo-title {
-        font-size: 0.95rem;
+        font-size: 0.82rem;
+        letter-spacing: -0.01em;
     }
 
     .logo-subtitle {
-        font-size: 0.65rem;
+        font-size: 0.58rem;
+        opacity: 0.75;
+        letter-spacing: 0.01em;
+        white-space: nowrap;
     }
 
     /* Logo area gap */
@@ -5070,8 +5074,8 @@ body.lang-switching [data-lang-ph] {
         font-size: 1.3rem;
     }
 
-    /* Hide subtitle on mobile to keep navbar single row */
-    .logo-subtitle { display: none !important; }
+    /* Show subtitle on mobile - compact & professional */
+    .logo-subtitle { display: block !important; }
 
     /* Fix content being hidden behind fixed navbar on mobile */
     /* Navbar height on mobile â‰ˆ 54px (10px*2 padding + 34px logo) */
