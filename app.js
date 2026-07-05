@@ -1519,50 +1519,68 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('scroll-text-3'),
             document.getElementById('scroll-text-4')
         ];
-        
+
         if (!container || texts.some(t => !t)) return;
 
-        window.addEventListener('scroll', () => {
-            const rect = container.getBoundingClientRect();
-            // Calculate how far we've scrolled inside the container
-            // rect.top is 0 when container hits the top of viewport
-            // rect.bottom is window.innerHeight when container hits bottom of viewport
-            
-            const startScroll = 0; // The point where container top hits viewport top
-            const endScroll = container.offsetHeight - window.innerHeight; // The total scrollable distance inside container
-
-            let scrollProgress = 0;
-            if (rect.top <= 0) {
-                // We are inside the container
-                scrollProgress = Math.min(1, Math.max(0, Math.abs(rect.top) / endScroll));
-            }
-
-            // Only animate if we are in or near the container
-            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
-                const totalTexts = texts.length;
-                const segmentSize = 1 / totalTexts;
-
-                texts.forEach((text, index) => {
-                    // Center of this text's segment
-                    const segmentCenter = (index * segmentSize) + (segmentSize / 2);
-                    
-                    // How far is the current scroll from this text's center?
-                    const distance = Math.abs(scrollProgress - segmentCenter);
-                    
-                    // Convert distance to opacity (1 when exact center, 0 when outside segment)
-                    // We make the fade radius a bit smaller than segmentSize to ensure clear transitions
-                    const fadeRadius = segmentSize * 0.8;
-                    let opacity = 1 - (distance / fadeRadius);
-                    opacity = Math.max(0, Math.min(1, opacity)); // Clamp between 0 and 1
-
-                    // Scale effect (1.1 when fading out/in, 1.0 when fully visible)
-                    const scale = 0.95 + (0.05 * opacity);
-
-                    text.style.opacity = opacity;
-                    text.style.transform = `translate(-50%, -50%) scale(${scale})`;
-                });
-            }
+        // Initialize all texts as hidden
+        texts.forEach(t => {
+            t.style.opacity = '0';
+            t.style.transform = 'translate(-50%, -50%) scale(0.9)';
         });
+
+        const updateScrolly = () => {
+            const rect = container.getBoundingClientRect();
+            const endScroll = container.offsetHeight - window.innerHeight;
+
+            // Not yet in view — hide all
+            if (rect.top > 0) {
+                texts.forEach(t => {
+                    t.style.opacity = '0';
+                    t.style.transform = 'translate(-50%, -50%) scale(0.9)';
+                });
+                return;
+            }
+
+            const scrollProgress = Math.min(1, Math.max(0, Math.abs(rect.top) / endScroll));
+            const totalTexts = texts.length;
+            const segmentSize = 1 / totalTexts;
+
+            // Which segment is currently active?
+            const activeIndex = Math.min(totalTexts - 1, Math.floor(scrollProgress / segmentSize));
+
+            texts.forEach((text, index) => {
+                let opacity = 0;
+                let scale = 0.9;
+
+                if (index === activeIndex) {
+                    // Position within this segment (0 → 1)
+                    const segStart = index * segmentSize;
+                    const posInSeg = (scrollProgress - segStart) / segmentSize;
+
+                    // Fade IN first 20%, hold 60%, fade OUT last 20%
+                    if (posInSeg < 0.2) {
+                        opacity = posInSeg / 0.2;
+                    } else if (posInSeg > 0.8) {
+                        opacity = (1 - posInSeg) / 0.2;
+                    } else {
+                        opacity = 1;
+                    }
+                    scale = 0.95 + (0.05 * opacity);
+                }
+
+                text.style.opacity = opacity;
+                text.style.transform = `translate(-50%, -50%) scale(${scale})`;
+            });
+
+            // Update progress dots
+            const dots = document.querySelectorAll('.scrolly-dot');
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === activeIndex);
+            });
+        };
+
+        window.addEventListener('scroll', updateScrolly, { passive: true });
+        updateScrolly(); // run once on load
     };
 
     // Load static data on startup
