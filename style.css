@@ -1,4 +1,4 @@
-/* Style variables representing the custom color palette */
+﻿/* Style variables representing the custom color palette */
 :root {
     --color-primary: #FF3385;
     /* Vibrant Pink matching logo */
@@ -121,7 +121,7 @@ textarea {
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     padding: 16px 24px;
     max-width: 1350px;
@@ -129,9 +129,7 @@ textarea {
 }
 
 .logo-area {
-    display: flex;
-    align-items: center;
-    gap: 12px;
+    margin-right: auto;
 }
 
 .logo-img {
@@ -1862,7 +1860,7 @@ textarea:focus {
 
 .comment-header {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     margin-bottom: 8px;
 }
@@ -1905,7 +1903,7 @@ textarea:focus {
 
 .footer-container {
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     flex-wrap: wrap;
     gap: 24px;
@@ -2163,7 +2161,7 @@ textarea:focus {
     border-radius: 24px;
     padding: 50px;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     gap: 40px;
     box-shadow: 0 20px 40px var(--color-shadow);
@@ -2200,7 +2198,7 @@ textarea:focus {
 }
 
 
-/* Instagram Button — original pink gradient */
+/* Instagram Button â€” original pink gradient */
 .btn-social-instagram {
     background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
     color: var(--color-white) !important;
@@ -2223,7 +2221,7 @@ textarea:focus {
     filter: brightness(1.08);
 }
 
-/* TikTok Button — original dark style */
+/* TikTok Button â€” original dark style */
 .btn-social-tiktok {
     background: #111111;
     color: var(--color-white) !important;
@@ -2265,7 +2263,7 @@ textarea:focus {
     color: var(--color-white);
 }
 
-/* Dark mode CTA — full redesign to premium dark glassmorphic */
+/* Dark mode CTA â€” full redesign to premium dark glassmorphic */
 [data-theme="dark"] .cta-section {
     background-color: #11111B !important;
 }
@@ -2935,7 +2933,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ================================================================
-   DARK MODE — PROFESSIONAL COMPLETE REDESIGN
+   DARK MODE â€” PROFESSIONAL COMPLETE REDESIGN
    Strategy: Override ALL color variables + explicit selectors
    ================================================================ */
 
@@ -2990,7 +2988,7 @@ body.lang-switching [data-lang-ph] {
     box-shadow: 0 0 8px rgba(255, 107, 157, 0.6);
 }
 
-/* Nav-btn (Buku Tamu pill button) in dark mode — glassmorphism */
+/* Nav-btn (Buku Tamu pill button) in dark mode â€” glassmorphism */
 [data-theme="dark"] .nav-btn {
     background: rgba(255, 107, 157, 0.12) !important;
     color: #FF9DBF !important;
@@ -3401,7 +3399,7 @@ body.lang-switching [data-lang-ph] {
     color: #6C7086 !important;
 }
 
-/* === 18. DETAILS MODAL — DARK MODE === */
+/* === 18. DETAILS MODAL â€” DARK MODE === */
 
 /* Backdrop */
 [data-theme="dark"] .custom-modal-backdrop {
@@ -3555,7 +3553,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ================================================================
-   THEME TOGGLE BUTTON — Premium Pill Style
+   THEME TOGGLE BUTTON â€” Premium Pill Style
    ================================================================ */
 .theme-toggle {
     position: relative;
@@ -3735,7 +3733,7 @@ body.lang-switching [data-lang-ph] {
 /* === END OF STYLESHEET === */
 
 /* ===================================================
-   DARK MODE ADDITIONS — Pillar Cards, Badges, Sections
+   DARK MODE ADDITIONS â€” Pillar Cards, Badges, Sections
    =================================================== */
 
 /* Pillar Cards (Fokus Utama Pengabdian) */
@@ -3883,7 +3881,7 @@ body.lang-switching [data-lang-ph] {
     color: #A6ADC8 !important;
 }
 
-/* Buttons — Dark Mode */
+/* Buttons â€” Dark Mode */
 [data-theme="dark"] .btn-primary {
     background: linear-gradient(135deg, #FF6B9D 0%, #cc2266 100%) !important;
     color: #fff !important;
@@ -4109,7 +4107,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ===================================================
-   BLOG READER MODAL — Premium Design
+   BLOG READER MODAL â€” Premium Design
    =================================================== */
 .blog-reader-overlay {
     position: fixed;
@@ -4443,7 +4441,7 @@ body.lang-switching [data-lang-ph] {
     padding: 15px 20px;
     font-weight: 700;
     display: flex;
-    justify-content: space-between;
+    
     align-items: center;
     font-size: 1.1rem;
 }
@@ -4573,7 +4571,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ======================================================
-   PDF GENERATOR — Floating Button & Modal
+   PDF GENERATOR â€” Floating Button & Modal
    ====================================================== */
 
 /* FAB Trigger Button */
@@ -4799,7 +4797,7 @@ body.lang-switching [data-lang-ph] {
 }
 .pdf-btn-generate:hover { box-shadow: 0 8px 24px rgba(108, 8, 32, 0.45); transform: translateY(-2px); }
 
-/* Dark Mode — PDF Modal */
+/* Dark Mode â€” PDF Modal */
 [data-theme="dark"] .pdf-modal { background: #1E1E2E; }
 [data-theme="dark"] .pdf-form-group label { color: #CDD6F4; }
 [data-theme="dark"] .pdf-form-group input,
@@ -4819,4 +4817,7 @@ body.lang-switching [data-lang-ph] {
 }
 [data-theme="dark"] .pdf-btn-cancel:hover { border-color: #FF6B9D; color: #FF6B9D; }
 .lang-toggle-btn { white-space: nowrap !important; }
+
+
+.header-controls { display: flex; align-items: center; gap: 8px; margin-left: 16px; }
 

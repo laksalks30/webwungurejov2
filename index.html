@@ -40,7 +40,7 @@
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=18">
+    <link rel="stylesheet" href="style.css?v=19">
     <!-- Chart.js for Demographics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- jsPDF for PDF Generator -->
@@ -68,9 +68,6 @@
                     <span class="logo-subtitle">UPN "Veteran" Yogyakarta</span>
                 </div>
             </a>
-            <button class="mobile-nav-toggle" aria-label="Toggle navigation">
-                <i class="fa-solid fa-bars"></i>
-            </button>
             <nav class="nav-menu">
                 <a href="#beranda" class="nav-link active" data-lang-key="nav_home">Beranda</a>
                 <a href="#profil" class="nav-link" data-lang-key="nav_profile">Profil Desa</a>
@@ -86,7 +83,8 @@
                     <i class="fa-solid fa-file-pdf"></i>
                     <span class="pdf-nav-label">Surat PDF</span>
                 </button>
-
+            </nav>
+            <div class="header-controls">
                 <!-- Language Toggle Button -->
                 <button id="lang-toggle" class="lang-toggle-btn" aria-label="Toggle Language">
                     <span class="lang-id">ID</span>
@@ -98,7 +96,11 @@
                 <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
                     <i class="fa-solid fa-moon"></i>
                 </button>
-            </nav>
+
+                <button class="mobile-nav-toggle" aria-label="Toggle navigation" >
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </div>
     </header>
 
@@ -786,7 +788,7 @@
     <!-- Multi-Language Dictionary -->
     <script src="lang.js?v=2"></script>
     <!-- App Script -->
-    <script src="app.js?v=18"></script>
+    <script src="app.js?v=19"></script>
     <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
@@ -1160,5 +1162,8 @@
 
 </body>
 </html>
+
+
+
 
 
