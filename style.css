@@ -5407,36 +5407,45 @@ body.lang-switching [data-lang-ph] {
 }
 
 /* ======================================================
-   GALLERY SCROLLYTELLING OVERLAY
+   GALLERY SCROLLYTELLING — CLEAN ARCHITECTURE
    ====================================================== */
 .gallery-section {
     position: relative;
+    /* no overflow:hidden so sticky can work on child */
+    padding-bottom: 0;
 }
 
-.gallery-scrolly {
+/* Trigger container: tall enough for 4 scroll segments */
+.gallery-scrolly-trigger {
+    height: 400vh; /* 100vh per text slide */
+    position: relative;
+    background: #050505;
+}
+
+/* Sticky viewport that fills the screen */
+.gallery-scrolly-sticky {
     position: sticky;
     top: 0;
     height: 100vh;
     width: 100%;
-    z-index: 10;
-    pointer-events: none; /* Let clicks pass through to gallery */
-    background: transparent;
-    align-self: start;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background: radial-gradient(ellipse at center, #0d0d1a 0%, #000 100%);
 }
 
-/* Subtle dark overlay to make text readable over photos */
-.gallery-scrolly::before {
+/* Subtle ambient glow */
+.gallery-scrolly-sticky::before {
     content: '';
     position: absolute;
     inset: 0;
-    background: radial-gradient(circle at center, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.3) 100%);
+    background:
+        radial-gradient(circle at 30% 70%, rgba(255,51,133,0.06) 0%, transparent 55%),
+        radial-gradient(circle at 70% 30%, rgba(255,165,0,0.06) 0%, transparent 55%);
     pointer-events: none;
-    transition: opacity 0.3s ease;
 }
 
-.gallery-scrolly .scrolly-text {
-    text-shadow: 0 4px 30px rgba(0,0,0,1); /* Stronger shadow for photo background */
-}
 
 
 
