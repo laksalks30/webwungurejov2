@@ -40,7 +40,7 @@
     <!-- AOS Animation CSS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css?v=40">
+    <link rel="stylesheet" href="style.css?v=41">
     <!-- Chart.js for Demographics -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- jsPDF for PDF Generator -->
@@ -557,14 +557,6 @@
 
     <!-- Gallery Section -->
     <section id="galeri" class="gallery-section section-padding page-section">
-        <div class="container container-wide">
-            <div class="section-header" data-aos="fade-up">
-                <span class="section-tag" data-lang-key="gallery_tag">Pesona Wungurejo</span>
-                <h2 class="section-title" data-lang-key="gallery_title">Galeri Pengabdian</h2>
-                <p class="section-subtitle" data-lang-key="gallery_subtitle">Potret keindahan alam dan momen berharga
-                    selama pelaksanaan KKN Kelompok AA 84.095.</p>
-            </div>
-        </div>
 
         <!-- ① Scrollytelling: dedicated 400vh container so sticky works perfectly -->
         <div id="gallery-scrolly-trigger" class="gallery-scrolly-trigger">
@@ -598,8 +590,15 @@
             </div>
         </div>
 
-        <!-- ② Masonry Gallery: sits cleanly below scrollytelling -->
+        <!-- ② Section header + Masonry Gallery: below scrollytelling -->
         <div class="container container-wide">
+            <div class="section-header" data-aos="fade-up" style="margin-top: 60px;">
+                <span class="section-tag" data-lang-key="gallery_tag">Pesona Wungurejo</span>
+                <h2 class="section-title" data-lang-key="gallery_title">Galeri Pengabdian</h2>
+                <p class="section-subtitle" data-lang-key="gallery_subtitle">Potret keindahan alam dan momen berharga
+                    selama pelaksanaan KKN Kelompok AA 84.095.</p>
+            </div>
+
             <div class="masonry-gallery" id="masonry-gallery-container">
                 <div class="loading-spinner-wrapper"
                     style="display: flex; justify-content: center; align-items: center; padding: 40px; width: 100%; grid-column: 1 / -1;">
@@ -920,7 +919,7 @@
     <!-- Multi-Language Dictionary -->
     <script src="lang.js?v=5"></script>
     <!-- App Script -->
-    <script src="app.js?v=40"></script>
+    <script src="app.js?v=41"></script>
     <!-- PWA Service Worker Registration -->
     <script>
         if ('serviceWorker' in navigator) {
