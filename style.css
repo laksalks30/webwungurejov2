@@ -5450,11 +5450,15 @@ body.lang-switching [data-lang-ph] {
     z-index: 0;
 }
 
-/* Ensure content layers sit above background */
-.gallery-scrolly-sticky .scrolly-content,
+/* Ensure content sits above the ::before background gradient */
+.gallery-scrolly-sticky .scrolly-content {
+    position: relative;
+    z-index: 5;
+}
+
+/* Dots & indicator are already position:absolute — only lift their z-index */
 .gallery-scrolly-sticky .scrolly-dots,
 .gallery-scrolly-sticky .scroll-indicator {
-    position: relative;
     z-index: 5;
 }
 
