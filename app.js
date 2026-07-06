@@ -1070,7 +1070,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // EDIT DATA GALERI DI SINI:
         // ================================================================
         const galleryItems = [
-            { id: 1, title: "Posko KKN AB 84.095", description: "Suasana posko kami di Dusun Wungurejo.", image_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" }
+            { id: 1, title: "Posko KKN AB 84.095", description: "Suasana posko kami di Dusun Wungurejo.", image_url: "assets/images/Gunung kidul.jpg", date: "2026-07-01" },
+            { id: 2, title: "Kunjungan UMKM Madu TBS", description: "Foto bersama Bapak Sutadi, pemilik UMKM Madu Klanceng TBS di Dusun Wungurejo.", image_url: "assets/GaleriUMKM/Fotobersamapaksutadimadutbs.jpeg", date: "2026-07-06" }
         ];
 
         galleryContainer.innerHTML = '';
