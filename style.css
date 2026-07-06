@@ -5252,97 +5252,32 @@ body.lang-switching [data-lang-ph] {
     text-align: center;
 }
 
-/* Particle canvas */
-.scrolly-particles-canvas {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    z-index: 0;
-    opacity: 0.5;
-}
-
-/* Top progress bar */
-.scrolly-progress-bar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 3px;
-    width: 0%;
-    background: linear-gradient(90deg, #FF3385, #FFA500);
-    z-index: 20;
-    transition: width 0.1s linear;
-    box-shadow: 0 0 12px rgba(255, 51, 133, 0.6);
-}
-
-/* Each slide card */
+/* Each slide - original centered text style */
 .scrolly-text {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, calc(-50% + 60px));
+    transform: translate(-50%, -50%) scale(0.92);
     width: 90%;
-    max-width: 700px;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: rgba(255, 255, 255, 0.95);
+    line-height: 1.2;
     opacity: 0;
-    will-change: transform, opacity, filter;
+    will-change: transform, opacity;
     pointer-events: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 8px;
-    filter: blur(12px);
-}
-
-/* Label (e.g. "Total Program Kerja") */
-.scrolly-label {
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: rgba(255, 255, 255, 0.45);
-    padding: 6px 20px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 30px;
-    backdrop-filter: blur(4px);
-    background: rgba(255,255,255,0.04);
-}
-
-/* Giant number */
-.scrolly-number {
-    font-size: 9rem;
-    font-weight: 900;
-    line-height: 1;
-    letter-spacing: -6px;
-    filter: drop-shadow(0 0 40px rgba(255, 51, 133, 0.4));
-}
-
-.scrolly-number--text {
-    font-size: 5rem;
-    letter-spacing: -2px;
-}
-
-.scrolly-plus {
-    font-size: 5rem;
-    vertical-align: super;
-    letter-spacing: 0;
-}
-
-/* Unit label (e.g. "Hari Penuh Dedikasi") */
-.scrolly-unit {
-    font-size: 1.3rem;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.7);
-    letter-spacing: 1px;
+    letter-spacing: -0.5px;
+    text-shadow: 0 4px 60px rgba(0, 0, 0, 0.9);
 }
 
 .scrolly-highlight {
-    background: linear-gradient(135deg, #FF3385 0%, #FFA500 100%);
+    background: linear-gradient(135deg, #FF3385 0%, #FF8C00 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     display: inline-block;
+    /* Subtle glow behind the gradient text */
+    filter: drop-shadow(0 0 20px rgba(255, 51, 133, 0.35));
 }
 
 /* Progress dots */
@@ -5352,19 +5287,19 @@ body.lang-switching [data-lang-ph] {
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    gap: 8px;
+    gap: 10px;
     z-index: 10;
 }
 .scrolly-dot {
-    width: 28px;
-    height: 4px;
-    border-radius: 2px;
-    background: rgba(255,255,255,0.15);
-    transition: background 0.4s ease, width 0.4s ease;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.2);
+    transition: background 0.4s ease, transform 0.4s ease, width 0.4s ease;
 }
 .scrolly-dot.active {
-    background: linear-gradient(90deg, #FF3385, #FFA500);
-    width: 44px;
+    background: #FF3385;
+    transform: scale(1.5);
 }
 
 /* Scroll cue */
@@ -5373,32 +5308,27 @@ body.lang-switching [data-lang-ph] {
     bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    color: rgba(255, 255, 255, 0.3);
+    color: rgba(255, 255, 255, 0.35);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 6px;
-    font-size: 0.65rem;
+    gap: 8px;
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    animation: bounce 2.4s ease-in-out infinite;
+    letter-spacing: 3px;
+    animation: bounce 2.2s ease-in-out infinite;
 }
 
 @keyframes bounce {
     0%, 100% { transform: translateY(0) translateX(-50%); }
-    50% { transform: translateY(-10px) translateX(-50%); }
+    50%       { transform: translateY(-8px) translateX(-50%); }
 }
 
 @media (max-width: 768px) {
-    .scrolly-number { font-size: 6rem; letter-spacing: -3px; }
-    .scrolly-number--text { font-size: 3.5rem; }
-    .scrolly-plus { font-size: 3rem; }
-    .scrolly-unit { font-size: 1rem; }
+    .scrolly-text { font-size: 2.4rem; width: 95%; }
 }
 @media (max-width: 480px) {
-    .scrolly-number { font-size: 4.5rem; letter-spacing: -2px; }
-    .scrolly-number--text { font-size: 2.5rem; }
-    .scrolly-label { font-size: 0.65rem; letter-spacing: 3px; }
+    .scrolly-text { font-size: 1.8rem; }
 }
 
 /* ======================================================
