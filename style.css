@@ -2014,7 +2014,7 @@ textarea:focus {
     }
 
     [data-theme="dark"] .nav-menu {
-        background-color: rgba(30, 30, 46, 0.98) !important;
+        background-color: rgba(8, 13, 26, 0.98) !important;
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
         box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
     }
@@ -2265,7 +2265,7 @@ textarea:focus {
 
 /* Dark mode CTA Ã¢â‚¬â€ full redesign to premium dark glassmorphic */
 [data-theme="dark"] .cta-section {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 [data-theme="dark"] .cta-container {
@@ -2340,6 +2340,139 @@ body.lang-switching [data-lang-ph] {
 /* === UMKM SECTION === */
 .umkm-section {
     background-color: var(--color-white);
+}
+
+/* === UMKM SEARCH === */
+.umkm-search-wrapper {
+    max-width: 650px;
+    margin: 0 auto 40px auto;
+    position: relative;
+    z-index: 10;
+}
+
+.umkm-search-box {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: var(--color-white);
+    border-radius: 50px;
+    border: 2px solid rgba(255, 107, 157, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.umkm-search-box:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 15px 40px rgba(255, 107, 157, 0.15);
+    transform: translateY(-2px);
+}
+
+.umkm-search-icon {
+    position: absolute;
+    left: 24px;
+    color: var(--color-primary);
+    font-size: 1.2rem;
+}
+
+.umkm-search-input {
+    width: 100%;
+    padding: 18px 50px 18px 60px;
+    border: none;
+    outline: none;
+    font-size: 1.05rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: transparent;
+    color: var(--color-dark);
+}
+
+.umkm-search-input::placeholder {
+    color: #94a3b8;
+}
+
+.umkm-search-clear {
+    position: absolute;
+    right: 18px;
+    background: rgba(255, 107, 157, 0.1);
+    border: none;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    color: var(--color-primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+
+.umkm-search-clear:hover {
+    background: var(--color-primary);
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.umkm-search-info {
+    text-align: center;
+    margin-top: 16px;
+    font-size: 0.95rem;
+    color: var(--color-text-muted);
+}
+
+.umkm-search-info .highlight {
+    color: var(--color-primary);
+    font-weight: 700;
+}
+
+.umkm-no-result {
+    display: none;
+    text-align: center;
+    padding: 60px 20px;
+    grid-column: 1 / -1;
+    background: rgba(255, 107, 157, 0.03);
+    border-radius: 20px;
+    border: 2px dashed rgba(255, 107, 157, 0.3);
+}
+
+.umkm-no-result.show {
+    display: block;
+    animation: fadeIn 0.5s ease;
+}
+
+.umkm-no-result-icon {
+    font-size: 3.5rem;
+    color: var(--color-primary-light);
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.umkm-no-result h4 {
+    font-size: 1.3rem;
+    color: var(--color-dark);
+    margin-bottom: 5px;
+}
+
+.search-hidden {
+    display: none !important;
+}
+
+/* Dark mode overrides for UMKM Search */
+[data-theme="dark"] .umkm-search-box {
+    background: var(--color-surface);
+    border-color: rgba(255, 107, 157, 0.2);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+[data-theme="dark"] .umkm-search-input {
+    color: var(--color-text);
+}
+[data-theme="dark"] .umkm-search-input::placeholder {
+    color: #64748b;
+}
+[data-theme="dark"] .umkm-no-result {
+    background: rgba(15, 23, 42, 0.5);
+    border-color: rgba(255, 107, 157, 0.2);
+}
+[data-theme="dark"] .umkm-no-result h4 {
+    color: var(--color-text);
 }
 
 .umkm-grid {
@@ -2471,7 +2604,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Dark mode UMKM overrides */
 [data-theme="dark"] .umkm-section {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 [data-theme="dark"] .btn-wa {
@@ -2492,7 +2625,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .umkm-card {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border-color: rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3) !important;
 }
@@ -2511,7 +2644,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .umkm-badge {
-    background: rgba(30, 30, 46, 0.85) !important;
+    background: rgba(15, 23, 42, 0.85) !important;
     color: #FF6B9D !important;
     border: 1px solid rgba(255, 107, 157, 0.2);
 }
@@ -2942,19 +3075,20 @@ body.lang-switching [data-lang-ph] {
     --color-primary: #FF6B9D;
     --color-primary-light: #FF9DBF;
     --color-accent: rgba(255, 107, 157, 0.12);
-    --color-bg-light: #1E1E2E;
+    --color-bg-light: #162032;
     --color-secondary: #A3D977;
     --color-dark: #CDD6F4;
     --color-text: #CDD6F4;
     --color-text-muted: #A6ADC8;
-    --color-white: #181825;
+    --color-white: #1e293b;
     --color-light-gray: #313244;
     --color-shadow: rgba(0, 0, 0, 0.6);
+    --color-surface: #162032;
 }
 
 /* === 2. BASE ELEMENTS === */
 [data-theme="dark"] body {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
     color: #CDD6F4 !important;
 }
 
@@ -2964,7 +3098,7 @@ body.lang-switching [data-lang-ph] {
 
 /* === 3. NAVBAR === */
 [data-theme="dark"] .header {
-    background-color: rgba(17, 17, 27, 0.92) !important;
+    background-color: rgba(8, 13, 26, 0.92) !important;
     backdrop-filter: blur(20px) !important;
     border-bottom: 1px solid rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5) !important;
@@ -3017,7 +3151,7 @@ body.lang-switching [data-lang-ph] {
 
 /* === 4. HERO SECTION === */
 [data-theme="dark"] .hero-section {
-    background: linear-gradient(135deg, #11111B 0%, #1E1E2E 50%, #181825 100%) !important;
+    background: linear-gradient(135deg, #080d1a 0%, #0f172a 50%, #162032 100%) !important;
 }
 
 [data-theme="dark"] .hero-overlay {
@@ -3046,7 +3180,7 @@ body.lang-switching [data-lang-ph] {
 
 /* === 5. STATS CARD (Hero) === */
 [data-theme="dark"] .hero-stats-card {
-    background-color: rgba(30, 30, 46, 0.9) !important;
+    background-color: rgba(15, 23, 42, 0.92) !important;
     border: 1px solid rgba(255, 107, 157, 0.15) !important;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5) !important;
 }
@@ -3071,12 +3205,12 @@ body.lang-switching [data-lang-ph] {
 [data-theme="dark"] .tim-section,
 [data-theme="dark"] .guestbook-section,
 [data-theme="dark"] .section-padding {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 /* Alternating dark sections */
 [data-theme="dark"] .proker-section {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
 }
 
 /* === 7. SECTION HEADERS === */
@@ -3117,7 +3251,7 @@ body.lang-switching [data-lang-ph] {
 [data-theme="dark"] .info-card,
 [data-theme="dark"] .profile-info-card,
 [data-theme="dark"] .village-info {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border-color: rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
 }
@@ -3152,7 +3286,7 @@ body.lang-switching [data-lang-ph] {
 
 [data-theme="dark"] .demo-card,
 [data-theme="dark"] .stat-card {
-    background: linear-gradient(135deg, #1E1E2E 0%, #181825 100%) !important;
+    background: linear-gradient(135deg, #162032 0%, #0f172a 100%) !important;
     border: 1px solid rgba(255, 107, 157, 0.12) !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5) !important;
 }
@@ -3171,7 +3305,7 @@ body.lang-switching [data-lang-ph] {
 
 /* === 12. PROGRAM KERJA CARDS === */
 [data-theme="dark"] .proker-card {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(205, 214, 244, 0.06) !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
 }
@@ -3204,7 +3338,7 @@ body.lang-switching [data-lang-ph] {
 /* === 13. FILTER BUTTONS === */
 [data-theme="dark"] .filter-btn,
 [data-theme="dark"] .logbook-filter-btn {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(205, 214, 244, 0.1) !important;
     color: #A6ADC8 !important;
 }
@@ -3226,7 +3360,7 @@ body.lang-switching [data-lang-ph] {
 
 /* === 14. LOGBOOK TIMELINE === */
 [data-theme="dark"] .timeline-content {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(205, 214, 244, 0.06) !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
 }
@@ -3265,7 +3399,7 @@ body.lang-switching [data-lang-ph] {
 /* === 15. TIM SECTION === */
 [data-theme="dark"] .team-detail-card,
 [data-theme="dark"] #team-detail-card {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(255, 107, 157, 0.12) !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5) !important;
 }
@@ -3295,12 +3429,12 @@ body.lang-switching [data-lang-ph] {
 
 /* === 16. GUESTBOOK SECTION === */
 [data-theme="dark"] .guestbook-section {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 [data-theme="dark"] .guestbook-form-card,
 [data-theme="dark"] .guestbook-messages-card {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.45) !important;
 }
@@ -3316,7 +3450,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .comment-card {
-    background-color: #181825 !important;
+    background-color: #1e293b !important;
     border: 1px solid rgba(205, 214, 244, 0.07) !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35) !important;
 }
@@ -3344,7 +3478,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .messages-list::-webkit-scrollbar {
-    background-color: #11111B;
+    background-color: #0f172a;
 }
 
 [data-theme="dark"] .messages-list::-webkit-scrollbar-thumb {
@@ -3354,7 +3488,7 @@ body.lang-switching [data-lang-ph] {
 /* === 17. FORM INPUTS === */
 [data-theme="dark"] .form-card,
 [data-theme="dark"] .guestbook-form-container {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
 }
@@ -3377,7 +3511,7 @@ body.lang-switching [data-lang-ph] {
 [data-theme="dark"] input[type="email"],
 [data-theme="dark"] select,
 [data-theme="dark"] textarea {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
     border: 1px solid rgba(205, 214, 244, 0.1) !important;
     color: #CDD6F4 !important;
 }
@@ -3410,7 +3544,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Modal container */
 [data-theme="dark"] .custom-modal-content {
-    background: rgba(24, 24, 37, 0.96) !important;
+    background: rgba(10, 18, 35, 0.97) !important;
     backdrop-filter: blur(24px);
     -webkit-backdrop-filter: blur(24px);
     border: 1px solid rgba(255, 107, 157, 0.15) !important;
@@ -3452,13 +3586,13 @@ body.lang-switching [data-lang-ph] {
 
 /* Modal body scroll area */
 [data-theme="dark"] .custom-modal-body {
-    scrollbar-color: #FF6B9D #1E1E2E;
+    scrollbar-color: #FF6B9D #162032;
 }
 [data-theme="dark"] .custom-modal-body::-webkit-scrollbar-thumb {
     background: #FF6B9D;
 }
 [data-theme="dark"] .custom-modal-body::-webkit-scrollbar-track {
-    background: #1E1E2E;
+    background: #162032;
 }
 
 /* Markdown content text */
@@ -3499,7 +3633,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Carousel area */
 [data-theme="dark"] .carousel-container {
-    background: #13131f !important;
+    background: #0c1525 !important;
     border-radius: 16px;
     border: 1px solid rgba(205, 214, 244, 0.06) !important;
 }
@@ -3538,7 +3672,7 @@ body.lang-switching [data-lang-ph] {
 [data-theme="dark"] .map-section,
 [data-theme="dark"] .map-wrapper,
 [data-theme="dark"] .map-container {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(255, 107, 157, 0.1) !important;
     border-radius: var(--border-radius) !important;
     overflow: hidden;
@@ -3548,7 +3682,7 @@ body.lang-switching [data-lang-ph] {
 [data-theme="dark"] footer,
 [data-theme="dark"] .footer,
 [data-theme="dark"] .site-footer {
-    background-color: #0D0D17 !important;
+    background-color: #060c18 !important;
     border-top: 1px solid rgba(255, 107, 157, 0.1) !important;
 }
 
@@ -3583,7 +3717,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .theme-toggle {
-    background: linear-gradient(135deg, #1E1E2E, #313244);
+    background: linear-gradient(135deg, #162032, #313244);
     color: #CDD6F4;
     border: 1.5px solid rgba(205, 214, 244, 0.12);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -3630,7 +3764,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .lang-toggle-btn {
-    background: linear-gradient(135deg, #1E1E2E, #313244);
+    background: linear-gradient(135deg, #162032, #313244);
     color: #CDD6F4;
     border: 1.5px solid rgba(205, 214, 244, 0.12);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
@@ -3721,7 +3855,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Dark mode overrides for gallery */
 [data-theme="dark"] .gallery-item {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border-color: rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3) !important;
 }
@@ -3738,7 +3872,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Pillar Cards (Fokus Utama Pengabdian) */
 [data-theme="dark"] .pillar-card {
-    background: linear-gradient(135deg, #1E1E2E 0%, #181825 100%) !important;
+    background: linear-gradient(135deg, #162032 0%, #0f172a 100%) !important;
     border: 1px solid rgba(255, 107, 157, 0.12) !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4) !important;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1) !important;
@@ -3790,7 +3924,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Section Backgrounds */
 [data-theme="dark"] .profile-section {
-    background-color: #181825 !important;
+    background-color: #1e293b !important;
 }
 
 /* Profile Text Fixes */
@@ -3806,7 +3940,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Visual Card Fixes */
 [data-theme="dark"] .visual-card {
-    background-color: rgba(30, 30, 46, 0.6) !important;
+    background-color: rgba(15, 23, 42, 0.6) !important;
     border-color: rgba(255, 107, 157, 0.2) !important;
 }
 [data-theme="dark"] .visual-img-placeholder {
@@ -3815,14 +3949,14 @@ body.lang-switching [data-lang-ph] {
     color: #A6ADC8 !important;
 }
 [data-theme="dark"] .visual-badge {
-    background-color: rgba(30, 30, 46, 0.9) !important;
+    background-color: rgba(15, 23, 42, 0.92) !important;
     border-color: rgba(255, 107, 157, 0.2) !important;
     color: #CDD6F4 !important;
 }
 
 /* Demographics Dark Mode */
 [data-theme="dark"] .demo-box {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border-color: rgba(255, 107, 157, 0.1) !important;
     box-shadow: 0 10px 30px rgba(0,0,0,0.2) !important;
 }
@@ -3847,15 +3981,15 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .logbook-section {
-    background-color: #181825 !important;
+    background-color: #1e293b !important;
 }
 
 [data-theme="dark"] .team-section {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
 }
 
 [data-theme="dark"] .vm-card {
-    background: linear-gradient(135deg, #1E1E2E 0%, #181825 100%) !important;
+    background: linear-gradient(135deg, #162032 0%, #0f172a 100%) !important;
     border-left-color: #FF6B9D !important;
 }
 
@@ -3921,13 +4055,13 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .preloader {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 /* Scrollbar */
 [data-theme="dark"] ::-webkit-scrollbar {
     width: 8px;
-    background-color: #11111B;
+    background-color: #0f172a;
 }
 
 [data-theme="dark"] ::-webkit-scrollbar-thumb {
@@ -3946,17 +4080,17 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .leaflet-popup-content-wrapper {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border: 1px solid rgba(255, 107, 157, 0.2) !important;
     color: #CDD6F4 !important;
 }
 
 [data-theme="dark"] .leaflet-popup-tip {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
 }
 
 [data-theme="dark"] .leaflet-control-zoom a {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     color: #CDD6F4 !important;
     border-color: rgba(255, 107, 157, 0.2) !important;
 }
@@ -4079,11 +4213,11 @@ body.lang-switching [data-lang-ph] {
 
 /* Dark mode Blog */
 [data-theme="dark"] .blog-section {
-    background-color: #11111B !important;
+    background-color: #0f172a !important;
 }
 
 [data-theme="dark"] .blog-card {
-    background-color: #1E1E2E !important;
+    background-color: #162032 !important;
     border-color: rgba(255, 107, 157, 0.1) !important;
 }
 
@@ -4101,7 +4235,7 @@ body.lang-switching [data-lang-ph] {
 }
 
 [data-theme="dark"] .blog-date {
-    background: rgba(30, 30, 46, 0.9) !important;
+    background: rgba(15, 23, 42, 0.9) !important;
     color: #FF6B9D !important;
     border: 1px solid rgba(255, 107, 157, 0.2);
 }
@@ -4352,7 +4486,7 @@ body.lang-switching [data-lang-ph] {
 
 /* ===== DARK MODE ===== */
 [data-theme="dark"] .blog-reader-container {
-    background: #1E1E2E;
+    background: #162032;
     box-shadow: 0 32px 80px rgba(0, 0, 0, 0.6);
 }
 
@@ -4512,18 +4646,18 @@ body.lang-switching [data-lang-ph] {
 
 /* Dark mode overrides for chat */
 [data-theme="dark"] .chat-widget {
-    background: #1E1E2E;
+    background: #162032;
     border-color: rgba(255,255,255,0.1);
 }
 [data-theme="dark"] .chat-body {
-    background: #181825;
+    background: #1e293b;
 }
 [data-theme="dark"] .bot-msg {
     background: #313244;
     color: #CDD6F4;
 }
 [data-theme="dark"] .chat-options {
-    background: #1E1E2E;
+    background: #162032;
     border-top-color: #313244;
 }
 
@@ -4798,12 +4932,12 @@ body.lang-switching [data-lang-ph] {
 .pdf-btn-generate:hover { box-shadow: 0 8px 24px rgba(108, 8, 32, 0.45); transform: translateY(-2px); }
 
 /* Dark Mode Ã¢â‚¬â€ PDF Modal */
-[data-theme="dark"] .pdf-modal { background: #1E1E2E; }
+[data-theme="dark"] .pdf-modal { background: #162032; }
 [data-theme="dark"] .pdf-form-group label { color: #CDD6F4; }
 [data-theme="dark"] .pdf-form-group input,
 [data-theme="dark"] .pdf-form-group select,
 [data-theme="dark"] .pdf-form-group textarea {
-    background: #181825;
+    background: #1e293b;
     color: #CDD6F4;
     border-color: rgba(255, 107, 157, 0.2);
 }
@@ -4993,12 +5127,12 @@ body.lang-switching [data-lang-ph] {
 .pdf-btn-generate:hover { box-shadow: 0 8px 24px rgba(108, 8, 32, 0.45); transform: translateY(-2px); }
 
 /* Dark Mode Ã¢â‚¬â€ PDF Modal */
-[data-theme="dark"] .pdf-modal { background: #1E1E2E; }
+[data-theme="dark"] .pdf-modal { background: #162032; }
 [data-theme="dark"] .pdf-form-group label { color: #CDD6F4; }
 [data-theme="dark"] .pdf-form-group input,
 [data-theme="dark"] .pdf-form-group select,
 [data-theme="dark"] .pdf-form-group textarea {
-    background: #181825;
+    background: #1e293b;
     color: #CDD6F4;
     border-color: rgba(255, 107, 157, 0.2);
 }
@@ -5124,7 +5258,7 @@ body.lang-switching [data-lang-ph] {
 
 /* Dark mode support */
 [data-theme="dark"] .umkm-modal-box { background: var(--color-surface); }
-[data-theme="dark"] .umkm-gallery-thumbs { background: #11111B; }
+[data-theme="dark"] .umkm-gallery-thumbs { background: #0f172a; }
 
 /* ======================================================
    WEATHER DASHBOARD

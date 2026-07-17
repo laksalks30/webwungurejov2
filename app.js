@@ -203,8 +203,8 @@ document.addEventListener('DOMContentLoaded', () => {
             owner: "Peternak: Usaha Madu TBS (Bapak Sutadi) — Dusun Wungurejo",
             desc: "Madu klanceng murni 100% tanpa campuran, dipanen langsung dari koloni lebah tanpa sengat (Trigona sp.) yang diternakkan di alam asri Dusun Wungurejo. Kaya akan antioksidan, vitamin, dan mineral alami. Berkhasiat untuk meningkatkan imun tubuh, menyembuhkan luka, dan menjaga kesehatan secara holistik. Dalam galeri terdapat momen kunjungan kami dan foto bersama Bapak Sutadi selaku pemilik Usaha Madu TBS.",
             images: ["assets/images/umkm_madu.png", "assets/GaleriUMKM/Fotobersamapaksutadimadutbs.jpeg"],
-            waLink: "https://wa.me/6281234567890?text=Halo%2C%20saya%20mau%20pesan%20Madu%20Klanceng%20asli%20Wungurejo.%20Apakah%20stoknya%20ready%3F",
-            mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.605389!3d-7.874000!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInMjYuNCJTIDExMMKwMzYnMTkuNCJF!5e0!3m2!1sid!2sid!4v1000000000001!5m2!1sid!2sid"
+            waLink: "https://wa.me/6281804093906?text=Halo%20Madu%20Klanceng%20Murni%20%28TBS%29",
+            mapSrc: "https://maps.app.goo.gl/vjDa8UGaf69wPBEi6?g_st=ic"
         },
         3: {
             name: "Bibit & Konsumsi Ikan Air Tawar",
@@ -215,6 +215,268 @@ document.addEventListener('DOMContentLoaded', () => {
             images: ["assets/images/umkm_ikan.png"],
             waLink: "https://wa.me/6281234567890?text=Halo%20Bapak%20Sugino%2C%20saya%20tertarik%20dengan%20hasil%20perikanannya.%20Bisa%20tanya%20stok%20yang%20ready%3F",
             mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.60831684355774!3d-7.879900709814317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInNDcuNiJTIDExMMKwMzYnMzAuMCJF!5e0!3m2!1sid!2sid!4v1000000000002!5m2!1sid!2sid"
+        },
+        4: {
+            name: "Kripik Singkong & Kripik Pisang Ibu Anik",
+            badge: "Olahan Pangan",
+            price: "Harga Bervariasi",
+            owner: "Peternak/Pembuat: Ibu Anik — Dusun Wungurejo",
+            desc: "Menyediakan olahan hasil bumi berupa kripik singkong dan kripik pisang yang renyah dan gurih. Diproduksi dari bahan baku segar pilihan dan diolah dengan bumbu rahasia yang menggugah selera. Cocok untuk camilan santai keluarga maupun oleh-oleh khas Wungurejo.",
+            images: [
+                "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0554.JPG",
+                "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0555.JPG",
+                "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0557.JPG",
+                "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0558.JPG",
+                "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0559.JPG"
+            ],
+            waLink: "https://wa.me/62882005973468?text=Halo%20Ibu%20Anik%2C%20saya%20ingin%20bertanya%20tentang%20Kripik",
+            mapSrc: "https://maps.app.goo.gl/bTx3yPihw3cb3hzy6?g_st=ic"
+        },
+        5: {
+            name: "Jahe Instan KWT Ngudi Makmur",
+            badge: "Minuman Herbal",
+            price: "Harga Bervariasi",
+            owner: "KWT Ngudi Makmur — Dusun Wungurejo",
+            desc: "Minuman serbuk jahe instan yang praktis dan menyehatkan produksi Kelompok Wanita Tani (KWT) Ngudi Makmur. Dibuat dari jahe pilihan berkualitas tinggi dengan pemrosesan higienis. Sangat cocok untuk menghangatkan badan dan menjaga daya tahan tubuh.",
+            images: [
+                "assets/KatalogUMKM/RT01/Jahe_instant_KWT_Ngudi_Makmur/IMG_0551.JPG",
+                "assets/KatalogUMKM/RT01/Jahe_instant_KWT_Ngudi_Makmur/IMG_0552.JPG",
+                "assets/KatalogUMKM/RT01/Jahe_instant_KWT_Ngudi_Makmur/IMG_0553.JPG",
+                "assets/KatalogUMKM/RT01/Jahe_instant_KWT_Ngudi_Makmur/IMG_0559.JPG"
+            ],
+            waLink: "https://wa.me/62882005973468?text=Halo%20KWT%20Ngudi%20Makmur%2C%20saya%20ingin%20bertanya%20tentang%20Jahe%20Instant",
+            mapSrc: "https://maps.app.goo.gl/s2JxcV9jzKaBdMvk9?g_st=ic"
+        },
+        6: {
+            name: "Duwisty Snack",
+            badge: "Olahan Pangan",
+            price: "Harga Bervariasi",
+            owner: "Duwisty Snack — Dusun Wungurejo",
+            desc: "Menyediakan aneka camilan ringan (snack) berkualitas dengan rasa yang lezat dan harga terjangkau. Diproduksi dengan bahan-bahan pilihan yang aman dikonsumsi. Sangat cocok sebagai teman bersantai, hidangan tamu, maupun oleh-oleh khas.",
+            images: [
+                "assets/KatalogUMKM/RT02/Duwisty_Snack/IMG_0520.JPG",
+                "assets/KatalogUMKM/RT02/Duwisty_Snack/IMG_0521.JPG",
+                "assets/KatalogUMKM/RT02/Duwisty_Snack/IMG_0550.JPG"
+            ],
+            waLink: "https://wa.me/6282111587174?text=Halo%20Duwisty%20Snack",
+            mapSrc: "https://maps.app.goo.gl/BUq1EjmqaenaDfkM9?g_st=ic"
+        },
+        7: {
+            name: "Hikmah Bakery",
+            badge: "Olahan Pangan",
+            price: "Harga Bervariasi",
+            owner: "Hikmah Bakery — Dusun Wungurejo",
+            desc: "Menyediakan aneka roti dan kue (bakery) segar dengan cita rasa lezat dan tekstur lembut. Diproduksi setiap hari menggunakan bahan-bahan berkualitas tanpa bahan pengawet berlebih. Pilihan tepat untuk sarapan, bekal, maupun suguhan acara.",
+            images: [
+                "assets/KatalogUMKM/RT02/Hikmah_Bakery/IMG_0525.JPG"
+            ],
+            waLink: "https://wa.me/6282122815553?text=Halo%20Hikmah%20Bakery",
+            mapSrc: "https://maps.app.goo.gl/VCmwcT9pXiWBwfkdA?g_st=ic"
+        },
+        8: {
+            name: "Warung Ibu Umi",
+            badge: "Toko Kelontong",
+            price: "Harga Bervariasi",
+            owner: "Ibu Umi — Dusun Wungurejo",
+            desc: "Toko kelontong milik Ibu Umi yang menyediakan berbagai kebutuhan sehari-hari warga Dusun Wungurejo. Tersedia aneka sembako, bumbu masak, minuman, dan keperluan rumah tangga lainnya dengan harga yang terjangkau dan pelayanan yang ramah.",
+            images: [
+                "assets/KatalogUMKM/RT02/Warung_Ibu_Umi/IMG_0548.JPG",
+                "assets/KatalogUMKM/RT02/Warung_Ibu_Umi/IMG_0549.JPG"
+            ],
+            waLink: "https://wa.me/6281329358918?text=Halo%20Warung%20Ibu%20Umi",
+            mapSrc: "https://maps.app.goo.gl/wjxJcbmp4oP2xEiz5?g_st=ic"
+        },
+        9: {
+            name: "Meubel Pak Wasimin",
+            badge: "Kerajinan Kayu",
+            price: "Harga Bervariasi",
+            owner: "Pak Wasimin — Dusun Wungurejo",
+            desc: "Usaha meubel milik Pak Wasimin yang memproduksi berbagai perabot dan furnitur kayu berkualitas tinggi. Mengerjakan berbagai pesanan mulai dari meja, kursi, lemari, hingga perabot rumah tangga lainnya. Dibuat dengan bahan kayu pilihan dan pengerjaan yang teliti oleh tenaga ahli berpengalaman.",
+            images: [
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Wasimin/IMG_0527.JPG",
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Wasimin/IMG_0528.JPG",
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Wasimin/IMG_0529.JPG",
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Wasimin/IMG_0563.JPG"
+            ],
+            waLink: "https://wa.me/6281904709013?text=Halo%20Meubel%20Pak%20Wasimin",
+            mapSrc: "https://maps.app.goo.gl/jjsjjnjGZinftVju8?g_st=ic"
+        },
+        10: {
+            name: "Meubel Pak Puryanto",
+            badge: "Kerajinan Kayu",
+            price: "Harga Bervariasi",
+            owner: "Pak Puryanto — Dusun Wungurejo",
+            desc: "Usaha meubel milik Pak Puryanto yang memproduksi berbagai perabot dan furnitur kayu berkualitas. Melayani pesanan berbagai jenis furniture seperti meja, kursi, lemari, dan perabot lainnya sesuai kebutuhan pelanggan. Dikerjakan dengan ketelitian tinggi menggunakan kayu pilihan.",
+            images: [
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Puryanto/IMG_0530.JPG",
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Puryanto/IMG_0531.JPG",
+                "assets/KatalogUMKM/RT03/Meubel_Pak_Puryanto/IMG_0532.JPG"
+            ],
+            waLink: "https://wa.me/6281289243969?text=Halo%20Meubel%20Pak%20Puryanto",
+            mapSrc: "https://maps.app.goo.gl/9JuhCLDKVf49oKbQ7?g_st=ic"
+        },
+        11: {
+            name: "Pecel Mbah Tini",
+            badge: "Kuliner Lokal",
+            price: "Harga Bervariasi",
+            owner: "Mbah Tini — Dusun Wungurejo",
+            desc: "Menyediakan sego pecel khas dengan bumbu kacang gurih dan sayuran segar. Resep turun temurun yang sudah menjadi favorit masyarakat setempat. Sangat pas untuk menu sarapan yang sehat dan mengenyangkan.",
+            images: [
+                "assets/KatalogUMKM/RT03/Pecel_Mbah_Tini/IMG_0562.JPG"
+            ],
+            waLink: "https://wa.me/6283845121303?text=Halo%20Pecel%20Mbah%20Tini",
+            mapSrc: "https://maps.app.goo.gl/fEsKbsa8wR1J88Au9?g_st=ic"
+        },
+        12: {
+            name: "Tikar Mendong Mbah Tuminem",
+            badge: "Kerajinan Tangan",
+            price: "Harga Bervariasi",
+            owner: "Mbah Tuminem — Dusun Wungurejo",
+            desc: "Pengrajin tikar mendong tradisional asli Dusun Wungurejo. Tikar anyaman tangan yang dibuat dengan ketelitian dan bahan mendong berkualitas, menghasilkan produk yang awet, nyaman digunakan, dan ramah lingkungan. Cocok untuk alas duduk santai di rumah tangga.",
+            images: [
+                "assets/KatalogUMKM/RT03/Tikar_Mendong_Mbah_Tuminem/IMG_0526.JPG",
+                "assets/KatalogUMKM/RT03/Tikar_Mendong_Mbah_Tuminem/IMG_0533.JPG",
+                "assets/KatalogUMKM/RT03/Tikar_Mendong_Mbah_Tuminem/IMG_0534.JPG",
+                "assets/KatalogUMKM/RT03/Tikar_Mendong_Mbah_Tuminem/IMG_0561.JPG"
+            ],
+            waLink: "https://wa.me/628818786473?text=Halo%20Mbah%20Tuminem%2C%20saya%20tertarik%20dengan%20Tikar%20Mendong",
+            mapSrc: "https://maps.app.goo.gl/BbimRVtqb6RSjUdeA?g_st=ic"
+        },
+        13: {
+            name: "Bengkel AB SQUAD",
+            badge: "Jasa Servis",
+            price: "Sesuai Kerusakan",
+            owner: "AB SQUAD — Dusun Wungurejo",
+            desc: "Bengkel terpercaya di Dusun Wungurejo yang melayani servis kendaraan roda dua maupun roda empat. Layanan meliputi servis rutin, perbaikan mesin, ganti oli, tune up, dan berbagai masalah kendaraan motor maupun mobil lainnya. Dikerjakan oleh mekanik handal dengan pelayanan yang cepat dan memuaskan.",
+            images: [
+                "assets/KatalogUMKM/RT03/Bengkel_AB_SQUAD/IMG_0535.JPG?v=3",
+                "assets/KatalogUMKM/RT03/Bengkel_AB_SQUAD/IMG_0536.JPG?v=3"
+            ],
+            waLink: "https://wa.me/6288233955479?text=Halo%20Bengkel%20AB%20SQUAD",
+            mapSrc: "https://maps.app.goo.gl/bro6fJdKdUNFYSdw7?g_st=ic"
+        },
+        14: {
+            name: "Bengkel Fergi",
+            badge: "Jasa Servis Mobil",
+            price: "Sesuai Kerusakan",
+            owner: "Fergi — RT 04, Dusun Wungurejo",
+            desc: "Bengkel spesialis kendaraan roda empat di Dusun Wungurejo. Melayani servis rutin, perbaikan mesin mobil, tune up, ganti oli, serta berbagai kerusakan kendaraan roda empat lainnya. Dikerjakan oleh tenaga ahli berpengalaman dengan hasil kerja yang teliti dan terpercaya.",
+            images: [
+                "assets/KatalogUMKM/RT04/Fergi_Bengkel/IMG_0477.JPG?v=2",
+                "assets/KatalogUMKM/RT04/Fergi_Bengkel/IMG_0478.JPG?v=2",
+                "assets/KatalogUMKM/RT04/Fergi_Bengkel/IMG_0491.JPG?v=2"
+            ],
+            waLink: "https://wa.me/6287839154457?text=Halo%20Bengkel%20Fergi",
+            mapSrc: "https://maps.app.goo.gl/GhXC9YrVmBDmCYyd6?g_st=ic"
+        },
+        15: {
+            name: "Warung Sayur Ibu Wacik",
+            badge: "Warung Sayur",
+            price: "Harga Bervariasi",
+            owner: "Ibu Wacik — RT 04, Dusun Wungurejo",
+            desc: "Menyediakan berbagai macam sayuran segar, bumbu dapur, dan kebutuhan pokok harian. Warung sayur Ibu Wacik menjadi pilihan warga untuk mendapatkan bahan makanan segar setiap harinya.",
+            images: [
+                "assets/KatalogUMKM/RT04/Ibu_Wacik_Sayur/IMG_0544.JPG"
+            ],
+            waLink: "https://wa.me/62882007544905?text=Halo%20Warung%20Sayur%20Ibu%20Wacik",
+            mapSrc: "https://maps.app.goo.gl/C4r77RhGJhoBG6GF8?g_st=ic"
+        },
+        16: {
+            name: "FFS Ternak Ayam Petelur",
+            badge: "Hasil Peternakan",
+            price: "Harga Bervariasi",
+            owner: "Fam Fergi Sabriansyah — RT 04, Dusun Wungurejo",
+            desc: "Peternakan ayam petelur berkualitas yang menghasilkan telur segar setiap harinya. Telur ayam diproduksi dengan pakan ternak terbaik untuk menjaga kualitas dan nilai gizi yang tinggi.",
+            images: [
+                "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0522.JPG",
+                "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0523.JPG",
+                "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0524.JPG",
+                "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0545.JPG",
+                "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0547.JPG"
+            ],
+            waLink: "https://wa.me/6283846375523?text=Halo%20FFS%20Ternak%20Ayam%20Petelur",
+            mapSrc: "https://maps.app.goo.gl/dWqipGcYV5zQD9n76?g_st=ic"
+        },
+        17: {
+            name: "Jual Beli Kambing Pak Sutikno",
+            badge: "Hasil Peternakan",
+            price: "Harga Bervariasi",
+            owner: "Pak Sutikno — RT 04, Dusun Wungurejo",
+            desc: "Melayani jual beli kambing berkualitas untuk berbagai keperluan seperti aqiqah, qurban, maupun ternak. Kambing sehat, terawat, dan pakan terjamin.",
+            images: [
+                "assets/KatalogUMKM/RT04/Jual_Beli_Kambing_Pak_Sutikno/IMG_0483.JPG",
+                "assets/KatalogUMKM/RT04/Jual_Beli_Kambing_Pak_Sutikno/IMG_0542.JPG"
+            ],
+            waLink: "https://wa.me/6281802655336?text=Halo%20Pak%20Sutikno%2C%20saya%20tertarik%20dengan%20kambingnya",
+            mapSrc: "#"
+        },
+        18: {
+            name: "Penanam Cabai Mas Rida",
+            badge: "Hasil Pertanian",
+            price: "Harga Bervariasi",
+            owner: "Mas Rida — RT 04, Dusun Wungurejo",
+            desc: "Hasil panen cabai berkualitas langsung dari kebun Mas Rida. Cabai segar, pedas mantap, dan ditanam dengan perawatan yang baik untuk menghasilkan panen yang optimal.",
+            images: [
+                "assets/KatalogUMKM/RT04/Penanam_Cabai_Mas_Rida/IMG_0541.JPG"
+            ],
+            waLink: "https://wa.me/6285946686947?text=Halo%20Mas%20Rida%2C%20saya%20tertarik%20dengan%20cabai",
+            mapSrc: "https://maps.app.goo.gl/3ERJt6r1bG8TwogG6?g_st=ic"
+        },
+        19: {
+            name: "Anyaman Tikar Mendong Ibu Sugiyanto",
+            badge: "Kerajinan Tangan",
+            price: "Harga Bervariasi",
+            owner: "Ibu Sugiyanto — RT 06, Dusun Wungurejo",
+            desc: "Kerajinan anyaman tikar berbahan dasar mendong yang ditenun secara tradisional oleh Ibu Sugiyanto. Tikar mendong memiliki keunggulan sejuk saat digunakan, kuat, dan ramah lingkungan.",
+            images: [
+                "assets/KatalogUMKM/RT06/Anyaman_Tikar_Mendong_Ibu_Sugiyanto/IMG_0516.JPG",
+                "assets/KatalogUMKM/RT06/Anyaman_Tikar_Mendong_Ibu_Sugiyanto/IMG_0537.JPG",
+                "assets/KatalogUMKM/RT06/Anyaman_Tikar_Mendong_Ibu_Sugiyanto/IMG_0538.JPG"
+            ],
+            waLink: "https://wa.me/6283846618593?text=Halo%20Ibu%20Sugiyanto%2C%20saya%20tertarik%20dengan%20Anyaman%20Tikar%20Mendong",
+            mapSrc: "https://maps.app.goo.gl/4RPWGhGvmCjV3o248?g_st=ic"
+        },
+        20: {
+            name: "Cilok Pak Ngatijo",
+            badge: "Kuliner Lokal",
+            price: "Mulai dari Rp 5.000",
+            owner: "Pak Ngatijo — RT 05, Dusun Wungurejo",
+            desc: "Jajanan cilok khas buatan Pak Ngatijo yang kenyal, gurih, dan lezat. Disajikan hangat dengan bumbu kacang spesial yang menggugah selera. Cocok untuk camilan santai keluarga.",
+            images: [
+                "assets/KatalogUMKM/RT05/Ngatijo_Cilok/IMG_0539.JPG",
+                "assets/KatalogUMKM/RT05/Ngatijo_Cilok/IMG_0540.JPG"
+            ],
+            waLink: "#",
+            mapSrc: "#"
+        },
+        21: {
+            name: "Toko Qutis",
+            badge: "Toko Kelontong",
+            price: "Harga Terjangkau",
+            owner: "Pemilik — RT 03, Dusun Wungurejo",
+            desc: "Menyediakan berbagai macam kebutuhan pokok dan sehari-hari dengan harga terjangkau. [Silakan isi deskripsi lengkap di sini atau kirimkan via chat agar saya dapat memperbaruinya].",
+            images: [
+                "assets/KatalogUMKM/RT03/Toko_Qutis/IMG_0771.JPG",
+                "assets/KatalogUMKM/RT03/Toko_Qutis/IMG_0774.JPG",
+                "assets/KatalogUMKM/RT03/Toko_Qutis/IMG_0775.JPG",
+                "assets/KatalogUMKM/RT03/Toko_Qutis/IMG_0776.JPG"
+            ],
+            waLink: "https://wa.me/6283843734543?text=Halo%20Toko%20Qutis",
+            mapSrc: "https://maps.app.goo.gl/bq8tUBsfZj739Ut57?g_st=ic"
+        },
+        22: {
+            name: "Brigaz Sablon",
+            badge: "Jasa & Layanan",
+            price: "Harga Bervariasi",
+            owner: "Pemilik — RT 04, Dusun Wungurejo",
+            desc: "Melayani jasa sablon berkualitas untuk kaos, jaket, seragam, dan kebutuhan lainnya. [Silakan isi deskripsi lengkap di sini atau kirimkan via chat agar saya dapat memperbaruinya].",
+            images: [
+                "assets/KatalogUMKM/RT04/Brigaz_Sablon/IMG_0770.JPG?v=5",
+                "assets/KatalogUMKM/RT04/Brigaz_Sablon/IMG_0772.JPG?v=5",
+                "assets/KatalogUMKM/RT04/Brigaz_Sablon/IMG_0773.JPG?v=5"
+            ],
+            waLink: "https://wa.me/6287878455546?text=Halo%20Brigaz%20Sablon",
+            mapSrc: "https://maps.app.goo.gl/PMUTfDzucc1977Ns7?g_st=ic"
         }
     };
 
@@ -239,6 +501,14 @@ document.addEventListener('DOMContentLoaded', () => {
             // Main image
             const mainImg = document.getElementById('umkm-modal-main-img');
             mainImg.src = data.images[0];
+            
+            // Add zoom interaction to main image
+            mainImg.style.cursor = 'zoom-in';
+            mainImg.onclick = () => {
+                if(typeof window.openLightbox === 'function') {
+                    window.openLightbox(mainImg.src);
+                }
+            };
 
             // Thumbnails
             const thumbsContainer = document.getElementById('umkm-gallery-thumbs');
@@ -262,7 +532,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             // Google Maps
-            document.getElementById('umkm-modal-map').src = data.mapSrc;
+            const mapEl = document.getElementById('umkm-modal-map');
+        if (data.mapSrc && data.mapSrc !== "#") {
+            mapEl.href = data.mapSrc;
+            mapEl.style.display = 'block';
+        } else {
+            mapEl.style.display = 'none';
+        }
 
             // Open modal
             overlay.classList.add('active');
@@ -273,7 +549,7 @@ document.addEventListener('DOMContentLoaded', () => {
             overlay.classList.remove('active');
             document.body.style.overflow = '';
             // Clear iframe src to stop map loading in bg
-            setTimeout(() => { document.getElementById('umkm-modal-map').src = ''; }, 300);
+            setTimeout(() => { document.getElementById('umkm-modal-map').href = '#'; }, 300);
         }
 
         // Bind clicks on UMKM cards
@@ -290,6 +566,79 @@ document.addEventListener('DOMContentLoaded', () => {
     })();
 
     // ================================================================
+    // UMKM SEARCH LOGIC
+    // ================================================================
+    (function () {
+        const searchInput  = document.getElementById('umkm-search-input');
+        const searchClear  = document.getElementById('umkm-search-clear');
+        const searchInfo   = document.getElementById('umkm-search-info');
+        const noResult     = document.getElementById('umkm-no-result');
+        if (!searchInput) return;
+
+        // Kumpulkan data searchable dari umkmData
+        // Setiap card punya data-umkm-id; kita ambil name + badge + desc untuk matching
+        function getSearchText(id) {
+            const d = umkmData[id];
+            if (!d) return '';
+            return [d.name, d.badge, d.desc, d.owner].filter(Boolean).join(' ').toLowerCase();
+        }
+
+        let debounceTimer;
+
+        function runSearch() {
+            const query = searchInput.value.trim().toLowerCase();
+            const cards = document.querySelectorAll('#umkm-grid .umkm-card');
+            let visible = 0;
+
+            cards.forEach(card => {
+                const id = parseInt(card.getAttribute('data-umkm-id'));
+                const text = getSearchText(id);
+                // Juga cek teks h3 dan p di dalam card sebagai fallback
+                const cardText = (card.querySelector('h3')?.textContent || '') + ' ' +
+                                 (card.querySelector('p')?.textContent  || '') + ' ' +
+                                 (card.querySelector('.umkm-badge')?.textContent || '');
+                const combined = text + ' ' + cardText.toLowerCase();
+
+                if (!query || combined.includes(query)) {
+                    card.classList.remove('search-hidden');
+                    visible++;
+                } else {
+                    card.classList.add('search-hidden');
+                }
+            });
+
+            // Tombol clear
+            searchClear.style.display = query ? 'flex' : 'none';
+
+            // Info teks
+            if (query) {
+                searchInfo.style.display = 'block';
+                searchInfo.innerHTML = visible > 0
+                    ? `Menampilkan <span class="highlight">${visible}</span> produk untuk "<span class="highlight">${searchInput.value.trim()}</span>"`
+                    : `Tidak ada hasil untuk "<span class="highlight">${searchInput.value.trim()}</span>"`;
+            } else {
+                searchInfo.style.display = 'none';
+            }
+
+            // Pesan tidak ditemukan
+            if (noResult) {
+                noResult.classList.toggle('show', visible === 0 && query.length > 0);
+            }
+        }
+
+        searchInput.addEventListener('input', () => {
+            clearTimeout(debounceTimer);
+            debounceTimer = setTimeout(runSearch, 200);
+        });
+
+        searchClear.addEventListener('click', () => {
+            searchInput.value = '';
+            searchInput.focus();
+            runSearch();
+        });
+    })();
+
+    // ================================================================
     // EDIT DATA PROGRAM KERJA DI SINI:
     // ================================================================
 
@@ -301,15 +650,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // PROKER INDIVIDU
         { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Identifikasi Kualitas Air Tanah", description_markdown: "Identifikasi kualitas air tanah dan air permukaan di wilayah Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Uji Recovery Sumur Warga", description_markdown: "Melakukan uji recovery dan analisis ketersediaan air pada sumur-sumur Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
+        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: [] },
+        { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Evaluasi Kualitas Air Sumur Masyarakat", description_markdown: "Evaluasi kualitas air sumur masyarakat melalui pengujian laboratorium dan rekomendasi pengolahan air bersih.", status: "Belum Mulai", image_urls: [] },
         { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
         { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Desa", description_markdown: "Membangun website profil desa, katalog UMKM, serta digitalisasi logbook KKN.", status: "Belum Mulai", image_urls: [] },
         { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: [] },
-        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Company Profile Usaha Madu", description_markdown: "Penyusunan Company Profile digital untuk meningkatkan profesionalitas Usaha Madu TBS.", status: "Belum Mulai", image_urls: [] },
+        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Penguatan Identitas dan Profil Usaha UMKM", description_markdown: "Program ini dilaksanakan melalui penyusunan company profile untuk UMKM TBS sebagai media pengenalan usaha, serta pendataan informasi UMKM di Dusun Wungurejo yang mencakup nomor WhatsApp dan titik lokasi Google Maps sebagai pendukung penyajian informasi pada website dusun.", status: "Belum Mulai", image_urls: [] },
         { id: 11, type: "Proker Individu", owner_name: "Anas Rifai Prayogo", title: "Edukasi Keuangan Anak Usia Dini", description_markdown: "Memberikan edukasi dan literasi manajemen keuangan sejak dini untuk anak-anak Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 12, type: "Proker Individu", owner_name: "Lyra Artha Amarila", title: "Pemasaran Digital Madu TBS", description_markdown: "Optimalisasi media promosi dan strategi pemasaran digital untuk Usaha Madu TBS lokal.", status: "Belum Mulai", image_urls: [] },
-        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Festival Bicara Ceria", description_markdown: "Mengadakan Lomba MC Cilik dan Storytelling Anak untuk meningkatkan kemampuan komunikasi dan kepercayaan diri.", status: "Belum Mulai", image_urls: [] }
+        { id: 12, type: "Proker Individu", owner_name: "Lyra Artha Amarila", title: "Optimalisasi Media Promosi Digital dan Pendataan Informasi UMKM", description_markdown: "Program ini bertujuan untuk mendukung promosi digital dan penyediaan informasi UMKM di Dusun Wungurejo. Kegiatan yang dilakukan meliputi penataan akun Instagram, pembuatan konten, dan penyusunan Linktree pada UMKM TBS, serta pendataan nomor WhatsApp dan pembuatan titik lokasi Google Maps UMKM di Dusun Wungurejo yang akan diintegrasikan ke dalam website dusun.", status: "Belum Mulai", image_urls: [] },
+        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Sosialisasi dan Pendampingan Komunikasi Publik", description_markdown: "Kegiatan ini terdiri dari dua sesi yang dilaksanakan pada hari terpisah. Sesi pertama berupa sosialisasi anti bullying untuk anak-anak usia SD dan SMP di Desa Wungurejo, disampaikan secara interaktif dan menyenangkan melalui diskusi ringan, kartu visual, dan kuis berhadiah. Sesi kedua berupa pendampingan langsung kepada ibu-ibu Kelompok Wanita Tani Ngudi Makmur dalam mempersiapkan presentasi produk unggulan mereka seperti jahe instan, kencur instan, dan kunyit instan untuk ditampilkan di acara Warna Sari Kelurahan, mencakup penyusunan materi presentasi dan tips dasar public speaking agar ibu-ibu dapat mempromosikan produk dengan percaya diri dan komunikatif.", status: "Belum Mulai", image_urls: [] }
     ];
 
     const prokerGridContainer = document.getElementById('proker-grid-container');
@@ -484,122 +833,122 @@ document.addEventListener('DOMContentLoaded', () => {
         'laksa': {
             name: "Laksa",
             shortName: "Laksa",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Berbagi inspirasi, membangun potensi.",
+            shortRole: "Logistic",
+            role: "Logistik",
+            major: "Teknik Informatika",
+            quote: "Memastikan ketersediaan sarana dan prasarana demi kelancaran operasional kegiatan.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/laksalkss?igsh=dDBzOHl4cHYyNHdk",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/LAKSA.jpeg"
+            photo: "assets/profilepic/LAKSA.JPG"
         },
         'ahmad': {
             name: "Ahmad",
             shortName: "Ahmad",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Bersama mewujudkan desa yang mandiri.",
+            shortRole: "Sekretaris",
+            role: "Sekretaris",
+            major: "Teknik Pertambangan",
+            quote: "Mengelola administrasi dengan teliti demi kelancaran dan kerapian setiap program kerja KKN.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/ahmad_firdn?igsh=OHp4OGtybWg0amtj",
             linkedin: "https://linkedin.com/",
             photo: "assets/profilepic/AHMAD.jpeg"
         },
         'sabrina': {
             name: "Sabrina",
             shortName: "Sabrina",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Kreativitas untuk masyarakat sekitar.",
+            shortRole: "PDD",
+            role: "Publikasi, Dekorasi & Dokumentasi (PDD)",
+            major: "Ilmu Komunikasi",
+            quote: "Mengabadikan setiap momen bermakna dan mengemas publikasi visual yang kreatif.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/sabrinzahr?igsh=Ymlya2E4cjdlaXZ1",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/SABRINA.jpeg?v=" + new Date().getTime()
+            photo: "assets/profilepic/SABRINA.JPG?v=" + new Date().getTime()
         },
         'havez': {
             name: "Havez",
             shortName: "Havez",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Teknologi dan inovasi dari desa untuk dunia.",
+            shortRole: "Logistic",
+            role: "Logistik",
+            major: "Teknik Perminyakan",
+            quote: "Mendukung eksekusi program dengan manajemen perlengkapan yang sigap, tanggap, dan rapi.",
             iconClass: "fa-solid fa-user",
             instagram: "https://www.instagram.com/havezein?igsh=MWJ6dWhraXE2NGc1cA==",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/HAVEZ.jpeg"
+            photo: "assets/profilepic/HAVEZ.JPG"
         },
         'anas': {
             name: "Anas",
             shortName: "Anas",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Membangun dari desa, tumbuh bersama.",
+            shortRole: "Ketua",
+            role: "Ketua KKN",
+            major: "Akuntansi",
+            quote: "Mengayomi dan memimpin tim untuk memberikan dampak positif berkelanjutan bagi Dusun Wungurejo.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/anasrfai_?igsh=c3h3M29oYzV4Mm92",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/ANAS.jpeg"
+            photo: "assets/profilepic/ANAS.JPG"
         },
         'nabila': {
             name: "Nabila",
             shortName: "Nabila",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Menjadi bagian dari perubahan positif di masyarakat.",
+            shortRole: "Humas",
+            role: "Hubungan Masyarakat (Humas)",
+            major: "Agribisnis",
+            quote: "Menjadi jembatan komunikasi yang hangat antara tim KKN dengan masyarakat Wungurejo.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/nabilavnsy._?igsh=cjM4NDNubzdhNjZt",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/NABILA.jpeg"
+            photo: "assets/profilepic/NABILA.JPG"
         },
         'fanida': {
             name: "Fanida",
             shortName: "Fanida",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Pendidikan adalah kunci kemajuan desa.",
+            shortRole: "Bendahara",
+            role: "Bendahara",
+            major: "Teknik Geologi",
+            quote: "Memastikan transparansi dan efisiensi anggaran untuk menunjang keberhasilan pengabdian.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/fanidaby?igsh=YTloaWNnbGtncm5z",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/FANIDA.jpeg"
+            photo: "assets/profilepic/FANIDA.JPG"
         },
         'lyra': {
             name: "Lyra",
             shortName: "Lyra",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Menebar manfaat tanpa batas waktu.",
+            shortRole: "PDD",
+            role: "Publikasi, Dekorasi & Dokumentasi (PDD)",
+            major: "Ekonomi Pembangunan",
+            quote: "Merangkai dokumentasi menarik untuk menyebarluaskan cerita inspiratif dari desa.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/lyraarthaa?igsh=Y3cwZ3kydHpsb3Y0",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/LYRA.jpeg"
+            photo: "assets/profilepic/LYRA.JPG"
         },
         'dian': {
             name: "Dian",
             shortName: "Dian",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Memberdayakan desa melalui kolaborasi tiada henti.",
+            shortRole: "PDD",
+            role: "Publikasi, Dekorasi & Dokumentasi (PDD)",
+            major: "Manajemen",
+            quote: "Menghadirkan desain dan publikasi estetis untuk mendukung setiap agenda kegiatan KKN.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/dianmeutiaa?igsh=cm1uMGx4dXo4eHlv",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/DIAN.jpeg"
+            photo: "assets/profilepic/DIAN.JPG"
         },
         'shofa': {
             name: "Shofa",
             shortName: "Shofa",
-            shortRole: "anggota",
-            role: "Anggota",
-            major: "-",
-            quote: "Setiap pengabdian adalah investasi untuk masa depan.",
+            shortRole: "Humas",
+            role: "Hubungan Masyarakat (Humas)",
+            major: "Teknik Kimia",
+            quote: "Menjaga silaturahmi dan memfasilitasi informasi secara efektif kepada seluruh warga.",
             iconClass: "fa-solid fa-user",
-            instagram: "https://instagram.com/",
+            instagram: "https://www.instagram.com/shofasalsabilaaw?igsh=MWJhaDQ0ZXo5Njh3Mg==",
             linkedin: "https://linkedin.com/",
-            photo: "assets/profilepic/SHOFA.jpeg"
+            photo: "assets/profilepic/SHOFA.JPG"
         }
     };
 
