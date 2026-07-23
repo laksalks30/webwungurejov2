@@ -706,13 +706,34 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Determine background and icon color based on category/owner
             let iconBoxClass = proker.type === 'Proker Bersama' ? 'bg-maroon' : 'bg-blue';
-            let icon = proker.type === 'Proker Bersama' ? 'fa-people-group' : 'fa-user-gear';
+            
+            // Find owner photo from teamData
+            let ownerPhotoUrl = null;
+            if (proker.owner_name) {
+                for (const key in teamData) {
+                    if (proker.owner_name.includes(teamData[key].name)) {
+                        ownerPhotoUrl = teamData[key].photo;
+                        break;
+                    }
+                }
+            }
+
+            let iconHtml = '';
+            if (ownerPhotoUrl) {
+                iconHtml = `<img src="${ownerPhotoUrl}" alt="${escapeHTML(proker.owner_name)}" style="width: 100%; height: 100%; border-radius: 10px; object-fit: cover;">`;
+                // Add a small padding reset if needed, but proker-icon-box usually centers things.
+                // To make the image fill the box nicely:
+                iconBoxClass += ' has-photo';
+            } else {
+                let icon = proker.type === 'Proker Bersama' ? 'fa-people-group' : 'fa-user-gear';
+                iconHtml = `<i class="fa-solid ${icon}"></i>`;
+            }
 
             // Parse description using marked if available
             const descHtml = typeof marked !== 'undefined' ? marked.parse(proker.description_markdown) : proker.description_markdown;
 
             prokerCard.innerHTML = `
-                <div class="proker-icon-box ${iconBoxClass}"><i class="fa-solid ${icon}"></i></div>
+                <div class="proker-icon-box ${iconBoxClass}" ${ownerPhotoUrl ? 'style="padding: 0; overflow: hidden;"' : ''}>${iconHtml}</div>
                 <div class="proker-body">
                     <span class="proker-tag">${proker.type}${proker.owner_name ? ` &bull; ${proker.owner_name}` : ''}</span>
                     <h3 class="proker-title">${escapeHTML(proker.title)}</h3>
