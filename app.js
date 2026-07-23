@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Menyediakan bibit ikan berkualitas (Lele, Nila, Mas) dan ikan siap konsumsi hasil budidaya intensif oleh Bapak Sugino Wiryo. Kolam ikan dikelola secara higienis dengan pakan alami. Cocok untuk pembelian retail maupun partai besar untuk kebutuhan hajatan atau warung makan.",
             images: ["assets/images/umkm_ikan.png"],
             waLink: "https://wa.me/6282226799923?text=Halo%20Bapak%20Sugino%2C%20saya%20tertarik%20dengan%20hasil%20perikanannya.%20Bisa%20tanya%20stok%20yang%20ready%3F",
-            mapSrc: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d494.4!2d110.60831684355774!3d-7.879900709814317!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zN8KwNTInNDcuNiJTIDExMMKwMzYnMzAuMCJF!5e0!3m2!1sid!2sid!4v1000000000002!5m2!1sid!2sid"
+            mapSrc: "https://maps.google.com/?q=-7.879900709814317,110.60831684355774"
         },
         4: {
             name: "Kripik Singkong & Kripik Pisang Ibu Anik",
