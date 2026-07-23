@@ -707,12 +707,12 @@ document.addEventListener('DOMContentLoaded', () => {
             // Determine background and icon color based on category/owner
             let iconBoxClass = proker.type === 'Proker Bersama' ? 'bg-maroon' : 'bg-blue';
             
-            // Find owner photo from teamData
+            // Find owner photo from teamMembers
             let ownerPhotoUrl = null;
             if (proker.owner_name) {
-                for (const key in teamData) {
-                    if (proker.owner_name.includes(teamData[key].name)) {
-                        ownerPhotoUrl = teamData[key].photo;
+                for (const key in teamMembers) {
+                    if (proker.owner_name.includes(teamMembers[key].name)) {
+                        ownerPhotoUrl = teamMembers[key].photo;
                         break;
                     }
                 }
