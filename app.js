@@ -657,7 +657,7 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, type: "Proker Bersama", owner_name: null, title: "Penomoran Rumah & Database Warga", description_markdown: "Pembuatan sistem penomoran rumah terstandar dan pendataan database warga Dusun Wungurejo yang terdigitalisasi.", status: "Belum Mulai", image_urls: [] },
 
         // PROKER INDIVIDU
-        { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
+        { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [], pdf_url: "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web.pdf" },
         { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: [] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Evaluasi Kualitas Air Sumur Masyarakat", description_markdown: "Evaluasi kualitas air sumur masyarakat melalui pengujian laboratorium dan rekomendasi pengolahan air bersih.", status: "Belum Mulai", image_urls: [] },
         { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
@@ -1270,10 +1270,31 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Handle Image Gallery
+        // Handle Image Gallery / PDF
         activeImages = item.image_urls || [];
-        if (activeImages.length === 0) {
+        const pdfUrl = item.pdf_url || null;
+
+        if (activeImages.length === 0 && !pdfUrl) {
             if (modalGallerySide) modalGallerySide.style.display = 'none';
+        } else if (pdfUrl && activeImages.length === 0) {
+            // Show PDF embedded in the gallery panel
+            if (modalGallerySide) modalGallerySide.style.display = 'block';
+            if (carouselTrack) {
+                carouselTrack.innerHTML = `
+                    <div class="carousel-slide" style="width:100%; flex-shrink:0;">
+                        <iframe src="${pdfUrl}" style="width:100%; height:480px; border:none; border-radius:10px; display:block;"></iframe>
+                    </div>
+                    <div style="text-align:center; padding: 10px 0;">
+                        <a href="${pdfUrl}" target="_blank" style="display:inline-flex; align-items:center; gap:6px; background: var(--color-primary, #c0392b); color:#fff; padding:8px 18px; border-radius:50px; font-size:0.85rem; font-weight:700; text-decoration:none;">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka PDF di Tab Baru
+                        </a>
+                    </div>
+                `;
+                carouselTrack.style.transform = 'translateX(0)';
+            }
+            if (carouselDotsContainer) carouselDotsContainer.innerHTML = '';
+            if (prevBtn) prevBtn.style.display = 'none';
+            if (nextBtn) nextBtn.style.display = 'none';
         } else {
             if (modalGallerySide) modalGallerySide.style.display = 'block';
 
