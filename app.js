@@ -197,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             mapSrc: "https://maps.app.goo.gl/FLSsHeaEzeNrAhf66"
         },
         2: {
-            name: "Madu Klanceng Murni",
+            name: "Griya Sehat TBS Gunungkidul",
             badge: "Hasil Peternakan",
             price: "Harga Bervariasi",
             owner: "Peternak: Usaha Madu TBS (Bapak Sutadi) — Dusun Wungurejo",
@@ -212,7 +212,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT06/Madu_TBS/IMG_0856_final.JPG"
             ],
             waLink: "https://wa.me/6281804093906?text=Halo%20Madu%20Klanceng%20Murni%20%28TBS%29",
-            mapSrc: "https://maps.app.goo.gl/vjDa8UGaf69wPBEi6?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/imZiDVKAYeS9MTkL9"
         },
         3: {
             name: "Bibit & Konsumsi Ikan Air Tawar",
@@ -222,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
             desc: "Menyediakan bibit ikan berkualitas (Lele, Nila, Mas) dan ikan siap konsumsi hasil budidaya intensif oleh Bapak Sugino Wiryo. Kolam ikan dikelola secara higienis dengan pakan alami. Cocok untuk pembelian retail maupun partai besar untuk kebutuhan hajatan atau warung makan.",
             images: ["assets/images/umkm_ikan.png"],
             waLink: "https://wa.me/6282226799923?text=Halo%20Bapak%20Sugino%2C%20saya%20tertarik%20dengan%20hasil%20perikanannya.%20Bisa%20tanya%20stok%20yang%20ready%3F",
-            mapSrc: "https://maps.google.com/?q=-7.879900709814317,110.60831684355774"
+            mapSrc: "https://maps.app.goo.gl/UmWkdkzneoFnNGcK6"
         },
         4: {
             name: "Kripik Singkong & Kripik Pisang Ibu Anik",
@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT01/kripik_singkong_ibu_anik/IMG_0559.JPG"
             ],
             waLink: "https://wa.me/62882005973468?text=Halo%20Ibu%20Anik%2C%20saya%20ingin%20bertanya%20tentang%20Kripik",
-            mapSrc: "https://maps.app.goo.gl/bTx3yPihw3cb3hzy6?g_st=ic"
+            mapSrc: "https://goo.gl/maps/THNMqsHjtn1pzz7n7"
         },
         5: {
             name: "Jahe Instan KWT Ngudi Makmur",
@@ -253,7 +253,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT01/Jahe_instant_KWT_Ngudi_Makmur/IMG_0559.JPG"
             ],
             waLink: "https://wa.me/62882005973468?text=Halo%20KWT%20Ngudi%20Makmur%2C%20saya%20ingin%20bertanya%20tentang%20Jahe%20Instant",
-            mapSrc: "https://maps.app.goo.gl/s2JxcV9jzKaBdMvk9?g_st=ic"
+            mapSrc: "https://goo.gl/maps/VUkHBugAevt3cdFV8"
         },
         6: {
             name: "Duwisty Snack",
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Fergi_Bengkel/IMG_0491.JPG?v=2"
             ],
             waLink: "https://wa.me/6287839154457?text=Halo%20Bengkel%20Fergi",
-            mapSrc: "https://maps.app.goo.gl/GhXC9YrVmBDmCYyd6?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/dYwjJU1KoJajFuaBA"
         },
         15: {
             name: "Warung Sayur Ibu Wacik",
@@ -684,15 +684,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0024.jpg",
             "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0025.jpg"
         ] },
-        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: [] },
+        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Fanida/IMG_1304.JPG"] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Evaluasi Kualitas Air Sumur Masyarakat", description_markdown: "Evaluasi kualitas air sumur masyarakat melalui pengujian laboratorium dan rekomendasi pengolahan air bersih.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0001.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0002.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0003.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0004.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0005.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0006.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0007.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0008.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0009.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0010.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0011.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0012.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0013.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0014.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0015.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0016.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0017.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0018.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0019.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0020.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0021.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0022.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0023.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0024.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0025.jpg"] },
-        { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
+        { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Shofa/IMG_1007.JPG", "assets/ProgramKerja/Shofa/IMG_1406.JPG", "assets/ProgramKerja/Shofa/IMG_1407.JPG"] },
         { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Desa", description_markdown: "Membangun website profil desa, katalog UMKM, serta digitalisasi logbook KKN.", status: "Belum Mulai", image_urls: [] },
-        { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: [] },
-        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Penguatan Identitas dan Profil Usaha UMKM", description_markdown: "Program ini dilaksanakan melalui penyusunan company profile untuk UMKM TBS sebagai media pengenalan usaha, serta pendataan informasi UMKM di Dusun Wungurejo yang mencakup nomor WhatsApp dan titik lokasi Google Maps sebagai pendukung penyajian informasi pada website dusun.", status: "Belum Mulai", image_urls: [] },
-        { id: 11, type: "Proker Individu", owner_name: "Anas Rifai Prayogo", title: "Edukasi Keuangan Anak Usia Dini", description_markdown: "Memberikan edukasi dan literasi manajemen keuangan sejak dini untuk anak-anak Dusun Wungurejo.", status: "Belum Mulai", image_urls: [] },
+        { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Nabila/IMG_1394.JPG", "assets/ProgramKerja/Nabila/IMG_1395.JPG", "assets/ProgramKerja/Nabila/IMG_1396.JPG", "assets/ProgramKerja/Nabila/IMG_1397.JPG"] },
+        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Penguatan Identitas dan Profil Usaha UMKM", description_markdown: "Program ini dilaksanakan melalui penyusunan company profile untuk UMKM TBS sebagai media pengenalan usaha, serta pendataan informasi UMKM di Dusun Wungurejo yang mencakup nomor WhatsApp dan titik lokasi Google Maps sebagai pendukung penyajian informasi pada website dusun.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Dian/IMG_1299.JPG", "assets/ProgramKerja/Dian/IMG_1300.JPG", "assets/ProgramKerja/Dian/IMG_1301.JPG", "assets/ProgramKerja/Dian/IMG_1302.JPG"] },
+        { id: 11, type: "Proker Individu", owner_name: "Anas Rifai Prayogo", title: "Edukasi Keuangan Anak Usia Dini", description_markdown: "Memberikan edukasi dan literasi manajemen keuangan sejak dini untuk anak-anak Dusun Wungurejo.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Anas/IMG_1293.JPG", "assets/ProgramKerja/Anas/IMG_1294.JPG", "assets/ProgramKerja/Anas/IMG_1295.JPG", "assets/ProgramKerja/Anas/IMG_1296.JPG"] },
         { id: 12, type: "Proker Individu", owner_name: "Lyra Artha Amarila", title: "Optimalisasi Media Promosi Digital dan Pendataan Informasi UMKM", description_markdown: "Program ini bertujuan untuk mendukung promosi digital dan penyediaan informasi UMKM di Dusun Wungurejo. Kegiatan yang dilakukan meliputi penataan akun Instagram, pembuatan konten, dan penyusunan Linktree pada UMKM TBS, serta pendataan nomor WhatsApp dan pembuatan titik lokasi Google Maps UMKM di Dusun Wungurejo yang akan diintegrasikan ke dalam website dusun.", status: "Selesai", image_urls: ["assets/ProgramKerja/Lyra/IMG_1297.JPG", "assets/ProgramKerja/Lyra/IMG_1298.JPG", "assets/ProgramKerja/Lyra/IMG_1299.JPG", "assets/ProgramKerja/Lyra/IMG_1300.JPG"] },
-        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Sosialisasi dan Pendampingan Komunikasi Publik", description_markdown: "Kegiatan ini terdiri dari dua sesi yang dilaksanakan pada hari terpisah. Sesi pertama berupa sosialisasi anti bullying untuk anak-anak usia SD dan SMP di Desa Wungurejo, disampaikan secara interaktif dan menyenangkan melalui diskusi ringan, kartu visual, dan kuis berhadiah. Sesi kedua berupa pendampingan langsung kepada ibu-ibu Kelompok Wanita Tani Ngudi Makmur dalam mempersiapkan presentasi produk unggulan mereka seperti jahe instan, kencur instan, dan kunyit instan untuk ditampilkan di acara Warna Sari Kelurahan, mencakup penyusunan materi presentasi dan tips dasar public speaking agar ibu-ibu dapat mempromosikan produk dengan percaya diri dan komunikatif.", status: "Belum Mulai", image_urls: [] }
+        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Sosialisasi dan Pendampingan Komunikasi Publik", description_markdown: "Kegiatan ini terdiri dari dua sesi yang dilaksanakan pada hari terpisah. Sesi pertama berupa sosialisasi anti bullying untuk anak-anak usia SD dan SMP di Desa Wungurejo, disampaikan secara interaktif dan menyenangkan melalui diskusi ringan, kartu visual, dan kuis berhadiah. Sesi kedua berupa pendampingan langsung kepada ibu-ibu Kelompok Wanita Tani Ngudi Makmur dalam mempersiapkan presentasi produk unggulan mereka seperti jahe instan, kencur instan, dan kunyit instan untuk ditampilkan di acara Warna Sari Kelurahan, mencakup penyusunan materi presentasi dan tips dasar public speaking agar ibu-ibu dapat mempromosikan produk dengan percaya diri dan komunikatif.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Sabrina/IMG_1400.JPG", "assets/ProgramKerja/Sabrina/IMG_1401.JPG"] }
     ];
 
     const prokerGridContainer = document.getElementById('proker-grid-container');

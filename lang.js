@@ -82,7 +82,7 @@ window.KKN_LANG = {
         umkm_1_name:        "Kerajinan Popor Senapan Kayu",
         umkm_1_desc:        "Mahakarya seni ukir kayu berkualitas tinggi oleh pengrajin lokal. Cocok untuk kolektor dan pecinta olahraga menembak.",
         umkm_1_price:       "Mulai dari Rp 250.000",
-        umkm_2_name:        "Madu Klanceng Murni",
+        umkm_2_name:        "Griya Sehat TBS Gunungkidul",
         umkm_2_desc:        "Madu murni kaya antioksidan langsung dari peternakan lebah tanpa sengat di alam asri Wungurejo. Sehat & berkhasiat.",
         umkm_2_price:       "Rp 85.000 / Botol",
         umkm_3_name:        "Bibit & Konsumsi Ikan Air Tawar",
