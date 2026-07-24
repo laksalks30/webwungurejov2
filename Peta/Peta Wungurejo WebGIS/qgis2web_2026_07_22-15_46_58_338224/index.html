@@ -61,9 +61,171 @@
                 fillOpacity: 1
               });
             }
-            highlightLayer.openPopup();
+            // openPopup() removed — popup now opens on click only (prevents drag jitter)
         }
+        // ================================================================
+        // DATA FOTO & DESKRIPSI TITIK PETA WUNGUREJO
+        // ================================================================
+        var wungurejoPOIData = {
+            // === LAYER 1: KOORDINATWUNGUREJOFIXTemporaryPlaces ===
+            'MASJID AL AMIN': {
+                img: 'MASJID AL AMIN.jpg',
+                desc: 'Masjid Al Amin merupakan salah satu tempat ibadah utama warga Dusun Wungurejo. Masjid ini aktif digunakan untuk shalat berjamaah, pengajian rutin, dan kegiatan keagamaan lainnya.'
+            },
+            'BALAI PADUKUHAN': {
+                img: 'BALAI PADUKUHAN.jpg',
+                desc: 'Balai Padukuhan adalah pusat kegiatan sosial dan administratif Dusun Wungurejo. Digunakan untuk pertemuan warga, rapat RT/RW, dan berbagai acara kemasyarakatan.'
+            },
+            'TOKO QUTIS': {
+                img: 'TOKO QUTIS.jpg',
+                desc: 'Toko Qutis menyediakan berbagai kebutuhan pokok dan barang sehari-hari dengan harga terjangkau untuk warga Dusun Wungurejo.'
+            },
+            'AB SQUAD POLISHING & PAINTING': {
+                img: 'AB SQUAD POLISHING & PAINTING.jpg',
+                desc: 'AB Squad menyediakan jasa bengkel, polishing, dan pengecatan kendaraan bermotor. Dikerjakan oleh tenaga ahli berpengalaman dengan hasil memuaskan.'
+            },
+            'PENANAM CABAI MAS RIDA': {
+                img: 'PENANAM CABAI MAS RIDA.jpg',
+                desc: 'Kebun cabai milik Mas Rida menghasilkan cabai segar berkualitas yang ditanam dengan perawatan intensif di lahan Dusun Wungurejo.'
+            },
+            'MASJID AS SALAM': {
+                img: 'MASJID AS SALAM.jpg',
+                desc: 'Masjid As Salam adalah tempat ibadah yang aktif melayani warga Dusun Wungurejo untuk berbagai kegiatan keagamaan dan pengajian.'
+            },
+            'Kripik Singkong & Kripik Pisang Ibu Anik': {
+                img: 'Kripik Singkong & Kripik Pisang Ibu Anik.jpg',
+                desc: 'Ibu Anik memproduksi kripik singkong dan kripik pisang renyah dengan bumbu rahasia khas Wungurejo. Cocok untuk camilan keluarga dan oleh-oleh.'
+            },
+            'Jahe Instant KWT Ngudi Makmur ': {
+                img: 'Jahe Instant KWT Ngudi Makmur.jpg',
+                desc: 'Produk minuman serbuk jahe instan buatan KWT Ngudi Makmur. Terbuat dari jahe pilihan yang diproses secara higienis. Menghangatkan tubuh dan meningkatkan daya tahan.'
+            },
+            'Jahe Instant KWT Ngudi Makmur': {
+                img: 'Jahe Instant KWT Ngudi Makmur.jpg',
+                desc: 'Produk minuman serbuk jahe instan buatan KWT Ngudi Makmur. Terbuat dari jahe pilihan yang diproses secara higienis. Menghangatkan tubuh dan meningkatkan daya tahan.'
+            },
+            'DUWISTY SNACK': {
+                img: 'DUWISTY SNACK.jpg',
+                desc: 'Duwisty Snack menyediakan aneka camilan ringan berkualitas dengan rasa lezat dan harga terjangkau. Cocok untuk teman bersantai dan oleh-oleh.'
+            },
+            'WARUNG IBU UMI': {
+                img: 'WARUNG IBU UMI.jpg',
+                desc: 'Warung Ibu Umi menyediakan berbagai kebutuhan sehari-hari warga Dusun Wungurejo mulai dari sembako, bumbu masak, hingga minuman dengan harga ramah di kantong.'
+            },
+            'Meubel Pak Wasimin': {
+                img: 'Meubel Pak Wasimin.jpg',
+                desc: 'Usaha meubel milik Pak Wasimin memproduksi berbagai perabot dan furnitur kayu berkualitas tinggi. Melayani pesanan custom dengan pengerjaan teliti oleh tenaga ahli.'
+            },
+            'Meubel Pak Puryanto ': {
+                img: 'Meubel Pak Puryanto.jpg',
+                desc: 'Usaha meubel Pak Puryanto melayani pembuatan berbagai jenis furniture kayu berkualitas sesuai kebutuhan pelanggan dengan harga bersaing.'
+            },
+            'Meubel Pak Puryanto': {
+                img: 'Meubel Pak Puryanto.jpg',
+                desc: 'Usaha meubel Pak Puryanto melayani pembuatan berbagai jenis furniture kayu berkualitas sesuai kebutuhan pelanggan dengan harga bersaing.'
+            },
+            'PECEL MBAH TINI': {
+                img: 'PECEL MBAH TINI.jpg',
+                desc: 'Sego pecel khas Mbah Tini dengan bumbu kacang gurih dan sayuran segar. Resep turun-temurun yang sudah menjadi favorit warga setempat untuk sarapan.'
+            },
+            'Tikar Mendong Mbah Tuminem': {
+                img: 'Tikar Mendong Mbah Tuminem.jpg',
+                desc: 'Pengrajin tikar mendong tradisional asli Dusun Wungurejo. Anyaman tangan dari bahan mendong berkualitas menghasilkan tikar yang awet, nyaman, dan ramah lingkungan.'
+            },
+            'FERGI BENGKEL': {
+                img: 'FERGI BENGKEL.jpg',
+                desc: 'Bengkel Fergi spesialis kendaraan roda empat. Melayani servis rutin, perbaikan mesin, ganti oli, tune up, dan berbagai masalah kendaraan lainnya.'
+            },
+            'FFS (Fam Fergi Sabriansyah) Ternak Ayam Petelur': {
+                img: 'FFS (Fam Fergi Sabriansyah) Ternak Ayam Petelur.jpg',
+                desc: 'Peternakan ayam petelur FFS menghasilkan telur segar berkualitas setiap hari. Dipelihara dengan pakan terbaik untuk menjaga kualitas dan nilai gizi tinggi.'
+            },
+            'Ibu Wacik Sayur ': {
+                img: 'WARUNG IBU UMI.jpg',
+                desc: 'Warung sayur Ibu Wacik menyediakan berbagai sayuran segar, bumbu dapur, dan kebutuhan pokok harian untuk warga Dusun Wungurejo.'
+            },
+            'TBS': {
+                img: 'TBS.jpg',
+                desc: 'Griya Sehat TBS Gunungkidul menyediakan madu klanceng murni 100% tanpa campuran, dipanen langsung dari koloni lebah tanpa sengat yang diternakkan di alam asri Dusun Wungurejo.'
+            },
+            'Anyaman Tikar Mendong Ibu Sugiyanti': {
+                img: 'Anyaman Tikar Mendong Ibu Sugiyanti.jpg',
+                desc: 'Kerajinan anyaman tikar berbahan mendong yang ditenun secara tradisional oleh Ibu Sugiyanto. Tikar mendong terkenal sejuk, kuat, dan ramah lingkungan.'
+            },
+            'mushola al ikhlas': {
+                img: 'mushola al ikhlas.jpg',
+                desc: 'Mushola Al Ikhlas merupakan tempat ibadah warga yang aktif digunakan untuk shalat berjamaah dan kegiatan keagamaan di lingkungan Dusun Wungurejo.'
+            },
+            'BRIGAZ SABLON': {
+                img: '',
+                desc: 'Brigaz Sablon melayani jasa sablon berkualitas untuk kaos, jaket, seragam, dan berbagai kebutuhan lainnya dengan teknik sablon profesional.'
+            },
+            'Jual Beli Kambing Pak Sutikno': {
+                img: '',
+                desc: 'Melayani jual beli kambing berkualitas untuk berbagai keperluan seperti aqiqah, qurban, dan ternak. Kambing sehat, terawat, dan pakan terjamin.'
+            },
+
+            // === LAYER 2: KoordinatWungurejo2 ===
+            'Hikmah Bakery': {
+                img: 'Hikmah Bakery.jpg',
+                desc: 'Hikmah Bakery menyediakan aneka roti dan kue segar dengan cita rasa lezat dan tekstur lembut. Diproduksi setiap hari menggunakan bahan berkualitas tanpa bahan pengawet berlebih.'
+            },
+            'Warung Mbah Sukir': {
+                img: 'Warung Mbah Sukir.jpg',
+                desc: 'Warung Mbah Sukir menyediakan berbagai kebutuhan sehari-hari dan makanan untuk warga sekitar Dusun Wungurejo.'
+            },
+            'Micro Grafis': {
+                img: 'Micro Grafis.jpg',
+                desc: 'Micro Grafis melayani jasa percetakan dan desain grafis untuk berbagai kebutuhan warga dan usaha di sekitar Dusun Wungurejo.'
+            },
+            'Makam Punthuk': {
+                img: 'Makam Punthuk.jpg',
+                desc: 'Makam Punthuk adalah situs pemakaman bersejarah yang menjadi bagian dari identitas budaya Dusun Wungurejo.'
+            },
+            'Pengrajin Popor': {
+                img: 'Pengrajin Popor.jpg',
+                desc: 'Pengrajin popor (gagang senjata tradisional) yang menjadi salah satu kerajinan khas di Dusun Wungurejo.'
+            },
+            'TPQ Tarbiyatul Muchsinin': {
+                img: 'TPQ Tarbiyatul Muchsinin.jpg',
+                desc: 'TPQ Tarbiyatul Muchsinin adalah lembaga pendidikan Al-Qur\'an untuk anak-anak Dusun Wungurejo. Aktif mengajarkan membaca Al-Qur\'an dan pendidikan agama Islam.'
+            },
+            'Toko Sulis': {
+                img: 'Toko Sulis.jpg',
+                desc: 'Toko Sulis menyediakan berbagai barang kebutuhan warga dengan harga terjangkau.'
+            },
+            'Dava Multi CCTV': {
+                img: 'CCTV.jpg',
+                desc: 'Dava Multi CCTV melayani pemasangan dan servis kamera CCTV untuk keamanan rumah, toko, dan fasilitas lainnya.'
+            },
+            'Wagiyo Mebel': {
+                img: 'Wagiyo Mebel.jpg',
+                desc: 'Usaha meubel milik Pak Wagiyo yang memproduksi berbagai perabot kayu berkualitas dengan teknik pengerjaan tradisional yang teliti.'
+            },
+            'Paud Wungurejo': {
+                img: 'Paud Wungurejo.jpg',
+                desc: 'PAUD Wungurejo adalah lembaga pendidikan anak usia dini yang melayani tumbuh kembang dan pendidikan dasar anak-anak di Dusun Wungurejo.'
+            },
+            'Sularjo Meubel': {
+                img: 'Wagiyo Mebel.jpg',
+                desc: 'Usaha meubel milik Pak Sularjo yang memproduksi berbagai furnitur kayu berkualitas untuk kebutuhan rumah tangga.'
+            },
+            'CV Selo': {
+                img: 'CV Selo.jpg',
+                desc: 'CV Selo adalah usaha yang bergerak di bidang industri dan jasa di sekitar wilayah Dusun Wungurejo.'
+            },
+            'Aksa Florist': {
+                img: '',
+                desc: 'Aksa Florist melayani penyediaan berbagai rangkaian bunga segar untuk berbagai keperluan acara.'
+            },
+            'Bensin Eceran Pak Suhardi': {
+                img: 'Bensin Eceran Pak Suhardi 1.jpg',
+                desc: 'Pak Suhardi menyediakan layanan penjualan bensin eceran untuk masyarakat sekitar Dusun Wungurejo.'
+            }
+        };
+
         var map = L.map('map', {
+
             zoomControl:false, maxZoom:28, minZoom:1
         }).fitBounds([[-7.88408767552398,110.59494181813172],[-7.8639792537467335,110.62193377260846]]);
         var hash = new L.Hash(map);
@@ -177,23 +339,6 @@
         bounds_group.addLayer(layer_ClippedWungurejo_1);
         map.addLayer(layer_ClippedWungurejo_1);
         function pop_Batas_Wilayah_Dusun_Wungurejo_Fixedcopy_2(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
             var popupContent = '<table>\
                     <tr>\
                         <td colspan="2">' + (feature.properties['layer'] !== null ? autolinker.link(String(feature.properties['layer']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
@@ -285,23 +430,6 @@
         bounds_group.addLayer(layer_Batas_Wilayah_Dusun_Wungurejo_Fixedcopy_2);
         map.addLayer(layer_Batas_Wilayah_Dusun_Wungurejo_Fixedcopy_2);
         function pop_JalanWungurejo_3(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
             var popupContent = '<table>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -352,23 +480,6 @@
         bounds_group.addLayer(layer_JalanWungurejo_3);
         map.addLayer(layer_JalanWungurejo_3);
         function pop_DashDotline_4(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
             var popupContent = '<table>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -557,23 +668,6 @@
         bounds_group.addLayer(layer_DashDotline_4);
         map.addLayer(layer_DashDotline_4);
         function pop_Line_Batas_Dusun_5(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
             var popupContent = '<table>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -624,29 +718,15 @@
         bounds_group.addLayer(layer_Line_Batas_Dusun_5);
         map.addLayer(layer_Line_Batas_Dusun_5);
         function pop_KOORDINATWUNGUREJOFIXTemporaryPlaces_6(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(String(feature.properties['Name']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+            var name = feature.properties['Name'] || '';
+            var info = wungurejoPOIData[name] || { desc: '', img: '' };
+            var imgHtml = info.img ? '<img src="images/' + info.img + '" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px;margin-bottom:8px;"/>' : '';
+            var descHtml = info.desc ? '<p style="margin:4px 0 0 0;font-size:12px;color:#444;line-height:1.4;">' + info.desc + '</p>' : '';
+            var content = '<div style="font-family:\'Segoe UI\',sans-serif;min-width:200px;max-width:260px;">'
+                + imgHtml
+                + '<strong style="font-size:13px;color:#1a5276;">' + name + '</strong>'
+                + descHtml
+                + '</div>';
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
 			});
@@ -810,34 +890,21 @@
         bounds_group.addLayer(layer_KOORDINATWUNGUREJOFIXTemporaryPlaces_6);
         map.addLayer(layer_KOORDINATWUNGUREJOFIXTemporaryPlaces_6);
         function pop_KoordinatWungurejo2_7(feature, layer) {
-            layer.on({
-                mouseout: function(e) {
-                    for (var i in e.target._eventParents) {
-                        if (typeof e.target._eventParents[i].resetStyle === 'function') {
-                            e.target._eventParents[i].resetStyle(e.target);
-                        }
-                    }
-                    if (typeof layer.closePopup == 'function') {
-                        layer.closePopup();
-                    } else {
-                        layer.eachLayer(function(feature){
-                            feature.closePopup()
-                        });
-                    }
-                },
-                mouseover: highlightFeature,
-            });
-            var popupContent = '<table>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['Name'] !== null ? autolinker.link(String(feature.properties['Name']).replace(/'/g, '\'').toLocaleString()) : '') + '</td>\
-                    </tr>\
-                </table>';
-            var content = removeEmptyRowsFromPopupContent(popupContent, feature);
+            var name = feature.properties['Name'] || '';
+            var info = wungurejoPOIData[name] || { desc: '', img: '' };
+            var imgHtml = info.img ? '<img src="images/' + info.img + '" style="width:100%;max-height:160px;object-fit:cover;border-radius:8px;margin-bottom:8px;"/>' : '';
+            var descHtml = info.desc ? '<p style="margin:4px 0 0 0;font-size:12px;color:#444;line-height:1.4;">' + info.desc + '</p>' : '';
+            var content = '<div style="font-family:\'Segoe UI\',sans-serif;min-width:200px;max-width:260px;">'
+                + imgHtml
+                + '<strong style="font-size:13px;color:#1a5276;">' + name + '</strong>'
+                + descHtml
+                + '</div>';
 			layer.on('popupopen', function(e) {
 				addClassToPopupIfMedia(content, e.popup);
 			});
 			layer.bindPopup(content, { maxHeight: 400 });
         }
+
 
         function style_KoordinatWungurejo2_7_0(feature) {
             switch(String(feature.properties['Name'])) {

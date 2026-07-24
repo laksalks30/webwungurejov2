@@ -267,7 +267,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT02/Duwisty_Snack/IMG_0550.JPG"
             ],
             waLink: "https://wa.me/6282111587174?text=Halo%20Duwisty%20Snack",
-            mapSrc: "https://maps.app.goo.gl/BUq1EjmqaenaDfkM9?g_st=ic"
+            mapSrc: "https://goo.gl/maps/gEmzEtahwCS8N32p9"
         },
         7: {
             name: "Hikmah Bakery",
@@ -279,7 +279,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT02/Hikmah_Bakery/IMG_0525.JPG"
             ],
             waLink: "https://wa.me/6282122815553?text=Halo%20Hikmah%20Bakery",
-            mapSrc: "https://maps.app.goo.gl/VCmwcT9pXiWBwfkdA?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/nUL8GYb2PcVupzbU7"
         },
         8: {
             name: "Warung Ibu Umi",
@@ -292,7 +292,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT02/Warung_Ibu_Umi/IMG_0549.JPG"
             ],
             waLink: "https://wa.me/6281329358918?text=Halo%20Warung%20Ibu%20Umi",
-            mapSrc: "https://maps.app.goo.gl/wjxJcbmp4oP2xEiz5?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/nUL8GYb2PcVupzbU7"
         },
         9: {
             name: "Meubel Pak Wasimin",
@@ -307,7 +307,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Meubel_Pak_Wasimin/IMG_0563.JPG"
             ],
             waLink: "https://wa.me/6281904709013?text=Halo%20Meubel%20Pak%20Wasimin",
-            mapSrc: "https://maps.app.goo.gl/jjsjjnjGZinftVju8?g_st=ic"
+            mapSrc: "https://goo.gl/maps/todYcBjTrCNWV3n58"
         },
         10: {
             name: "Meubel Pak Puryanto",
@@ -321,7 +321,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Meubel_Pak_Puryanto/IMG_0532.JPG"
             ],
             waLink: "https://wa.me/6281289243969?text=Halo%20Meubel%20Pak%20Puryanto",
-            mapSrc: "https://maps.app.goo.gl/9JuhCLDKVf49oKbQ7?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/Gd77e6gEYcaobBGq6"
         },
         11: {
             name: "Pecel Mbah Tini",
@@ -333,7 +333,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Pecel_Mbah_Tini/IMG_0562.JPG"
             ],
             waLink: "https://wa.me/6283845121303?text=Halo%20Pecel%20Mbah%20Tini",
-            mapSrc: "https://maps.app.goo.gl/fEsKbsa8wR1J88Au9?g_st=ic"
+            mapSrc: "https://goo.gl/maps/NX98MBcjPnfx7AKY8"
         },
         12: {
             name: "Tikar Mendong Mbah Tuminem",
@@ -348,7 +348,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Tikar_Mendong_Mbah_Tuminem/IMG_0561.JPG"
             ],
             waLink: "https://wa.me/628818786473?text=Halo%20Mbah%20Tuminem%2C%20saya%20tertarik%20dengan%20Tikar%20Mendong",
-            mapSrc: "https://maps.app.goo.gl/BbimRVtqb6RSjUdeA?g_st=ic"
+            mapSrc: "https://goo.gl/maps/REqgGU25ps3Y3GFcA"
         },
         13: {
             name: "Bengkel AB SQUAD",
@@ -361,7 +361,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Bengkel_AB_SQUAD/IMG_0536.JPG?v=3"
             ],
             waLink: "https://wa.me/6288233955479?text=Halo%20Bengkel%20AB%20SQUAD",
-            mapSrc: "https://maps.app.goo.gl/bro6fJdKdUNFYSdw7?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/QQhrCYW3B9HgGRcf9"
         },
         14: {
             name: "Bengkel Fergi",
@@ -375,7 +375,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Fergi_Bengkel/IMG_0491.JPG?v=2"
             ],
             waLink: "https://wa.me/6287839154457?text=Halo%20Bengkel%20Fergi",
-            mapSrc: "https://maps.app.goo.gl/dYwjJU1KoJajFuaBA"
+            mapSrc: "https://goo.gl/maps/ZBVBUTomnfcvFDB18"
         },
         15: {
             name: "Warung Sayur Ibu Wacik",
@@ -387,7 +387,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Ibu_Wacik_Sayur/IMG_0544.JPG"
             ],
             waLink: "https://wa.me/62882007544905?text=Halo%20Warung%20Sayur%20Ibu%20Wacik",
-            mapSrc: "https://maps.app.goo.gl/C4r77RhGJhoBG6GF8?g_st=ic"
+            mapSrc: "https://goo.gl/maps/eQCu4CcHssLYvDhq5"
         },
         16: {
             name: "FFS Ternak Ayam Petelur",
@@ -403,7 +403,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/FFS_(Fam_Fergi_Sabriansyah)_Ternak_Ayam_Petelur/IMG_0547.JPG"
             ],
             waLink: "https://wa.me/6283846375523?text=Halo%20FFS%20Ternak%20Ayam%20Petelur",
-            mapSrc: "https://maps.app.goo.gl/dWqipGcYV5zQD9n76?g_st=ic"
+            mapSrc: "https://goo.gl/maps/6j3uoTeBKLGcB6Qs8"
         },
         17: {
             name: "Jual Beli Kambing Pak Sutikno",
@@ -416,7 +416,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Jual_Beli_Kambing_Pak_Sutikno/IMG_0542.JPG"
             ],
             waLink: "https://wa.me/6281802655336?text=Halo%20Pak%20Sutikno%2C%20saya%20tertarik%20dengan%20kambingnya",
-            mapSrc: "#"
+            mapSrc: "https://goo.gl/maps/gxdq83wxzuZmjP1q6"
         },
         18: {
             name: "Penanam Cabai Mas Rida",
@@ -428,7 +428,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Penanam_Cabai_Mas_Rida/IMG_0541.JPG"
             ],
             waLink: "https://wa.me/6285946686947?text=Halo%20Mas%20Rida%2C%20saya%20tertarik%20dengan%20cabai",
-            mapSrc: "https://maps.app.goo.gl/3ERJt6r1bG8TwogG6?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/6SDY9bxQeWXxjUU9A"
         },
         19: {
             name: "Anyaman Tikar Mendong Ibu Sugiyanto",
@@ -442,7 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT06/Anyaman_Tikar_Mendong_Ibu_Sugiyanto/IMG_0538.JPG"
             ],
             waLink: "https://wa.me/6283846618593?text=Halo%20Ibu%20Sugiyanto%2C%20saya%20tertarik%20dengan%20Anyaman%20Tikar%20Mendong",
-            mapSrc: "https://maps.app.goo.gl/4RPWGhGvmCjV3o248?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/Ursc4iWcfuGeobBJ7"
         },
         20: {
             name: "Cilok Pak Ngatijo",
@@ -455,7 +455,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT05/Ngatijo_Cilok/IMG_0540.JPG"
             ],
             waLink: "#",
-            mapSrc: "#"
+            mapSrc: "https://goo.gl/maps/fkzy3ybXnW94SD3F9"
         },
         21: {
             name: "Toko Qutis",
@@ -470,7 +470,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT03/Toko_Qutis/IMG_0776.JPG"
             ],
             waLink: "https://wa.me/6283843734543?text=Halo%20Toko%20Qutis",
-            mapSrc: "https://maps.app.goo.gl/bq8tUBsfZj739Ut57?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/sYgtrp3fdVKbpQbU9"
         },
         22: {
             name: "Brigaz Sablon",
@@ -484,7 +484,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 "assets/KatalogUMKM/RT04/Brigaz_Sablon/IMG_0773.JPG?v=5"
             ],
             waLink: "https://wa.me/6287878455546?text=Halo%20Brigaz%20Sablon",
-            mapSrc: "https://maps.app.goo.gl/PMUTfDzucc1977Ns7?g_st=ic"
+            mapSrc: "https://maps.app.goo.gl/eeR4HPSH4Dw3yEev9"
         }
     };
 
@@ -652,9 +652,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const prokersData = [
         // PROKER BERSAMA
-        { id: 1, type: "Proker Bersama", owner_name: null, title: "Pembuatan Peta Administrasi Fisik dan Digital", description_markdown: "Pembuatan peta administrasi fisik dan digital Dusun Wungurejo, mencakup batas RT, fasilitas umum, dan potensi UMKM.", status: "Belum Mulai", image_urls: [] },
-        { id: 2, type: "Proker Bersama", owner_name: null, title: "Sosialisasi dan Pelatihan Pertanian KWT", description_markdown: "Sosialisasi dan pelatihan budidaya pertanian, pengendalian hama, dan pengolahan hasil panen untuk Kelompok Wanita Tani (KWT) Wungurejo.", status: "Belum Mulai", image_urls: [] },
-        { id: 3, type: "Proker Bersama", owner_name: null, title: "Penomoran Rumah & Database Warga", description_markdown: "Pembuatan sistem penomoran rumah terstandar dan pendataan database warga Dusun Wungurejo yang terdigitalisasi.", status: "Belum Mulai", image_urls: [] },
+        { id: 1, type: "Proker Bersama", owner_name: null, title: "Pembuatan Peta Administrasi Fisik dan Digital", description_markdown: "Pembuatan peta administrasi fisik dan digital Dusun Wungurejo, mencakup batas RT, fasilitas umum, dan potensi UMKM.", status: "Selesai", image_urls: ["assets/ProgramKerja/Pembuatan Peta Administrasi Fisik dan Digital/Untitled-2.jpg.jpeg"] },
+        { id: 2, type: "Proker Bersama", owner_name: null, title: "Sosialisasi Pengendalian Hama Tanaman untuk KWT Wungurejo oleh Petugas Pengendali Organisme Pengganggu Tumbuhan", description_markdown: "Pelatihan dan sosialisasi pertanian yang diselenggarakan untuk Kelompok Wanita Tani (KWT) Dusun Wungurejo, dengan materi yang disampaikan langsung oleh Petugas Pengendali Organisme Pengganggu Tumbuhan (POPT).", status: "Selesai", image_urls: ["assets/ProgramKerja/SOSIALISASI DAN PELATIHAN PERTANIAN UNTUK KWT WUNGUREJO OLEH PETUGAS PENGENDALI ORGANISME PENGGANGGU TUMBUHAN (POPT)/IMG_1485.JPG", "assets/ProgramKerja/SOSIALISASI DAN PELATIHAN PERTANIAN UNTUK KWT WUNGUREJO OLEH PETUGAS PENGENDALI ORGANISME PENGGANGGU TUMBUHAN (POPT)/IMG_1486.JPG", "assets/ProgramKerja/SOSIALISASI DAN PELATIHAN PERTANIAN UNTUK KWT WUNGUREJO OLEH PETUGAS PENGENDALI ORGANISME PENGGANGGU TUMBUHAN (POPT)/IMG_1487.JPG"] },
+        { id: 3, type: "Proker Bersama", owner_name: null, title: "Pembangunan Website Dusun & Digitalisasi Layanan Administrasi: Surat Pengantar Online", description_markdown: "Pengembangan website profil Dusun Wungurejo sebagai pusat informasi digital. Website ini mencakup profil dusun, WebGIS interaktif, katalog promosi UMKM, serta digitalisasi rekam jejak program kerja dan logbook KKN. Selain itu, terdapat fitur pembuatan surat pengantar RT/RW secara online yang terintegrasi di dalam website. Proker bersama ini bertujuan untuk mempermudah warga Wungurejo dalam mengurus administrasi persuratan secara cepat, efisien, dan praktis dari perangkat masing-masing.", status: "Selesai", image_urls: ["assets/ProgramKerja/Digitalisasi Layanan Administrasi Surat Pengantar Online/IMG_1509.PNG"] },
+        { id: 15, type: "Proker Bersama", owner_name: null, title: "Pendampingan Olahraga: Senam Bersama", description_markdown: "Kegiatan pendampingan senam pagi bersama ibu-ibu dan warga Dusun Wungurejo. Proker pendamping ini bertujuan untuk menjaga kebugaran jasmani, meningkatkan kesadaran akan pentingnya kesehatan masyarakat, serta mempererat tali silaturahmi antar warga.", status: "Selesai", image_urls: ["assets/ProgramKerja/Senam/IMG_1490.JPG", "assets/ProgramKerja/Senam/IMG_1496.JPG"] },
+        { id: 14, type: "Proker Bersama", owner_name: null, title: "Pendampingan Olahraga: Turnamen Bola Voli", description_markdown: "Kegiatan pendampingan olahraga dengan membantu menjadi anak bola (ball boy) pada turnamen bola voli yang diselenggarakan di Dusun Kedok Ploso. Proker pendamping ini bertujuan untuk memupuk sportivitas dan mendukung kelancaran acara olahraga antar dusun.", status: "Selesai", image_urls: ["assets/ProgramKerja/Voli/IMG_1502.JPG", "assets/ProgramKerja/Voli/IMG_1503.JPG", "assets/ProgramKerja/Voli/IMG_1504.JPG", "assets/ProgramKerja/Voli/IMG_1505.JPG"] },
+        { id: 16, type: "Proker Bersama", owner_name: null, title: "Pendampingan Mengajar TPA & Bahasa Inggris", description_markdown: "Kegiatan pendampingan belajar bagi anak-anak Dusun Wungurejo melalui pengajaran di Taman Pendidikan Al-Qur'an (TPA) dan bimbingan belajar Bahasa Inggris dasar. Proker ini bertujuan untuk meningkatkan pemahaman agama serta kemampuan berbahasa Inggris sejak dini.", status: "Selesai", image_urls: ["assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1491.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1492.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1493.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1494.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1495.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1497.JPG", "assets/ProgramKerja/MENGAJAR TPA & BAHASA INGGRIS/IMG_1498.JPG"] },
 
         // PROKER INDIVIDU
         { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Selesai", image_urls: [
@@ -684,15 +687,15 @@ document.addEventListener('DOMContentLoaded', () => {
             "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0024.jpg",
             "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0025.jpg"
         ] },
-        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Fanida/IMG_1304.JPG"] },
+        { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Selesai", image_urls: ["assets/ProgramKerja/Fanida/IMG_1304.JPG", "assets/ProgramKerja/Fanida/IMG_1488.JPG", "assets/ProgramKerja/Fanida/IMG_1489.JPG"] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Evaluasi Kualitas Air Sumur Masyarakat", description_markdown: "Evaluasi kualitas air sumur masyarakat melalui pengujian laboratorium dan rekomendasi pengolahan air bersih.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0001.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0002.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0003.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0004.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0005.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0006.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0007.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0008.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0009.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0010.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0011.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0012.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0013.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0014.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0015.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0016.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0017.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0018.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0019.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0020.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0021.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0022.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0023.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0024.jpg", "assets/ProgramKerja/Ahmad/Pemetaan Air Tanah & Kualitas Air Sumur Web_page-0025.jpg"] },
-        { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Shofa/IMG_1007.JPG", "assets/ProgramKerja/Shofa/IMG_1406.JPG", "assets/ProgramKerja/Shofa/IMG_1407.JPG"] },
-        { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Desa", description_markdown: "Membangun website profil desa, katalog UMKM, serta digitalisasi logbook KKN.", status: "Belum Mulai", image_urls: [] },
-        { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Nabila/IMG_1394.JPG", "assets/ProgramKerja/Nabila/IMG_1395.JPG", "assets/ProgramKerja/Nabila/IMG_1396.JPG", "assets/ProgramKerja/Nabila/IMG_1397.JPG"] },
-        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Penguatan Identitas dan Profil Usaha UMKM", description_markdown: "Program ini dilaksanakan melalui penyusunan company profile untuk UMKM TBS sebagai media pengenalan usaha, serta pendataan informasi UMKM di Dusun Wungurejo yang mencakup nomor WhatsApp dan titik lokasi Google Maps sebagai pendukung penyajian informasi pada website dusun.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Dian/IMG_1299.JPG", "assets/ProgramKerja/Dian/IMG_1300.JPG", "assets/ProgramKerja/Dian/IMG_1301.JPG", "assets/ProgramKerja/Dian/IMG_1302.JPG"] },
-        { id: 11, type: "Proker Individu", owner_name: "Anas Rifai Prayogo", title: "Edukasi Keuangan Anak Usia Dini", description_markdown: "Memberikan edukasi dan literasi manajemen keuangan sejak dini untuk anak-anak Dusun Wungurejo.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Anas/IMG_1293.JPG", "assets/ProgramKerja/Anas/IMG_1294.JPG", "assets/ProgramKerja/Anas/IMG_1295.JPG", "assets/ProgramKerja/Anas/IMG_1296.JPG"] },
+        { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Selesai", image_urls: ["assets/ProgramKerja/Shofa/IMG_1007.JPG", "assets/ProgramKerja/Shofa/IMG_1406.JPG", "assets/ProgramKerja/Shofa/IMG_1407.JPG"] },
+        { id: 8, type: "Proker Individu", owner_name: "Laksana Atmaja Putra", title: "Pembangunan Website Dusun", description_markdown: "Pengembangan website profil Dusun Wungurejo sebagai pusat informasi digital. Website ini mencakup profil dusun, WebGIS interaktif, katalog promosi UMKM, serta digitalisasi rekam jejak program kerja dan logbook KKN.", status: "Selesai", image_urls: [] },
+        { id: 9, type: "Proker Individu", owner_name: "Nabila Vanesya Fiorella", title: "Pestisida Nabati MICESSLA", description_markdown: "Edukasi dan praktik pembuatan pestisida nabati (MICESSLA) untuk membasmi hama tanaman secara alami.", status: "Selesai", image_urls: ["assets/ProgramKerja/Nabila/IMG_1394.JPG", "assets/ProgramKerja/Nabila/IMG_1395.JPG", "assets/ProgramKerja/Nabila/IMG_1396.JPG", "assets/ProgramKerja/Nabila/IMG_1397.JPG"] },
+        { id: 10, type: "Proker Individu", owner_name: "Dian Meutia Zalianti", title: "Penguatan Identitas dan Profil Usaha UMKM", description_markdown: "Program ini dilaksanakan melalui penyusunan company profile untuk UMKM TBS sebagai media pengenalan usaha, serta pendataan informasi UMKM di Dusun Wungurejo yang mencakup nomor WhatsApp dan titik lokasi Google Maps sebagai pendukung penyajian informasi pada website dusun.", status: "Selesai", image_urls: ["assets/ProgramKerja/Dian/IMG_1299.JPG", "assets/ProgramKerja/Dian/IMG_1300.JPG", "assets/ProgramKerja/Dian/IMG_1301.JPG", "assets/ProgramKerja/Dian/IMG_1302.JPG"] },
+        { id: 11, type: "Proker Individu", owner_name: "Anas Rifai Prayogo", title: "Edukasi Keuangan Anak Usia Dini", description_markdown: "Memberikan edukasi dan literasi manajemen keuangan sejak dini untuk anak-anak Dusun Wungurejo.", status: "Selesai", image_urls: ["assets/ProgramKerja/Anas/IMG_1293.JPG", "assets/ProgramKerja/Anas/IMG_1294.JPG", "assets/ProgramKerja/Anas/IMG_1295.JPG", "assets/ProgramKerja/Anas/IMG_1296.JPG"] },
         { id: 12, type: "Proker Individu", owner_name: "Lyra Artha Amarila", title: "Optimalisasi Media Promosi Digital dan Pendataan Informasi UMKM", description_markdown: "Program ini bertujuan untuk mendukung promosi digital dan penyediaan informasi UMKM di Dusun Wungurejo. Kegiatan yang dilakukan meliputi penataan akun Instagram, pembuatan konten, dan penyusunan Linktree pada UMKM TBS, serta pendataan nomor WhatsApp dan pembuatan titik lokasi Google Maps UMKM di Dusun Wungurejo yang akan diintegrasikan ke dalam website dusun.", status: "Selesai", image_urls: ["assets/ProgramKerja/Lyra/IMG_1297.JPG", "assets/ProgramKerja/Lyra/IMG_1298.JPG", "assets/ProgramKerja/Lyra/IMG_1299.JPG", "assets/ProgramKerja/Lyra/IMG_1300.JPG"] },
-        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Sosialisasi dan Pendampingan Komunikasi Publik", description_markdown: "Kegiatan ini terdiri dari dua sesi yang dilaksanakan pada hari terpisah. Sesi pertama berupa sosialisasi anti bullying untuk anak-anak usia SD dan SMP di Desa Wungurejo, disampaikan secara interaktif dan menyenangkan melalui diskusi ringan, kartu visual, dan kuis berhadiah. Sesi kedua berupa pendampingan langsung kepada ibu-ibu Kelompok Wanita Tani Ngudi Makmur dalam mempersiapkan presentasi produk unggulan mereka seperti jahe instan, kencur instan, dan kunyit instan untuk ditampilkan di acara Warna Sari Kelurahan, mencakup penyusunan materi presentasi dan tips dasar public speaking agar ibu-ibu dapat mempromosikan produk dengan percaya diri dan komunikatif.", status: "Belum Mulai", image_urls: ["assets/ProgramKerja/Sabrina/IMG_1400.JPG", "assets/ProgramKerja/Sabrina/IMG_1401.JPG"] }
+        { id: 13, type: "Proker Individu", owner_name: "Sabrina Az Zahra", title: "Sosialisasi dan Pendampingan Komunikasi Publik: Anti Bullying untuk Anak-Anak dan Persiapan Presentasi Produk Kelompok Wanita Tani Ngudi Makmur", description_markdown: "Kegiatan ini terdiri dari dua sesi yang dilaksanakan pada hari terpisah. Sesi pertama berupa pendampingan kepada ibu-ibu Kelompok Wanita Tani Ngudi Makmur dalam mempersiapkan presentasi produk unggulan mereka untuk acara Warna Sari Kelurahan, meliputi penyusunan materi presentasi dan pelatihan dasar public speaking agar dapat mempromosikan produk dengan lebih percaya diri. Sesi kedua berupa sosialisasi anti-bullying bagi anak-anak SD dan SMP di Desa Wungurejo melalui diskusi interaktif, kartu visual, dan kuis berhadiah.", status: "Selesai", image_urls: ["assets/ProgramKerja/Sabrina/IMG_1400.JPG", "assets/ProgramKerja/Sabrina/IMG_1401.JPG"] }
     ];
 
     const prokerGridContainer = document.getElementById('proker-grid-container');
@@ -813,8 +816,30 @@ document.addEventListener('DOMContentLoaded', () => {
     logbookData = [
         { id: 1, phase: "Pra-KKN", date: "2026-06-15", title: "Pembekalan KKN Universitas", content_markdown: "Seluruh mahasiswa KKN mengikuti pembekalan resmi dari pihak universitas mengenai tata tertib, program kerja, dan panduan pengabdian di lapangan.", image_urls: [] },
         { id: 2, phase: "Pra-KKN", date: "2026-06-20", title: "Koordinasi Awal Kelompok", content_markdown: "Pertemuan perdana kelompok AB 84.095 untuk membahas pembagian tugas, program kerja, dan persiapan teknis sebelum berangkat ke lokasi KKN.", image_urls: [] },
-        { id: 3, phase: "Pelaksanaan KKN", date: "2026-07-01", title: "Tiba di Dusun Wungurejo", content_markdown: "Kelompok KKN AB 84.095 resmi tiba di Dusun Wungurejo dan disambut hangat oleh Bapak Dukuh serta warga setempat. Acara perkenalan dan serah terima berlangsung dengan khidmat.", image_urls: [] },
-        { id: 4, phase: "Pelaksanaan KKN", date: "2026-07-02", title: "Observasi dan Pemetaan Wilayah", content_markdown: "Tim melakukan survei keliling Dusun Wungurejo untuk memahami kondisi geografis, sosial, dan potensi UMKM yang ada sebagai dasar penyusunan program kerja.", image_urls: [] }
+        { id: 3, phase: "Pelaksanaan KKN", date: "2026-07-01", title: "Upacara Pelepasan KKN-BN Angkatan 84 • Upacara Penerimaan oleh Kelurahan Pengkol", content_markdown: "**Upacara Pelepasan KKN-BN Angkatan 84**\nMengikuti upacara pelepasan mahasiswa KKN-BN Angkatan 84 sebagai tanda dimulainya pelaksanaan program KKN.\n\n**Upacara Penerimaan oleh Kelurahan Pengkol**\nMengikuti kegiatan penerimaan mahasiswa KKN oleh pihak Kelurahan Pengkol.", image_urls: [] },
+        { id: 4, phase: "Pelaksanaan KKN", date: "2026-07-02", title: "Pertemuan dan Pemaparan Proker kepada Perangkat Dusun", content_markdown: "Melaksanakan pertemuan sekaligus memaparkan rencana program kerja kepada perangkat dusun.", image_urls: [] },
+        { id: 5, phase: "Pelaksanaan KKN", date: "2026-07-03", title: "Kunjungan ke Rumah RT se-Dusun Wungurejo", content_markdown: "Melakukan kunjungan ke rumah para Ketua RT di Dusun Wungurejo.", image_urls: [] },
+        { id: 6, phase: "Pelaksanaan KKN", date: "2026-07-04", title: "Menyiapkan Program Kerja Individu", content_markdown: "Melakukan persiapan program kerja individu yang akan dilaksanakan selama KKN.", image_urls: [] },
+        { id: 7, phase: "Pelaksanaan KKN", date: "2026-07-05", title: "Menyiapkan Program Kerja Individu", content_markdown: "Melanjutkan penyusunan dan persiapan program kerja individu.", image_urls: [] },
+        { id: 8, phase: "Pelaksanaan KKN", date: "2026-07-06", title: "Apel Rutin Senin Pagi di Kelurahan Pengkol • Kegiatan Bank Sampah di Setiap RT Wungurejo • Menyiapkan Program Kerja Individu", content_markdown: "**Apel Rutin Senin Pagi di Kelurahan Pengkol**\nMengikuti apel rutin Senin pagi di Kelurahan Pengkol.\n\n**Kegiatan Bank Sampah di Setiap RT Wungurejo**\nMengikuti kegiatan bank sampah bersama warga di setiap RT Dusun Wungurejo.\n\n**Menyiapkan Program Kerja Individu**\nMelanjutkan persiapan pelaksanaan program kerja individu.", image_urls: [] },
+        { id: 9, phase: "Pelaksanaan KKN", date: "2026-07-07", title: "Melanjutkan Persiapan Program Kerja Individu", content_markdown: "Melanjutkan penyusunan dan penyempurnaan program kerja individu.", image_urls: [] },
+        { id: 10, phase: "Pelaksanaan KKN", date: "2026-07-08", title: "Kunjungan DPL ke Posko KKN • Jalan Jalan Sore Sekitar Dusun Wungurejo", content_markdown: "**Kunjungan DPL ke Posko KKN**\nMenerima kunjungan Dosen Pembimbing Lapangan di posko KKN.\n\n**Jalan Jalan Sore Sekitar Dusun Wungurejo**\nMelakukan kegiatan berjalan sore di sekitar wilayah Dusun Wungurejo.", image_urls: [] },
+        { id: 11, phase: "Pelaksanaan KKN", date: "2026-07-09", title: "Mengerjakan Program Kerja Pendamping: Mengajar TPQ", content_markdown: "Melaksanakan kegiatan mengajar di TPQ sebagai program kerja pendamping.", image_urls: [] },
+        { id: 12, phase: "Pelaksanaan KKN", date: "2026-07-10", title: "Menyiapkan Program Kerja Individu • Mengikuti Pengajian Rutin Jumat Malam", content_markdown: "**Menyiapkan Program Kerja Individu**\nMelakukan persiapan program kerja individu.\n\n**Mengikuti Pengajian Rutin Jumat Malam**\nMengikuti kegiatan pengajian rutin yang dilaksanakan pada Jumat malam.", image_urls: [] },
+        { id: 13, phase: "Pelaksanaan KKN", date: "2026-07-11", title: "Arisan Warga di RT 6", content_markdown: "Mengikuti kegiatan arisan bersama warga RT 6.", image_urls: [] },
+        { id: 14, phase: "Pelaksanaan KKN", date: "2026-07-12", title: "Kerja Bakti Membantu Warga • Mengerjakan Program Kerja Individu: Memasang Rambu-Rambu Evakuasi Bencana", content_markdown: "**Kerja Bakti Membantu Warga**\nMengikuti kegiatan kerja bakti bersama warga.\n\n**Mengerjakan Program Kerja Individu: Memasang Rambu-Rambu Evakuasi Bencana**\nMelaksanakan pemasangan rambu-rambu evakuasi bencana sebagai bagian dari program kerja individu.", image_urls: [] },
+        { id: 15, phase: "Pelaksanaan KKN", date: "2026-07-13", title: "Apel Rutin Senin Pagi di Kelurahan Pengkol • Mengerjakan Program Kerja Pendamping: Mengajar TPQ", content_markdown: "**Apel Rutin Senin Pagi di Kelurahan Pengkol**\nMengikuti apel rutin Senin pagi di Kelurahan Pengkol.\n\n**Mengerjakan Program Kerja Pendamping: Mengajar TPQ**\nMelaksanakan kegiatan mengajar di TPQ sebagai program kerja pendamping.", image_urls: [] },
+        { id: 16, phase: "Pelaksanaan KKN", date: "2026-07-14", title: "Menyiapkan Program Kerja Individu • Mengerjakan Program Kerja Pendamping: Senam Rutin Bersama Warga", content_markdown: "**Menyiapkan Program Kerja Individu**\nMelakukan persiapan program kerja individu.\n\n**Mengerjakan Program Kerja Pendamping: Senam Rutin Bersama Warga**\nMengikuti kegiatan senam rutin bersama warga.", image_urls: [] },
+        { id: 17, phase: "Pelaksanaan KKN", date: "2026-07-15", title: "Mengerjakan Program Kerja Individu: Pendampingan Ibu-Ibu PKK dalam acara Warna Sari", content_markdown: "Melaksanakan kegiatan pendampingan kepada ibu-ibu PKK dalam acara Warna Sari.", image_urls: [] },
+        { id: 18, phase: "Pelaksanaan KKN", date: "2026-07-16", title: "Posyandu Balita, Remaja, dan Lansia • Mengerjakan Program Kerja Individu: Pembuatan Eco Enzyme dari Limbah Pertanian Organik", content_markdown: "**Posyandu Balita, Remaja, dan Lansia**\nMengikuti kegiatan Posyandu bagi balita, remaja, dan lansia.\n\n**Mengerjakan Program Kerja Individu: Pembuatan Eco Enzyme dari Limbah Pertanian Organik**\nMelaksanakan pembuatan eco enzyme dari limbah pertanian organik sebagai program kerja individu.", image_urls: [] },
+        { id: 19, phase: "Pelaksanaan KKN", date: "2026-07-17", title: "Senam Bersama dalam Rangka HUT Kelurahan Pengkol • Mengerjakan Program Kerja Individu: Penyerahan Konten Feeds dan Linktree untuk TBS", content_markdown: "**Senam Bersama dalam Rangka HUT Kelurahan Pengkol**\nMengikuti kegiatan senam bersama dalam rangka peringatan HUT Kelurahan Pengkol.\n\n**Mengerjakan Program Kerja Individu: Penyerahan Konten Feeds dan Linktree untuk TBS**\nMelaksanakan penyerahan konten feeds dan Linktree untuk TBS.", image_urls: [] },
+        { id: 20, phase: "Pelaksanaan KKN", date: "2026-07-18", title: "Pengajian Akbar di Dusun Wungurejo • Mengerjakan Program Kerja Individu: Edukasi Menabung Anak Usia Dini • Mendukung Voli Wungurejo di Event PORDUS 2026", content_markdown: "**Pengajian Akbar di Dusun Wungurejo**\nMengikuti kegiatan pengajian akbar di Dusun Wungurejo.\n\n**Mengerjakan Program Kerja Individu: Edukasi Menabung Anak Usia Dini**\nMelaksanakan edukasi mengenai pentingnya menabung kepada anak usia dini.\n\n**Mendukung Voli Wungurejo di Event PORDUS 2026**\nMemberikan dukungan kepada tim voli Wungurejo pada kegiatan PORDUS 2026.", image_urls: [] },
+        { id: 21, phase: "Pelaksanaan KKN", date: "2026-07-19", title: "Menyiapkan Program Kerja Individu", content_markdown: "Melakukan persiapan program kerja individu.", image_urls: [] },
+        { id: 22, phase: "Pelaksanaan KKN", date: "2026-07-20", title: "Apel Rutin Senin Pagi di Kelurahan Pengkol • Mengerjakan Program Kerja Pendamping: Mengajar TPQ • Mengerjakan Program Kerja Individu: Sosialisasi Anti Bullying untuk Anak-Anak • Mengerjakan Program Kerja Pendamping: Turnamen Voli PORDUS 2026", content_markdown: "**Apel Rutin Senin Pagi di Kelurahan Pengkol**\nMengikuti apel rutin Senin pagi di Kelurahan Pengkol.\n\n**Mengerjakan Program Kerja Pendamping: Mengajar TPQ**\nMelaksanakan kegiatan mengajar di TPQ sebagai program kerja pendamping.\n\n**Mengerjakan Program Kerja Individu: Sosialisasi Anti Bullying untuk Anak-Anak**\nMelaksanakan sosialisasi mengenai anti bullying kepada anak-anak.\n\n**Mengerjakan Program Kerja Pendamping: Turnamen Voli PORDUS 2026**\nBerpartisipasi dalam kegiatan pendampingan pada turnamen voli PORDUS 2026.", image_urls: [] },
+        { id: 23, phase: "Pelaksanaan KKN", date: "2026-07-21", title: "Mengerjakan Program Kerja Utama: Sosialisasi dan Pelatihan pertanian untuk KWT Ngudi Makmur • Mengerjakan Program Kerja Individu: Edukasi & Praktik Pembuatan Pestisida Nabati • Mengerjakan Program Kerja Individu: Pemetaan Kualitas Air dan Kondisi Hidrogeologi Sumur Gali • Mengerjakan Program Kerja Individu: Pengujian Kualitas Air Sumur", content_markdown: "**Mengerjakan Program Kerja Utama: Sosialisasi dan Pelatihan pertanian untuk KWT Ngudi Makmur**\nMelaksanakan sosialisasi dan pelatihan pertanian kepada anggota KWT Ngudi Makmur.\n\n**Mengerjakan Program Kerja Individu: Edukasi & Praktik Pembuatan Pestisida Nabati**\nMelaksanakan edukasi dan praktik pembuatan pestisida nabati.\n\n**Mengerjakan Program Kerja Individu: Pemetaan Kualitas Air dan Kondisi Hidrogeologi Sumur Gali**\nMelaksanakan pemetaan kualitas air dan kondisi hidrogeologi sumur gali.\n\n**Mengerjakan Program Kerja Individu: Pengujian Kualitas Air Sumur**\nMelaksanakan pengujian kualitas air pada sumur.", image_urls: [] },
+        { id: 24, phase: "Pelaksanaan KKN", date: "2026-07-22", title: "Mengerjakan Program Kerja Pendamping: Senam Rutin Bersama Warga", content_markdown: "Mengikuti kegiatan senam rutin bersama warga.", image_urls: [] },
+        { id: 25, phase: "Pelaksanaan KKN", date: "2026-07-23", title: "Penilaian Mahasiswa KKN oleh Bapak Lurah Pengkol • Mengerjakan Program Kerja Pendamping: TPQ dan Mengajar Bahasa Inggris Adik-Adik Wungurejo", content_markdown: "**Penilaian Mahasiswa KKN oleh Bapak Lurah Pengkol**\nMengikuti kegiatan penilaian mahasiswa KKN oleh Bapak Lurah Pengkol.\n\n**Mengerjakan Program Kerja Pendamping: TPQ dan Mengajar Bahasa Inggris Adik-Adik Wungurejo**\nMelaksanakan kegiatan mengajar di TPQ dan mengajar Bahasa Inggris kepada adik-adik Wungurejo.", image_urls: [] },
+        { id: 26, phase: "Pelaksanaan KKN", date: "2026-07-24", title: "Menyiapkan PPT untuk Expo KKN Kalurahan Pengkol • Mencicil Laporan Akhir KKN", content_markdown: "**Menyiapkan PPT untuk Expo KKN Kalurahan Pengkol**\nMenyiapkan materi presentasi dalam bentuk PPT untuk Expo KKN Kalurahan Pengkol.\n\n**Mencicil Laporan Akhir KKN**\nMelakukan penyusunan laporan akhir KKN secara bertahap.", image_urls: [] }
     ];
     // renderLogbook dipanggil di bagian startup bawah
 
@@ -1349,6 +1374,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Update slide positioning
             updateCarousel();
+        }
+
+        // Handle PDF button
+        const existingPdfBtn = detailsModal.querySelector('.modal-pdf-btn');
+        if (existingPdfBtn) existingPdfBtn.remove();
+        if (item.pdf_url) {
+            const pdfBtn = document.createElement('a');
+            pdfBtn.href = item.pdf_url;
+            pdfBtn.target = '_blank';
+            pdfBtn.className = 'modal-pdf-btn';
+            pdfBtn.innerHTML = '<i class="fa-solid fa-file-pdf"></i> Lihat Sampel PDF';
+            pdfBtn.style.cssText = 'display:inline-flex; align-items:center; gap:8px; margin-top:12px; padding:10px 20px; background:linear-gradient(135deg,#e74c3c,#c0392b); color:#fff; border-radius:8px; text-decoration:none; font-weight:600; font-size:0.9rem; box-shadow:0 4px 12px rgba(231,76,60,0.35); transition:all 0.2s ease;';
+            pdfBtn.onmouseover = () => { pdfBtn.style.transform = 'translateY(-2px)'; pdfBtn.style.boxShadow = '0 6px 16px rgba(231,76,60,0.5)'; };
+            pdfBtn.onmouseout = () => { pdfBtn.style.transform = 'translateY(0)'; pdfBtn.style.boxShadow = '0 4px 12px rgba(231,76,60,0.35)'; };
+            if (modalMarkdownContent) modalMarkdownContent.parentNode.insertBefore(pdfBtn, modalMarkdownContent.nextSibling);
         }
 
         // Show modal with transition

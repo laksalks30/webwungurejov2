@@ -25,21 +25,21 @@
     <meta name="keywords" content="KKN, UPN Veteran Yogyakarta, Dusun Wungurejo, Pengkol, Nglipar, Gunung Kidul, Program Kerja KKN">
     <meta name="author" content="KKN AB 84.095">
     <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://laksalks30.github.io/WebsiteDusunWungurejo/">
+    <link rel="canonical" href="https://laksalks30.github.io/DusunWungurejo/">
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://laksalks30.github.io/WebsiteDusunWungurejo/">
+    <meta property="og:url" content="https://laksalks30.github.io/DusunWungurejo/">
     <meta property="og:title" content="KKN AB 84.095 UPN Veteran Yogyakarta - Dusun Wungurejo">
     <meta property="og:description" content="Official website of KKN AB 84.095 UPN 'Veteran' Yogyakarta in Desa Dusun Wungurejo.">
-    <meta property="og:image" content="https://laksalks30.github.io/WebsiteDusunWungurejo/assets/logo/LogoKKNBaru.png">
+    <meta property="og:image" content="https://laksalks30.github.io/DusunWungurejo/assets/logo/LogoKKNBaru.png">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://laksalks30.github.io/WebsiteDusunWungurejo/">
+    <meta property="twitter:url" content="https://laksalks30.github.io/DusunWungurejo/">
     <meta property="twitter:title" content="KKN AB 84.095 UPN Veteran Yogyakarta - Dusun Wungurejo">
     <meta property="twitter:description" content="Official website of KKN AB 84.095 UPN 'Veteran' Yogyakarta in Desa Dusun Wungurejo.">
-    <meta property="twitter:image" content="https://laksalks30.github.io/WebsiteDusunWungurejo/assets/logo/LogoKKNBaru.png">
+    <meta property="twitter:image" content="https://laksalks30.github.io/DusunWungurejo/assets/logo/LogoKKNBaru.png">
     <!-- PWA Manifest and Theme Color -->
     <link rel="manifest" href="manifest.json">
     <meta name="theme-color" content="#FF3385">
@@ -382,11 +382,147 @@
                 <i class="fa-solid fa-map-location-dot" style="color: var(--color-primary); margin-right: 10px;"></i>
                 <span data-lang-key="map_title">Peta Lokasi Dusun Wungurejo</span>
             </h3>
-            <div style="border-radius: 16px; overflow: hidden; position: relative;">
-                <iframe src="Peta/Peta%20Wungurejo%20WebGIS/qgis2web_2026_07_22-15_46_58_338224/index.html" style="width: 100%; height: 500px; border: none; z-index: 1;"></iframe>
+            <!-- Kotak Preview Peta - Klik untuk Buka Penuh -->
+            <div id="webgis-preview-card" onclick="openWebGISFullscreen()" data-aos="fade-up" style="
+                margin-top: 10px; border-radius: 16px; overflow: hidden;
+                position: relative; cursor: pointer;
+                box-shadow: 0 8px 32px rgba(108,8,32,0.18);
+                transition: transform 0.3s, box-shadow 0.3s;">
+                <!-- Iframe preview (tidak interaktif, hanya tampilan) -->
+                <iframe src="Peta/Peta%20Wungurejo%20WebGIS/qgis2web_2026_07_22-15_46_58_338224/index.html"
+                    style="width:100%; height:420px; border:none; display:block; pointer-events:none;"
+                    tabindex="-1"></iframe>
+                <!-- Overlay klik di atas iframe -->
+                <div style="
+                    position: absolute; inset: 0;
+                    background: linear-gradient(to top, rgba(108,8,32,0.8) 0%, rgba(0,0,0,0.08) 55%);
+                    display: flex; flex-direction: column;
+                    align-items: center; justify-content: flex-end;
+                    padding-bottom: 32px; gap: 10px;">
+                    <div style="
+                        background: rgba(255,255,255,0.18);
+                        backdrop-filter: blur(10px);
+                        border: 1.5px solid rgba(255,255,255,0.45);
+                        border-radius: 50px; padding: 12px 28px;
+                        display: flex; align-items: center; gap: 10px;
+                        color: #fff; font-weight: 800; font-size: 15px;
+                        box-shadow: 0 4px 20px rgba(0,0,0,0.3);">
+                        <i class="fa-solid fa-expand" style="font-size:16px;"></i>
+                        <span>Buka Peta WebGIS Penuh</span>
+                    </div>
+                    <p style="color:rgba(255,255,255,0.8); font-size:12px; margin:0; text-align:center;">
+                        <i class="fa-solid fa-hand-pointer" style="margin-right:5px;"></i>
+                        Klik untuk membuka peta interaktif lengkap
+                    </p>
+                </div>
             </div>
+
+            <!-- ================================================ -->
+            <!-- WEBGIS FULLSCREEN: Overlay (hanya background+iframe) -->
+            <!-- ================================================ -->
+            <div id="webgis-fullscreen-overlay" style="
+                display: none;
+                position: fixed;
+                top: 0; left: 0;
+                width: 100vw; height: 100vh;
+                z-index: 1999999;
+                background: #000;">
+                <iframe id="webgis-iframe-full" src=""
+                    style="position: absolute; top: 0; left: 0;
+                           width: 100%; height: 100%;
+                           border: none; display: block;">
+                </iframe>
+            </div>
+
+            <!-- ================================================ -->
+            <!-- TOMBOL KEMBALI — FIXED MANDIRI di body level      -->
+            <!-- Posisi: KIRI BAWAH (area kosong pada peta)        -->
+            <!-- ================================================ -->
+            <button id="webgis-close-btn"
+                onclick="closeWebGISFullscreen()"
+                style="
+                    display: none;
+                    position: fixed;
+                    bottom: 30px;
+                    left: 30px;
+                    z-index: 2000001;
+                    background: rgba(255, 255, 255, 0.95);
+                    color: #6c0820;
+                    border: 1px solid rgba(108, 8, 32, 0.2);
+                    border-radius: 12px;
+                    padding: 12px 20px;
+                    font-size: 14px;
+                    font-weight: 700;
+                    font-family: inherit;
+                    cursor: pointer;
+                    white-space: nowrap;
+                    box-shadow: 0 8px 25px rgba(0,0,0,0.2), 0 2px 5px rgba(0,0,0,0.1);
+                    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+                    pointer-events: auto;
+                    display: none; /* diatur oleh js */
+                    align-items: center;
+                    gap: 8px;">
+                <div style="background: #6c0820; color: white; border-radius: 50%; width: 24px; height: 24px; display: flex; align-items: center; justify-content: center;">
+                    <i class="fa-solid fa-arrow-left" style="font-size:12px;"></i>
+                </div>
+                <span>Tutup Peta</span>
+            </button>
+
+            <style>
+            #webgis-preview-card:hover {
+                transform: scale(1.012);
+                box-shadow: 0 16px 48px rgba(108,8,32,0.3);
+            }
+            #webgis-close-btn:hover {
+                background: #ffffff !important;
+                transform: translateY(-3px) !important;
+                box-shadow: 0 12px 30px rgba(0,0,0,0.25), 0 4px 10px rgba(0,0,0,0.15) !important;
+            }
+            @media (max-width: 600px) {
+                #webgis-close-btn {
+                    bottom: 20px !important;
+                    left: 20px !important;
+                    padding: 10px 16px !important;
+                    font-size: 13px !important;
+                }
+            }
+            </style>
+
+            <script>
+            var webgisOverlayMoved = false;
+
+            function openWebGISFullscreen() {
+                var overlay = document.getElementById('webgis-fullscreen-overlay');
+                var closeBtn = document.getElementById('webgis-close-btn');
+                var iframe   = document.getElementById('webgis-iframe-full');
+                var src = 'Peta/Peta%20Wungurejo%20WebGIS/qgis2web_2026_07_22-15_46_58_338224/index.html';
+
+                // Fix stacking context (AOS transform bug): move to body directly
+                if (!webgisOverlayMoved) {
+                    document.body.appendChild(overlay);
+                    document.body.appendChild(closeBtn);
+                    webgisOverlayMoved = true;
+                }
+
+                overlay.style.display  = 'block';
+                closeBtn.style.display = 'flex';
+                document.body.style.overflow = 'hidden';
+
+                if (iframe.src.indexOf('qgis2web') === -1) {
+                    iframe.src = src;
+                }
+            }
+            function closeWebGISFullscreen() {
+                document.getElementById('webgis-fullscreen-overlay').style.display = 'none';
+                document.getElementById('webgis-close-btn').style.display = 'none';
+                document.body.style.overflow = '';
+            }
+            document.addEventListener('keydown', function(e) {
+                if (e.key === 'Escape') closeWebGISFullscreen();
+            });
+            </script>
         </div>
-        </div>
+
     </section>
 
     <!-- E-Katalog UMKM Section -->
