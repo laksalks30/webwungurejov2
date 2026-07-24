@@ -657,7 +657,33 @@ document.addEventListener('DOMContentLoaded', () => {
         { id: 3, type: "Proker Bersama", owner_name: null, title: "Penomoran Rumah & Database Warga", description_markdown: "Pembuatan sistem penomoran rumah terstandar dan pendataan database warga Dusun Wungurejo yang terdigitalisasi.", status: "Belum Mulai", image_urls: [] },
 
         // PROKER INDIVIDU
-        { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Belum Mulai", image_urls: [], pdf_url: "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web.pdf" },
+        { id: 4, type: "Proker Individu", owner_name: "Ahmad Firdaus Nugrahadi", title: "Pemetaan Kualitas Air & Hidrogeologi", description_markdown: "Pemetaan kualitas air dan kondisi hidrogeologi pada sumur gali warga Dusun Wungurejo.", status: "Selesai", image_urls: [
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0001.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0002.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0003.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0004.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0005.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0006.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0007.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0008.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0009.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0010.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0011.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0012.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0013.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0014.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0015.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0016.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0017.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0018.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0019.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0020.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0021.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0022.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0023.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0024.jpg",
+            "assets/ProgramKerja/Ahmad/Pemetaan%20Air%20Tanah%20%26%20Kualitas%20Air%20Sumur%20Web_page-0025.jpg"
+        ] },
         { id: 5, type: "Proker Individu", owner_name: "Fanida Rahmi Bay", title: "Pemasangan Rambu-Rambu Evakuasi Bencana", description_markdown: "Pemasangan rambu-rambu evakuasi bencana merupakan program kerja yang bertujuan memberikan penanda jalur evakuasi dan titik kumpul untuk meningkatkan kesiapsiagaan masyarakat dalam menghadapi situasi darurat. Rambu dipasang pada lokasi-lokasi strategis agar memudahkan warga melakukan evakuasi secara cepat, aman, dan terarah saat terjadi bencana.", status: "Belum Mulai", image_urls: [] },
         { id: 6, type: "Proker Individu", owner_name: "Havez Reza Zein Abizard", title: "Evaluasi Kualitas Air Sumur Masyarakat", description_markdown: "Evaluasi kualitas air sumur masyarakat melalui pengujian laboratorium dan rekomendasi pengolahan air bersih.", status: "Belum Mulai", image_urls: [] },
         { id: 7, type: "Proker Individu", owner_name: "Shofa Salsabila Ratna W", title: "Pembuatan Eco Enzyme", description_markdown: "Edukasi dan praktik pembuatan Eco Enzyme yang memanfaatkan limbah pertanian organik warga.", status: "Belum Mulai", image_urls: [] },
@@ -732,12 +758,23 @@ document.addEventListener('DOMContentLoaded', () => {
             // Parse description using marked if available
             const descHtml = typeof marked !== 'undefined' ? marked.parse(proker.description_markdown) : proker.description_markdown;
 
+            let previewHtml = '';
+            if (proker.image_urls && proker.image_urls.length > 0) {
+                previewHtml = `
+                    <div class="proker-preview-img" style="margin-top: 15px; margin-bottom: 10px; border-radius: 8px; overflow: hidden; height: 160px; position: relative; box-shadow: 0 4px 6px rgba(0,0,0,0.1);">
+                        <img src="${proker.image_urls[0]}" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease;" alt="Preview Proker" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                        ${proker.image_urls.length > 1 ? `<div style="position: absolute; bottom: 8px; right: 8px; background: rgba(0,0,0,0.7); color: #fff; padding: 4px 8px; border-radius: 6px; font-size: 0.75rem; font-weight: bold; backdrop-filter: blur(4px);"><i class="fa-solid fa-images"></i> +${proker.image_urls.length - 1} Foto</div>` : ''}
+                    </div>
+                `;
+            }
+
             prokerCard.innerHTML = `
                 <div class="proker-icon-box ${iconBoxClass}" ${ownerPhotoUrl ? 'style="padding: 0; overflow: hidden;"' : ''}>${iconHtml}</div>
                 <div class="proker-body">
                     <span class="proker-tag">${proker.type}${proker.owner_name ? ` &bull; ${proker.owner_name}` : ''}</span>
                     <h3 class="proker-title">${escapeHTML(proker.title)}</h3>
                     <div class="proker-desc">${descHtml}</div>
+                    ${previewHtml}
                     <div class="proker-footer">
                         <span class="proker-status ${statusClass}"><i class="fa-solid ${statusIcon}"></i> ${proker.status}</span>
                     </div>
@@ -1270,31 +1307,10 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         }
 
-        // Handle Image Gallery / PDF
+        // Handle Image Gallery
         activeImages = item.image_urls || [];
-        const pdfUrl = item.pdf_url || null;
-
-        if (activeImages.length === 0 && !pdfUrl) {
+        if (activeImages.length === 0) {
             if (modalGallerySide) modalGallerySide.style.display = 'none';
-        } else if (pdfUrl && activeImages.length === 0) {
-            // Show PDF embedded in the gallery panel
-            if (modalGallerySide) modalGallerySide.style.display = 'block';
-            if (carouselTrack) {
-                carouselTrack.innerHTML = `
-                    <div class="carousel-slide" style="width:100%; flex-shrink:0;">
-                        <iframe src="${pdfUrl}" style="width:100%; height:480px; border:none; border-radius:10px; display:block;"></iframe>
-                    </div>
-                    <div style="text-align:center; padding: 10px 0;">
-                        <a href="${pdfUrl}" target="_blank" style="display:inline-flex; align-items:center; gap:6px; background: var(--color-primary, #c0392b); color:#fff; padding:8px 18px; border-radius:50px; font-size:0.85rem; font-weight:700; text-decoration:none;">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i> Buka PDF di Tab Baru
-                        </a>
-                    </div>
-                `;
-                carouselTrack.style.transform = 'translateX(0)';
-            }
-            if (carouselDotsContainer) carouselDotsContainer.innerHTML = '';
-            if (prevBtn) prevBtn.style.display = 'none';
-            if (nextBtn) nextBtn.style.display = 'none';
         } else {
             if (modalGallerySide) modalGallerySide.style.display = 'block';
 
@@ -2322,5 +2338,21 @@ document.addEventListener('DOMContentLoaded', () => {
             card.style.boxShadow = '0 20px 40px rgba(108, 8, 32, 0.12)';
         });
     });
+
+    // --- Direct Link to Proker Modal (For QR Codes) ---
+    const urlParams = new URLSearchParams(window.location.search);
+    const directProkerId = urlParams.get('proker_id');
+    if (directProkerId) {
+        setTimeout(() => {
+            const targetProker = prokersData.find(p => p.id == parseInt(directProkerId));
+            if (targetProker) {
+                const prokerSection = document.getElementById('proker');
+                if (prokerSection) {
+                    prokerSection.scrollIntoView({ behavior: 'smooth' });
+                }
+                openDetailsModal(targetProker, 'Proker');
+            }
+        }, 500);
+    }
 });
 
